@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="flujo.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+      <span class="logo_name">Instrumentación</span>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <a href="nivel.html">
+              <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+              <span class="link_name">Volver</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="nivel.html">Volver</a></li>
+            </ul>
+          </li>
+      <li>
+        <div class="iocn-link">
+          <a href="presion.html">
+            <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+            <span class="link_name">Presión</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="presion.html">Presión</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="temperatura.html">
+            <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+            <span class="link_name">Temperatura</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="flujo.html">
+          <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+          <span class="link_name">Flujo</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="flujo.html">Flujo</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="posicionadores.html">
+          <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+          <span class="link_name">Posicionadores</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="peso.html">
+            <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+            <span class="link_name">Peso</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="peso.html">Peso</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="procesos.html">
+          <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+          <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="compcomplementarios.html">
+          <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+          <span class="link_name">Componentes complementarios</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+        </ul>
+      </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>NIVEL - MEDICION DE NIVEL DE PUNTOS</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="capacidad">CAPACIDAD</a>
+            <a href="#" class="category_item small" category="paleta-giratoria">PALETA GIRATORIA</a>
+            <a href="#" class="category_item" category="ultrasonico">ULTRASONICO</a>
+            <a href="#" class="category_item" category="vibrante">VIBRANTE</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="capacidad">
+              <a href="#">Pointek CLS100</a>
+              <img src="imagenes/pointek-cls100-for-web.jpg" alt="">
+              <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="capacidad">
+              <a href="#">Pointek CLS200</a>
+              <img src="imagenes/pointek-cls200-for-web.jpg" alt="" >
+              <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="capacidad">
+              <a href="#">Pointek CLS300</a>
+              <img src="imagenes/pointek-cls300-for-web.jpg" alt="" >
+              <button id="openModal2">Más Información</button>
+            </div>
+            <div class="product-item" category="capacidad">
+              <a href="#">SITRANS LCS050</a>
+              <img src="imagenes/SITRANS LCS050.jpg" alt="" >
+              <button id="openModal3">Más Información</button>
+            </div>
+            <div class="product-item" category="paleta-giratoria">
+              <a href="#">SITRANS LPS200</a>
+              <img src="imagenes/SITRANS LPS200.jpg" alt="" >
+              <button id="openModal4">Más Información</button>
+            </div>
+            <div class="product-item" category="ultrasonico">
+              <a href="#">Pointek ULS200</a>
+              <img src="imagenes/sitransuls200.jpg" alt="" >
+              <button id="openModal5">Más Información</button>
+            </div>
+            <div class="product-item" category="vibrante">
+              <a href="#">SITRANS LVL100</a>
+              <img src="imagenes/sitrans-lvl100-for-web.jpg" alt="" >
+              <button id="openModal6">Más Información</button>
+            </div>
+            <div class="product-item" category="vibrante">
+              <a href="#">SITRANS LVL200</a>
+              <img src="imagenes/sitrans-lvl200-for-web.jpg" alt="" >
+              <button id="openModal7">Más Información</button>
+            </div>
+            <div class="product-item" category="vibrante">
+              <a href="#">SITRANS LVS100</a>
+              <img src="imagenes/sitrans-lvs100-for-web.jpg" alt="" >
+              <button id="openModal8">Más Información</button>
+            </div>
+            <div class="product-item" category="vibrante">
+                <a href="#">SITRANS LVS200</a>
+                <img src="imagenes/sitrans-lvs200-for-web.jpg" alt="" >
+                <button id="openModal9">Más Información</button>
+              </div>
+              <div class="product-item" category="vibrante">
+                <a href="#">SITRANS LVS300</a>
+                <img src="imagenes/sitrans-lvs300-for-web.jpg" alt="" >
+                <button id="openModal10">Más Información</button>
+              </div>
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>Pointek CLS100</h2>
+        <p>El interruptor de nivel de capacitancia universal compacto para espacios reducidos<br><br>
+            •	Cubierta de sonda Sensguard para aplicaciones abrasivas<br>
+            •	Versión con cable integrado para instalación en espacios reducidos<br>
+            •	Detección de nivel independiente de la pared del tanque/tubería<br>
+            •	Múltiples salidas<br>
+            •	Opciones de sonda PPS o PVDF para compatibilidad con múltiples materiales<br>
+            •	El diseño totalmente encapsulado proporciona una solución duradera<br>
+            </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>Pointek CLS200</h2>
+        <p>El interruptor de nivel de capacitancia universal estándar con una amplia gama de extensiones<br><br>
+            •	Selección de opciones: comunicaciones PROFIBUS, pantallas digitales y pruebas remotas o locales<br>
+            •	Seguridad funcional SIL2 que garantiza seguridad y facilidad de integración<br>
+            •	Múltiples salidas<br>
+            •	Opciones de sonda PPS o PVDF para compatibilidad con múltiples materiales<br>
+            •	Pantalla con configuración de botones locales<br>
+            </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>Pointek CLS300</h2>
+        <p>El interruptor de nivel de capacitancia para aplicaciones duras y exigentes con altas temperaturas y presiones<br><br>
+            •	Selección de opciones: comunicaciones PROFIBUS, pantallas digitales, pruebas remotas o locales<br>
+            •	Pantalla con configuración de botones locales<br>
+            </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal3" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS LCS050</h2>
+        <p>Ultra compacto con interruptor de nivel de punto digital de inserción corta<br><br>
+            •	Longitud de inserción muy pequeña de 15 mm (0,59 pulgadas)<br>
+            •	Fácil instalación sin necesidad de ajuste<br>
+            •	Bajo mantenimiento sin partes móviles<br>
+            •	Indicación de estado de 360 grados altamente visibles<br>
+            •	Conector M12 para facilitar la instalación<br>
+            •	Comunicación IO-Link para monitoreo y configuración avanzados<br>
+            </p>
+        <div id="close3" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal4" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS LPS200</h2>
+        <p>Es un componente esencial de cualquier operación de sólidos a granel. El interruptor de paleta duradero detecta con precisión las condiciones variables en una variedad de materiales. Además, puede optimizarse para sólidos de baja densidad y altas temperaturas.<br><br>
+            •	Paleta articulada opcional para materiales de baja densidad y pequeñas conexiones de proceso<br>
+            •	Protección de ingreso de cinco sellos<br>
+            •	El motor se apaga durante la alarma para una larga vida útil<br>
+            •	El diseño del embrague de fricción evita daños por impacto<br>
+            •	Monitoreo de fallas de rotación<br>
+            •	Ideal para condiciones extremas, incluidas altas temperaturas y acumulación<br>
+            •	Caja giratoria para facilitar la instalación<br>
+            </p>
+        <div id="close4" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal5" class="modal-container">
+    <div class="modal-content">
+        <h2>Pointek ULS200</h2>
+        <p>Utiliza un interruptor ultrasónico sin contacto para detectar sólidos, líquidos y lodos. Particularmente hábil para medir materiales pegajosos, se puede utilizar en muchas industrias. Prácticamente sin partes móviles, reduce significativamente los costos de reparación y maximiza la eficiencia. <br><br>
+            •	Fácil programación con dos botones<br>
+            •	Dos salidas de interruptor para alarmas<br>
+            •	Adaptador de brida<br>
+            •	Electrónica provista de función a prueba de fallas<br>
+            •	Conexiones de proceso de abrazadera de ajuste roscado y sanitario para flexibilidad de instalación<br>
+            </p>
+        <div id="close5" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal6" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS LVL100</h2>
+        <p>Detecta niveles de líquidos y lodos en espacios confinados<br><br>
+            •	Monitoreo de fallas por corrosión, pérdida de vibración y rotura de línea en el accionamiento piezoeléctrico<br>
+            •	Diseño compacto para espacios reducidos<br>
+            •	Conexión de proceso roscada a partir de ½"<br>
+            </p>
+        <div id="close6" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal7" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS LVL200</h2>
+        <p>Detecta niveles de líquidos y lodos mientras controla la corrosión y los daños.<br><br>
+            •	Función de prueba que incluye opciones remotas<br>
+            •	Monitoreo de fallas por corrosión, pérdida de vibración y rotura de línea en el accionamiento piezoeléctrico<br>
+            •	Diseño compacto para espacios reducidos<br>
+            •	Longitud de inserción corta a partir de 40 mm (1,57")<br>
+            •	Opciones de presión y temperatura extremas<br>
+            </p>
+        <div id="close7" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal8" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS LVS100</h2>
+        <p>Mide sólidos secos a granel en contenedores, silos y tolvas<br><br>
+            •	Fácil configuración sin necesidad de calibración y una carcasa giratoria<br>
+            •	Adecuado para materiales de baja densidad aparente a partir de 30 g/l (1,9 lb/ft³)<br>
+            •	Sensibilidad ajustable para aplicaciones variadas<br>
+            </p>
+        <div id="close8" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal9" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS LVS200</h2>
+        <p>Mide sólidos secos a granel mientras monitorea la corrosión y el daño<br><br>
+            •	Fácil configuración sin necesidad de calibración y una carcasa giratoria<br>
+            •	Adecuado para materiales de baja densidad aparente a partir de 30 g/l (1,9 lb/ft³)<br>
+            •	Sensibilidad ajustable para aplicaciones variadas<br>
+            </p>
+        <div id="close9" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal10" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS LVS300</h2>
+        <p>Es adecuado para condiciones muy exigentes, como sólidos a granel pesados y secos<br><br>
+            •	Fácil configuración sin necesidad de calibración y una carcasa giratoria<br>
+            •	Varillas flexibles suministradas por el cliente de hasta 4 m para facilitar el mantenimiento <br>
+            •	Alta resistencia a las fuerzas mecánicas.<br>
+            •	Adecuado para la detección de nivel puntual de materiales a granel ligeros a partir de 20 g/l (1,2 lb/ft³)<br>
+            •	Sensibilidad ajustable para aplicaciones variadas<br>
+            •	Prolongación y conexión a proceso en acero inoxidable con alta calidad superficial<br>
+            </p>
+        <div id="close10" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

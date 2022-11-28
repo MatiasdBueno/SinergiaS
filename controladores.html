@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="flujo.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+      <span class="logo_name">Instrumentación</span>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <a href="nivelcontinuo.html">
+              <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+              <span class="link_name">Volver</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="nivelcontinuo.html">Volver</a></li>
+            </ul>
+          </li>
+      <li>
+        <div class="iocn-link">
+          <a href="presion.html">
+            <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+            <span class="link_name">Presión</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="presion.html">Presión</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="temperatura.html">
+            <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+            <span class="link_name">Temperatura</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="flujo.html">
+          <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+          <span class="link_name">Flujo</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="flujo.html">Flujo</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="posicionadores.html">
+          <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+          <span class="link_name">Posicionadores</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="peso.html">
+            <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+            <span class="link_name">Peso</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="peso.html">Peso</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="procesos.html">
+          <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+          <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="compcomplementarios.html">
+          <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+          <span class="link_name">Componentes complementarios</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+        </ul>
+      </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>NIVEL - NIVEL CONTINUO - CONTROLADORES</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="controladores">CONTROLADORES</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="controladores">
+              <a href="#">MultiRanger/HydroRanger 200 HMI</a>
+              <img src="imagenes/multiranger-hmi.jpg" alt="">
+              <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="controladores">
+              <a href="#">MultiRanger/HydroRanger 100/200</a>
+              <img src="imagenes/multiranger100and200.jpg" alt="" >
+              <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="controladores">
+              <a href="#">SITRANS LT500 <br><br></a>
+              <img src="imagenes/lt500.jpg" alt="" >
+              <button id="openModal2">Más Información</button>
+            </div>
+            <div class="product-item" category="controladores">
+              <a href="#">SITRANS LUT400/420/430 <br><br></a>
+              <img src="imagenes/sitranslut400.jpg" alt="" >
+              <button id="openModal3">Más Información</button>
+            </div>
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>MultiRanger/HydroRanger 200 HMI</h2>
+        <p>Es un monitor/controlador ultrasónico versátil de nivel de uno o varios recipientes de rango corto a medio para prácticamente cualquier aplicación en una amplia gama de industrias. <br><br>
+            •	Medida diferencial y seis relés de control<br>
+            •	Inteligencia de procesos<br>
+            •	Gama de modelos para medición de nivel simple o control de bombas a más complejos para nivel diferencial, medición de canal abierto, control avanzado de bombas, alarmas y control de compuertas<br>
+            •	Supresión automática de ecos falsos para evitar ecos falsos de obstrucciones fijas<br>
+            •	Facilidad de uso intuitivo<br>
+            </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>MultiRanger/HydroRanger 100/200</h2>
+        <p>Es un monitor/controlador ultrasónico versátil de nivel de uno o varios recipientes de rango corto a medio para prácticamente cualquier aplicación en una amplia gama de industrias. Se puede utilizar en diferentes materiales, incluidos fuel oil, residuos municipales, ácidos, astillas de madera o en materiales con ángulos de reposo elevados.<br><br>
+            •	Medida diferencial y seis relés de control<br>
+            •	Inteligencia de procesos<br>
+            •	Gama de modelos para medición de nivel simple o control de bombas a más complejos para nivel diferencial, medición de canal abierto, control avanzado de bombas, alarmas y control de compuertas<br>
+            •	Supresión automática de ecos falsos para evitar ecos falsos de obstrucciones fijas<br>
+            •	Facilidad de uso intuitivo<br>
+            </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS LT500</h2>
+        <p>Es la próxima evolución de los controladores de nivel, caudal y bombas para radar y transmisores ultrasónicos, o cualquier dispositivo de 2 hilos de 4-20 mA. Es la primera opción para mediciones de sensores de radar a 80 GHz y cuenta con mediciones de punto único y doble, 6 relés y Modbus RTU, HART, PROFIBUS DP, PROFIBUS PA, PROFINET.
+
+        </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal3" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS LUT400/420/430</h2>
+        <p>Son controladores ultrasónicos compactos, de un solo punto y de largo alcance para la medición continua de nivel o volumen de líquidos, lodos y sólidos, y el control de alta precisión del caudal en canales abiertos. <br><br>
+            -	SITRANS LUT420: medición de nivel o volumen de líquidos, lodos y sólidos, así como funciones básicas de control de bombas y capacidad básica de registro de datos.<br>
+            -	SITRANS LUT430: incluye, un conjunto completo de funciones avanzadas de alarma y control de bomba, monitorización de caudal de canal abierto y capacidad básica de registro de datos de caudal.<br>
+            -	SITRANS LUT440 OCM de alta precisión: Incluye la mejor precisión de la industria (± 1 mm dentro de 3 m), un conjunto completo de funciones de control avanzadas y capacidad de registro de flujo mejorada.<br><br>
+            
+            •	Alta precisión y registro de datos <br>
+            •	Receptor digital de alto rendimiento y fiabilidad en aplicaciones ruidosas<br>
+            •	Facilidad de uso intuitivo<br>
+            •	Funciones avanzadas de bomba, alarma y control de flujo con tres relés<br>
+            •	Registrador de datos integrado<br>
+            •	Reloj en tiempo real con horario de verano y algoritmos de ahorro de energía<br>
+            </p>
+        <div id="close3" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

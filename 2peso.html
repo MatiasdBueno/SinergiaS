@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+          <span class="logo_name">Instrumentación</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="peso.html">
+                <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+                <span class="link_name">Volver</span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="peso.html">Volver</a></li>
+              </ul>
+            </li>
+          <li>
+            <div class="iocn-link">
+              <a href="presion.html">
+                <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+                <span class="link_name">Presión</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="presion.html">Presión</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="temperatura.html">
+                <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+                <span class="link_name">Temperatura</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="flujo.html">
+                <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+                <span class="link_name">Flujo</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="flujo.html">Flujo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="nivel.html">
+              <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+              <span class="link_name">Nivel</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="nivel.html">Nivel</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="posicionadores.html">
+              <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+              <span class="link_name">Posicionadores</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="procesos.html">
+              <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+              <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="compcomplementarios.html">
+              <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+              <span class="link_name">Componentes complementarios</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+            </ul>
+          </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+      </div>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>PESO - ELECTRONICA INDEPENDIENTE</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="plataforma-tolva">PLATAFORMA Y TOLVA</a>
+            <a href="#" class="category_item" category="cinta">DE CINTA</a>
+            <a href="#" class="category_item" category="dosificacion">DOSIFICACIÓN</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="plataforma-tolva">
+                <a href="#">SIWAREX WP231 <br><br></a>
+                <img src="imagenes/siwarex-wp231.png" alt="">
+                <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="plataforma-tolva">
+                <a href="#">SIWAREX WT231 <br><br></a>
+                <img src="imagenes/siwarex-wt231.png" alt="" >
+                <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="cinta">
+                <a href="#">INTEGRADOR MILLTRONICS BW500</a>
+                <img src="imagenes/siwarex-bw500.png" alt="" >
+                <button id="openModal2">Más Información</button>
+            </div>
+            <div class="product-item" category="cinta">
+                <a href="#">MODULO MILLTRONICS BW500</a>
+                <img src="imagenes/p-fi01-xx-00428h.jpg" alt="" >
+                <button id="openModal3">Más Información</button>
+            </div>
+            <div class="product-item" category="cinta">
+                <a href="#">SIWAREX WP241 <br><br></a>
+                <img src="imagenes/weighing-module-siwarex-wp241.jpg" alt="" >
+                <button id="openModal4">Más Información</button>
+            </div>
+            <div class="product-item" category="cinta">
+                <a href="#">SIWAREX WT241 <br><br></a>
+                <img src="imagenes/siwarex-wt241.png" alt="" >
+                <button id="openModal5">Más Información</button>
+            </div>
+            <div class="product-item" category="dosificacion">
+                <a href="#">SIWAREX WP251 <br><br></a>
+                <img src="imagenes/siwarex-wp251.png" alt="" >
+                <button id="openModal6">Más Información</button>
+            </div>
+
+
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>SIWAREX WP231</h2>
+        <p>Para SIMATIC S7-1200 y se puede programar a través de la plataforma de ingeniería Totally Integrated Automation (TIA) Portal.<br><br>
+          •	Estructura uniforme y comunicación universal mediante la integración en S7-1200<br>
+          •	Cuatro entradas y salidas digitales, una salida analógica, todas las entradas y salidas son controlables a través del módulo SIWAREX o a través de SIMATIC S7-1200<br>
+          •	También es posible el funcionamiento sin SIMATIC CPU<br>
+          •	Fácil puesta en marcha mediante SIWATOOL o mediante panel táctil HMI<br>
+          •	Amplias funciones de diagnóstico<br>
+          •	Calibrable según aprobación de tipo 2009/23/EC (NAWI)<br>
+          •	Calibrable según NTEP Clase III / III L<br>
+          •	Ajuste flexible para diferentes requisitos<br>
+          •	Ajuste teórico sin pesos de ajuste<br>
+          •	Los módulos se pueden cambiar sin reajustar la báscula<br>
+          •	Se puede utilizar para aplicaciones Ex zona 2<br>
+          </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>SIWAREX WT231</h2>
+        <p>El nuevo terminal de pesaje SIWAREX WT231 combina el potente módulo de pesaje SIWAREX WP231 y un panel táctil de Siemens con interfaz de usuario específica de la aplicación en un solo producto. El manejo intuitivo a través del panel táctil permite al usuario realizar una rápida parametrización y puesta en marcha. El módulo de pesaje integrado SIWAREX WP231 ofrece amplias funciones de diagnóstico, como la comprobación del progreso del peso o la supervisión y notificación de valores límite. Como solución independiente, el SIWAREX WT231 se puede utilizar independientemente de la solución de automatización, haciendo que el uso sea rápido y sencillo. La interfaz RS485 Modbus RTU permite una integración directa del terminal en todos los entornos de controlador convencionales.<br><br>
+          •	Amplias funciones de diagnóstico, control de valores límite<br>
+          •	Alta resolución de hasta +/- cuatro millones de partes<br>
+          •	Alta precisión de 0,05%<br>
+          •	Velocidad de medición de 10 ms<br>
+          •	Panel HMI de alta calidad - Pantalla panorámica TFT de 4 Zoll, pantalla táctil<br>
+          •	Interfaz de usuario intuitiva<br>
+          •	Conexión flexible a todos los sistemas de automatización compatibles con Modbus RTU<br>
+          •	Carcasa de acero inoxidable de alta calidad con grado de protección IP65<br>
+          </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>Integrador Milltronics BW500</h2>
+        <p>Es un integrador de características completas para usar tanto con básculas de cinta como con dosificadores de peso. Las señales de carga y velocidad de la cinta se procesan para obtener un índice de flujo preciso y el peso totalizado de los productos a granel. <br><br>
+
+          •	Calibración electrónica y cero automáticas<br>
+          •	Alarmas de caudal, carga, velocidad o error de diagnóstico<br>
+          •	Modbus® integrado, PROFIBUS DP opcional, ProfiNet, Modbus TCP/IP, EtherNet/IP y DeviceNet™<br>
+          •	Funciones integrales de control del dosificador de peso<br>
+          •	Control PID y calibración en línea con tarjeta de E/S analógica opcional<br>
+          •	Detección de velocidad diferencial con segundo sensor de velocidad<br>
+          •	Entrada de medidor de humedad con tarjeta de E/S analógica opcional para el cálculo del peso seco<br>
+          •	Entrada de inclinómetro con tarjeta de E/S analógica opcional para compensar la pendiente del transportador<br>
+          •	Apto para aprobación de custodia de básculas de cinta<br>
+          •	Aprobado por Measurement Canada y NTEP<br>
+          •	Idiomas de visualización: inglés, alemán, francés, español, ruso, italiano, portugués<br>
+          </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal3" class="modal-container">
+    <div class="modal-content">
+        <h2>Módulo de comunicación BW500 Smartlinx</h2>
+        <p>Proporciona todos los datos del instrumento, incluida la medición y el estado, y permite realizar cambios en los parámetros de funcionamiento a través del bus o enlace de telemetría. El usuario puede seleccionar qué datos en la capa de aplicación transferir a través del bus. Esta selección ahorra ancho de banda y memoria y optimiza el rendimiento de datos y acelera la red, lo que le permite conectar más instrumentos a su red.<br><br>
+          •	Instalación rápida y sencilla<br>
+          •	Conexión directa: no requiere instalación adicional<br>
+          •	La capa de aplicación escalable permite optimizar el ancho de banda de la red y los requisitos de memoria (solo para PROFIBUS DPV0 y DeviceNet)<br>
+          •	Módulos disponibles para PROFIBUS DPV0, PROFIBUS DPV1, PROFINET, DeviceNet, Modbus TCP/IP y EtherNet/IP<br>
+          </p>
+        <div id="close3" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal4" class="modal-container">
+    <div class="modal-content">
+        <h2>SIWAREX WP241</h2>
+        <p>Las funciones estándar para el control de la báscula de cinta, como el caudal, la velocidad de la cinta y la carga de la cinta, se pueden adaptar y ampliar según sea necesario. El modo de simulación permite a los usuarios probar dichas funciones, sin una cinta transportadora en movimiento. Para la puesta en marcha y el funcionamiento está disponible el proyecto TIA Portal "listo para usar" para paneles de operador.  <br><br>
+          •	Estructura uniforme y comunicación universal mediante la integración en S7-1200<br>
+          •	Es posible el modo de funcionamiento autónomo sin SIMATIC CPU<br>
+          •	Modbus TCP/IP y Modbus RTU<br>
+          •	6 totalizadores (reinicializables individualmente)<br>
+          •	Señal de pulso para totalizador remoto<br>
+          •	Modo de simulación para la carga de la correa y/o la velocidad de la correa<br>
+          •	registrador de trazas<br>
+          •	Punto de recuperación para una fácil reconstrucción de todos los parámetros<br>
+          •	Función de seguimiento automático de cero<br>
+          •	Fácil puesta en marcha mediante SIWATOOL y PC o mediante panel táctil HMI<br>
+          •	Amplias funciones de diagnóstico<br>
+          •	Adaptación flexible a diferentes requisitos<br>
+          •	Varias opciones de calibración<br>
+          •	Se puede utilizar en aplicaciones peligrosas ATEX zona 2<br>
+          </p>
+        <div id="close4" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal5" class="modal-container">
+    <div class="modal-content">
+        <h2>SIWAREX WT241</h2>
+        <p>El terminal de pesaje combina la calidad probada de dos componentes en un solo producto: un potente módulo de pesaje SIWAREX WP241 y un panel táctil con una interfaz de usuario específica de la aplicación. El módulo de pesaje de la báscula de cinta de alta resolución convence con una medición precisa y funciones integrales. Seis totalizadores independientes proporcionan la cantidad de material transportado. Un modo de simulación para la velocidad y la carga de la banda permite una prueba de aplicación completa, incluso sin una báscula ni un sensor de velocidad conectados. Las entradas y salidas digitales se pueden parametrizar de forma flexible para diversas funciones. El panel de 4 pulgadas con pantalla ancha TFT a color ofrece una alta resolución de pantalla y permite su uso en espacios muy reducidos sin comprometer la funcionalidad. Como solución independiente.<br><br>
+          •	Modo de simulación, detección de velocidad inteligente, entradas y salidas digitales libremente parametrizables, salida analógica, señal de pulso para totalizadores remotos, función de recuperación<br>
+          •	Panel HMI de alta calidad - Pantalla panorámica TFT de 4 Zoll, pantalla táctil<br>
+          •	Interfaz de usuario intuitiva<br>
+          •	Conexión flexible a todos los sistemas de automatización compatibles con Modbus RTU<br>
+          •	Carcasa de acero inoxidable de alta calidad con grado de protección IP65<br>
+          </p>
+        <div id="close5" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal6" class="modal-container">
+    <div class="modal-content">
+        <h2>SIWAREX WP251</h2>
+        <p>Controla las tareas de dosificación y preparación de lotes de forma completamente independiente y cumple los requisitos típicos de estos procesos, como la velocidad y la precisión. <br><br>
+          •	Estructura uniforme y comunicación universal mediante la integración en S7-1200<br>
+          •	Cuatro entradas y salidas digitales, una salida analógica integrada<br>
+          •	También es posible el funcionamiento sin SIMATIC CPU<br>
+          •	Conexiones flexibles a diferentes sistemas de automatización a través de interfaces Modbus RTU o Modbus TCP/IP integradas<br>
+          •	Alta resolución de hasta +/- cuatro millones de partes<br>
+          •	Tasa de medición de 100/120 Hz<br>
+          </p>
+        <div id="close6" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+          <span class="logo_name">Instrumentación</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="procesos.html">
+                <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+                <span class="link_name">Volver</span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="procesos.html">Volver</a></li>
+              </ul>
+            </li>
+          <li>
+            <div class="iocn-link">
+              <a href="presion.html">
+                <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+                <span class="link_name">Presión</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="presion.html">Presión</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="temperatura.html">
+                <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+                <span class="link_name">Temperatura</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="flujo.html">
+                <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+                <span class="link_name">Flujo</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="flujo.html">Flujo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="nivel.html">
+              <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+              <span class="link_name">Nivel</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="nivel.html">Nivel</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="posicionadores.html">
+              <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+              <span class="link_name">Posicionadores</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="peso.html">
+              <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+              <span class="link_name">Peso</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="peso.html">Peso</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="compcomplementarios.html">
+              <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+              <span class="link_name">Componentes complementarios</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+            </ul>
+          </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+      </div>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>PESO - PROTECCION DE PROCESOS: ACUSTICO</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="acustico">PROTECCION DE PROCESOS: ACUSTICO</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="acustico">
+                <a href="#">SITRANS AS100</a>
+                <img src="imagenes/as100-correct-label.jpg" alt="">
+                <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="acustico">
+                <a href="#">SITRANS CU02</a>
+                <img src="imagenes/akustisch-cu02.png" alt="">
+                <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="acustico">
+                <a href="#">SITRANS DA400</a>
+                <img src="imagenes/akustisch-da400.png" alt="">
+                <button id="openModal2">Más Información</button>
+            </div>
+
+
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS AS100</h2>
+        <p>Es un sensor acústico utilizado para la detección de flujo de sólidos. Detecta cambios en las ondas de sonido de alta frecuencia de equipos y materiales en movimiento y reacciona instantáneamente a los cambios en el flujo de sólidos para advertir sobre bloqueos, ausencia de productos o fallas en los equipos, como bolsas de filtro rotas.<br><br>
+            •	Operando con una unidad de control SITRANS CU02, el sistema detecta condiciones de flujo alto, flujo bajo o sin flujo<br>
+            •	El diseño no invasivo requiere poco o ningún mantenimiento<br>
+            •	Múltiples opciones de montaje, atornillar, atornillar, soldar o unir en su lugar<br>
+            •	Con un rango de operación de alta y baja sensibilidad, el sensor ofrece una gama excepcionalmente amplia de capacidades de aplicación<br>
+            </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS CU02</h2>
+        <p>Es una unidad de control de alarma, para usar con el sensor acústico SITRANS AS100, que brinda protección continua confiable para el flujo de sólidos a granel. El SITRANS CU02 recibe una señal de entrada de 0 a 10 V CC del sensor SITRANS AS100, lo que proporciona salidas de relé y analógicas para la interfaz en un proceso.<br><br>
+            •	Fácilmente configurado para puntos de ajuste que indican condiciones tales como flujo alto, flujo bajo o sin flujo<br>
+            •	Dos relés son completamente programables e independientes entre sí y se pueden usar para operar una alarma o un dispositivo de control<br>
+            •	El montaje en riel DIN proporciona una fácil instalación<br>
+            •	Retardo de tiempo de inicio ajustable<br>
+            </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS DA400</h2>
+        <p>Mide acústicamente el ruido propagado por estructuras - En la versión para monitorización de bombas; en bombas volumétricas oscilantes - En la versión para monitoreo de flujo de material; en tuberías, equipos de transporte o canales. Se compone de una unidad de diagnóstico eléctrica y hasta cuatro sensores acústicos.<br><br>
+            •	Mayor disponibilidad de la planta a través de<br>
+            - Programación de mantenimiento óptima mediante la detección temprana de componentes defectuosos<br>
+            - La identificación precisa del sitio de fuga minimiza el tiempo de parada y reparación<br>
+            - Intervalos de mantenimiento extendidos<br>
+            - Mayor confiabilidad de la bomba<br>
+            •	Prevención de costosos daños sucesivos<br>
+            •	Mayor seguridad en aplicaciones críticas<br>
+            •	Detección temprana de caídas en el rendimiento<br>
+            •	Productividad incrementada<br>
+            </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

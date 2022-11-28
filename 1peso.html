@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+          <span class="logo_name">Instrumentación</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="peso.html">
+                <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+                <span class="link_name">Volver</span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="peso.html">Volver</a></li>
+              </ul>
+            </li>
+          <li>
+            <div class="iocn-link">
+              <a href="presion.html">
+                <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+                <span class="link_name">Presión</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="presion.html">Presión</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="temperatura.html">
+                <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+                <span class="link_name">Temperatura</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="flujo.html">
+                <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+                <span class="link_name">Flujo</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="flujo.html">Flujo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="nivel.html">
+              <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+              <span class="link_name">Nivel</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="nivel.html">Nivel</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="posicionadores.html">
+              <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+              <span class="link_name">Posicionadores</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="procesos.html">
+              <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+              <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="compcomplementarios.html">
+              <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+              <span class="link_name">Componentes complementarios</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+            </ul>
+          </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+      </div>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>PESO - ELECTRONICA SIWAREX PARA SIMATIC</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="plataforma-tolva">PLATAFORMA Y TOLVA</a>
+            <a href="#" class="category_item" category="dosificacion">DOSIFICACIÓN</a>
+            <a href="#" class="category_item" category="cinta">DE CINTA</a>
+            <a href="#" class="category_item" category="fuerza">FUERZA-PAR</a>
+            <a href="#" class="category_item" category="interface">EX-INTERFACE</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="plataforma-tolva">
+                <a href="#">SIWAREX U</a>
+                <img src="imagenes/siwarex-u.jpg" alt="">
+                <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="plataforma-tolva">
+                <a href="#">SIWAREX DB</a>
+                <img src="imagenes/siwarex-db-beide-versionen-perspektive.jpg" alt="" >
+                <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="plataforma-tolva">
+                <a href="#">SIWAREX WP231</a>
+                <img src="imagenes/siwarex-wp231.png" alt="" >
+                <button id="openModal2">Más Información</button>
+            </div>
+            <div class="product-item" category="plataforma-tolva">
+                <a href="#">SIWAREX WP321</a>
+                <img src="imagenes/siwarex-wp321.png" alt="" >
+                <button id="openModal3">Más Información</button>
+            </div>
+            <div class="product-item" category="plataforma-tolva">
+                <a href="#">SIWAREX WP521</a>
+                <img src="imagenes/weighing-module-siwarex-wp521-st---wp522-st.jpg" alt="" >
+                <button id="openModal4">Más Información</button>
+            </div>
+            <div class="product-item" category="dosificacion">
+                <a href="#">SIWAREX FTA</a>
+                <img src="imagenes/p-wt01-xx-00359h.jpg" alt="" >
+                <button id="openModal5">Más Información</button>
+            </div>
+            <div class="product-item" category="dosificacion">
+                <a href="#">SIWAREX WP251</a>
+                <img src="imagenes/stand-alone-dosing-filling-bagging-scale.jpg" alt="" >
+                <button id="openModal6">Más Información</button>
+            </div>
+            <div class="product-item" category="dosificacion">
+                <a href="#">SIWAREX WP351</a>
+                <img src="imagenes/siwarex-wp351-newton.jpg" alt="" >
+                <button id="openModal7">Más Información</button>
+            </div>
+            <div class="product-item" category="cinta">
+                <a href="#">SIWAREX FTC</a>
+                <img src="imagenes/p-wt01-xx-00365h.jpg" alt="" >
+                <button id="openModal8">Más Información</button>
+            </div>
+            <div class="product-item" category="cinta">
+                <a href="#">SIWAREX WP241</a>
+                <img src="imagenes/siwarex-wp241.png" alt="" >
+                <button id="openModal9">Más Información</button>
+            </div>
+            <div class="product-item" category="fuerza">
+                <a href="#">AI 2xSG 4-6-hilos HS</a>
+                <img src="imagenes/ai-2xsg-persp-rechts.jpg" alt="" >
+                <button id="openModal10">Más Información</button>
+            </div>
+            <div class="product-item" category="interface">
+                <a href="#">Interfaz Ex SIWAREX IS</a>
+                <img src="imagenes/p-wt01-xx-00395h.jpg" alt="" >
+                <button id="openModal11">Más Información</button>
+            </div>
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>SIWAREX U</h2>
+        <p>Es un módulo de pesaje versátil para todas las tareas sencillas de pesaje y medición de fuerza. Se utiliza de forma centralizada en un SIMATIC S7-300 o se conecta de forma descentralizada a través de PROFIBUS-DP a un S7-400<br><br>
+            •	Tecnología de diseño uniforme y comunicación coherente en SIMATIC<br>
+            •	Medida de peso o fuerza con una alta resolución de 65000 partes y una precisión del 0,05%<br>
+            •	Ahorro de espacio mediante el uso de la versión de dos canales para dos básculas<br>
+            •	Conexión directa de una pantalla remota a la interfaz TTY<br>
+            •	Ajuste teórico sin pesos de ajuste<br>
+            •	Reemplazo de módulo sin nuevo ajuste de escala<br>
+            •	Parametrización sencilla con SIWATOOL<br>
+            •	Suministro de celdas de carga con seguridad intrínseca para las zonas de áreas peligrosas 1,2 (opcional)<br>
+            •	Se puede utilizar para aplicaciones Ex<br>
+            </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>Caja de conexiones SIWAREX DB</h2>
+        <p>La caja de conexiones digital SIWAREX DB garantiza, mediante la integración continua, que los datos se puedan recopilar y analizar de forma más completa. Estos datos se pueden utilizar de forma óptima para la supervisión específica de los procesos de pesaje, así como para un diagnóstico mejorado y la simplificación de los servicios. Los informes de error para cada celda de carga conectada se mostrarán de forma centralizada en el controlador SIMATIC o en el panel HMI. Incluso la carga de cada celda de carga individual ya aparece durante la puesta en marcha.<br><br> 
+            •	Posibilidades de diagnóstico adicionales gracias al análisis de células de carga individuales <br>
+            •	Integración en SIMATIC mediante conexión al módulo de pesaje SIWAREX<br>
+            •	Comunicación fluida entre el comando y el nivel de campo, admite el seguimiento del número de pedido y el código de ubicación<br>
+            •	Fácil intercambio con la caja de conexiones analógica<br>
+            •	Uso en entornos hostiles gracias a IP66 <br>
+            •	Simplificación del servicio: ya no es necesario un multímetro <br>
+            •	diagnóstico inicial rápido a través de LED<br>
+            •	ofrece la posibilidad de conectar una báscula con hasta cuatro celdas de carga<br>
+            </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>SIWAREX WP231</h2>
+        <p>Para SIMATIC S7-1200 y se puede programar a través de la plataforma de ingeniería Totally Integrated Automation (TIA) Portal.<br><br>
+            •	Estructura uniforme y comunicación universal mediante la integración en S7-1200<br>
+            •	Cuatro entradas y salidas digitales, una salida analógica, todas las entradas y salidas son controlables a través del módulo SIWAREX o a través de SIMATIC S7-1200<br>
+            •	También es posible el funcionamiento sin SIMATIC CPU<br>
+            •	Fácil puesta en marcha mediante SIWATOOL o mediante panel táctil HMI<br>
+            •	Amplias funciones de diagnóstico<br>
+            •	Calibrable según aprobación de tipo 2009/23/EC (NAWI)<br>
+            •	Calibrable según NTEP Clase III / III L<br>
+            •	Ajuste flexible para diferentes requisitos<br>
+            •	Ajuste teórico sin pesos de ajuste<br>
+            •	Los módulos se pueden cambiar sin reajustar la báscula<br>
+            •	Se puede utilizar para aplicaciones Ex zona 2<br>
+            </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal3" class="modal-container">
+    <div class="modal-content">
+        <h2>SIWAREX WP321</h2>
+        <p>Es un módulo tecnológico para el sistema de periferia descentralizada SIMATIC ET 200SP<br><br>
+
+            •	Estructura uniforme y comunicación universal mediante la integración en E/S SIMATIC ET 200<br>
+            •	Parametrización de la báscula mediante panel de mando, CPU o PC<br>
+            •	Posibilidades de configuración flexibles en SIMATIC TIA Portal resp. SIMATIC Step7 V5<br>
+            •	Medición de peso y fuerza con una resolución de hasta +/- 2 millones de partes<br>
+            •	Tasa de medición de 600 Hz (alta velocidad)<br>
+            •	Velocidad de medición de 100/120 Hz (supresión eficiente de frecuencias perturbadoras de 50/60 Hz)<br>
+            •	Control interno de escala de valores límite definibles libremente<br>
+            •	Fácil puesta en marcha a través del software SIWATOOL sin conocimientos de SIMATIC<br>
+            •	Ajuste automático sin pesas de ajuste posible<br>
+            •	Sustitución de módulo sin nuevo ajuste de escala<br>
+            •	Posibilidad de uso directo en zona ATEX 2<br>
+            •	Diversa información de estado y diagnóstic<br>
+            </p>
+        <div id="close3" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal4" class="modal-container">
+    <div class="modal-content">
+        <h2>SIWAREX WP521 ST</h2>
+        <p>Es un posicionador de válvula compacto y fiable. Su facilidad y velocidad de inicialización lo convierten en un ganador para los fabricantes de válvulas, la industria química, el sector energético y muchos otros campos.<br><br>
+            •	La puesta en marcha rápida y sencilla ahorra tiempo y costes<br>
+            •	Alta fiabilidad y vida útil del producto gracias a carcasas robustas y componentes del dispositivo de alta calidad<br>
+            •	Características innovadoras para un control de válvulas preciso, rápido y sólido<br>
+            •	Alta disponibilidad de planta<br>
+            </p>
+        <div id="close4" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal5" class="modal-container">
+    <div class="modal-content">
+        <h2>SIWAREX FTA</h2>
+        <p>Electrónica de pesaje calibrable y versátil para SIMATIC S7, C7 y PCS7. El módulo de función SIWAREX FTA está integrado en SIMATIC S7/PCS7 y utiliza las características de este moderno sistema de automatización, como herramientas integrales de comunicación, diagnóstico y configuración. Ajustando un parámetro en SIWAREX FTA, se puede activar un tipo de báscula individual.<br><br>
+            •	Estructura uniforme y comunicación universal mediante la integración en SIMATIC S7 y SIMATIC PCS 7<br>
+            •	Aplicación en el concepto de sistema descentralizado mediante conexión a PROFIBUS DP / PROFINET a través de ET 200M<br>
+            •	Medición de peso o fuerza a resoluciones de 16 millones de partes<br>
+            •	Precisión de 3 x 6000 d, calibrable<br>
+            •	Dosificación rápida con comunicación rápida<br>
+            •	Pantalla calibrable con SIMATIC HMI Standard Operator Panels<br>
+            •	Control de dosificación continuo o incremental<br>
+            •	Señales de cambio de dosis exactas (< 1 mseg)<br>
+            •	Parámetros de entrada y salida definibles<br>
+            •	Parámetros definibles para las más diversas aplicaciones<br>
+            •	Ajuste flexible para diferentes requisitos<br>
+            •	Definición sencilla de parámetros con el programa SIWATOOL FTA<br>
+            •	Ajuste teórico sin pesos de ajuste<br>
+            •	Los módulos se pueden cambiar sin reajustar la báscula<br>
+            •	Grabación/registro de progreso de escala<br>
+            •	Memoria Alibi calibrable<br>
+            •	Se puede utilizar para aplicaciones Ex<br>
+            </p>
+        <div id="close5" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal6" class="modal-container">
+    <div class="modal-content">
+        <h2>SIWAREX WP251</h2>
+        <p>Es un posicionador de válvula compacto y fiable. Su facilidad y velocidad de inicialización lo convierten en un ganador para los fabricantes de válvulas, la industria química, el sector energético y muchos otros campos.<br><br>
+            •	La puesta en marcha rápida y sencilla ahorra tiempo y costes<br>
+            •	Alta fiabilidad y vida útil del producto gracias a carcasas robustas y componentes del dispositivo de alta calidad<br>
+            •	Características innovadoras para un control de válvulas preciso, rápido y sólido<br>
+            •	Alta disponibilidad de planta<br>
+            </p>
+        <div id="close6" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal7" class="modal-container">
+    <div class="modal-content">
+        <h2>SIWAREX WP351</h2>
+        <p>SIWAREX WP351 es la elección correcta para muchas aplicaciones de pesaje exigentes, ya sea para producir mezclas precisas, garantizar un llenado preciso o embolsado, verificación, totalización o dosificación legal para el comercio. <br><br>
+            •	Firmware inteligente, el proceso de pesaje se controla de forma autónoma directamente desde el módulo<br>
+            •	Se puede utilizar en aplicaciones de pesaje automáticas y no automáticas.<br>
+            •	Ultra compacto: 20 mm de ancho, 65 mm de alto<br>
+            •	Rápido: tiempo de reacción de las salidas digitales < 1 ms<br>
+            •	Alta precisión: resolución +/- 20.000.000 partes, escala de hasta 3 x 6000d multirango/multiintervalo; 0,4µV/e<br>
+            •	Fácil de usar gracias al servidor web para el servicio y la puesta en marcha<br>
+            •	Legal para comercio de acuerdo con OIML R-51, R-61, R-76 y R-107<br>
+            •	Perfecta integración en diferentes sistemas de automatización <br>
+            •	Varias interfaces de comunicación de fábrica<br>
+            •	Interfaz HMI y bloque de función "listos para usar"<br>
+            </p>
+        <div id="close7" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal8" class="modal-container">
+    <div class="modal-content">
+        <h2>SIWAREX FTC</h2>
+        <p>SIWAREX FTC (Tecnología flexible para el pesaje continuo) está integrado en SIMATIC S7/PCS7 y utiliza las características de este moderno sistema de automatización, como herramientas integrales de comunicación, diagnóstico y configuración. El módulo de pesaje SIWAREX FTC es la solución óptima allí donde se imponen altas exigencias a los procedimientos de pesaje continuos. Gracias a sus excelentes propiedades de medición, los pesos se pueden medir con extrema precisión en hasta tres rangos. <br><br>
+            •	Estructura uniforme y comunicación universal mediante la integración en SIMATIC S7 y SIMATIC PCS7<br>
+            •	Aplicación en el concepto de sistema descentralizado mediante conexión a PROFIBUS DP / PROFINET a través de ET 200M<br>
+            •	Medición de peso o fuerza a resoluciones de 16 millones de partes<br>
+            •	Precisión (0,5 µV por e)<br>
+            •	Alta tasa de medición de 10 ms<br>
+            •	Funciones de entrada y salida definibles por parámetros<br>
+            •	Ajuste flexible para diversos requisitos SIMATIC<br>
+            •	Definición sencilla de parámetros con el programa SIWATOOL FTC a través de la interfaz RS 232<br>
+            •	Es posible el intercambio de módulos sin reajustar la báscula<br>
+            •	Grabación/registro de progreso de escala<br>
+            •	Alimentación de celdas de carga intrínsecamente segura para Ex-Zone 1 (opcional)<br>
+            •	Aplicación en Ex-Zona 2<br>
+            •	Amplias funciones de diagnóstico<br>
+            </p>
+        <div id="close8" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal9" class="modal-container">
+    <div class="modal-content">
+        <h2>SIWAREX WP241</h2>
+        <p>Las funciones estándar para el control de la báscula de cinta, como el caudal, la velocidad de la cinta y la carga de la cinta, se pueden adaptar y ampliar según sea necesario. El modo de simulación permite a los usuarios probar dichas funsiones, sin una cinta transportadora en movimiento. Para la puesta en marcha y el funcionamiento está disponible el proyecto TIA Portal "listo para usar" para paneles de operador.  <br><br>
+            •	Estructura uniforme y comunicación universal mediante la integración en S7-1200<br>
+            •	Es posible el modo de funcionamiento autónomo sin SIMATIC CPU<br>
+            •	Modbus TCP/IP y Modbus RTU<br>
+            •	6 totalizadores (reinicializables individualmente)<br>
+            •	Señal de pulso para totalizador remoto<br>
+            •	Modo de simulación para la carga de la correa y/o la velocidad de la correa<br>
+            •	registrador de trazas<br>
+            •	Punto de recuperación para una fácil reconstrucción de todos los parámetros<br>
+            •	Función de seguimiento automático de cero<br>
+            •	Fácil puesta en marcha mediante SIWATOOL y PC o mediante panel táctil HMI<br>
+            •	Amplias funciones de diagnóstico<br>
+            •	Adaptación flexible a diferentes requisitos<br>
+            •	Varias opciones de calibración<br>
+            •	Se puede utilizar en aplicaciones peligrosas ATEX zona 2<br>
+            </p>
+        <div id="close9" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal10" class="modal-container">
+    <div class="modal-content">
+        <h2>AI 2xSG 4-/6-hilos HS</h2>
+        <p>El módulo de entrada analógica Al2xSG de 4/6 hilos HS es la solución óptima para los requisitos de medición rápida de sensores basados en puentes completos de galgas extensométricas. El soporte del modo isócrono Profinet permite analizar los sensores conectados en relojes equidistantes. Numerosos filtros digitales y libremente ajustables permiten un pre procesamiento cómodo de la señal, directamente en el módulo de periferia. El puente completo es alimentado por el propio módulo, no se necesita hardware adicional. Los sensores de cuatro y seis hilos se conectan directamente a la BaseUnit del módulo. Se garantiza un cableado continuo y claro. <br><br>
+            •	Compacto con dos canales para un ancho de módulo de solo 15 mm<br>
+            •	Filtro de señal digital en módulo periférico<br>
+            •	Tasa de muestreo ajustable libremente hasta 10kHz<br>
+            •	Operaciones sincronizadas / con sobremuestreo opcional<br>
+            •	Conexión de un gran número de sensores gracias al rango de entrada libremente ajustable<br>
+            •	La calibración de fábrica garantiza un interruptor de módulo sin problemas<br>
+            </p>
+        <div id="close10" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal11" class="modal-container">
+    <div class="modal-content">
+        <h2>Interfaz Ex SIWAREX IS</h2>
+        <p>La interfaz Ex es una barrera que separa las células de carga instaladas en el área peligrosa de los procesadores de pesaje en el área no peligrosa según el tipo de protección "intrínsecamente seguro". Están disponibles dos versiones para montaje en armario de distribución. La interfaz SIWAREX IS Ex se puede utilizar para todos los módulos de pesaje SIWAREX. Contiene 6 barreras de seguridad y tiene la designación ATEX II(2)G[EEx ib] II<br><br>
+
+            •	Capacidades versátiles, diferentes versiones disponibles<br>
+            •	Interfiere con la señal de la celda de carga en una medida muy pequeña y, por lo tanto, está aprobado para básculas que requieren verificación. (SIWAREX ES)<br>
+            </p>
+        <div id="close11" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="coriolis.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+          <span class="logo_name">Instrumentación- <br> -Electromagnetico</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+              <a href="flujo.html">
+                <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+                <span class="link_name">Volver</span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="flujo.html">Volver</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="iocn-link">
+                <a href="presion.html">
+                  <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+                  <span class="link_name">Presión</span>
+                </a>
+              </div>
+              <ul class="sub-menu">
+                <li><a class="link_name" href="presion.html">Presión</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="iocn-link">
+                <a href="temperatura.html">
+                  <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+                  <span class="link_name">Temperatura</span>
+                </a>
+              </div>
+              <ul class="sub-menu">
+                <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="nivel.html">
+                <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+                <span class="link_name">Nivel</span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="nivel.html">Nivel</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="posiscionadores.html">
+                <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+                <span class="link_name">Posicionadores</span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="posiscionadores.html">Posicionadores</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="iocn-link">
+                <a href="peso.html">
+                  <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+                  <span class="link_name">Peso</span>
+                </a>
+              </div>
+              <ul class="sub-menu">
+                <li><a class="link_name" href="peso.html">Peso</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="procesos.html">
+                <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+                <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="compcomplementarios.html">
+                <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+                <span class="link_name">Componentes complementarios</span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+              </ul>
+            </li>
+          <li>
+        <div class="profile-details">
+          <div class="profile-content">
+          </div>
+        </div>
+      </li>
+    </ul>
+      </div>
+      <section class="home-section">
+        <div class="home-content">
+          <i class='bx bx-menu' ></i>
+        </div>
+      </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>FLUJO - ELECTROMAGNETICO</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="sensores">SENSORES</a>
+            <a href="#" class="category_item" category="transmisores">TRANSMISORES</a>
+            <a href="#" class="category_item" category="sist-flujo">SISTEMA DE FLUJO</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="sensores">
+              <a href="#">SITRANS FM MAG 1100</a>
+              <img src="imagenes/sitrans-f-m-mag1100.jpg" alt="">
+              <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="sensores">
+              <a href="#">SITRANS FM MAG 1100F</a>
+              <img src="imagenes/sitrans-f-m-sensors.jpg" alt="" >
+              <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="sensores">
+              <a href="#">SITRANS FM MAG 3100</a>
+              <img src="imagenes/p-sf01-xx-04521p-16-9.jpg" alt="" >
+              <button id="openModal2">Más Información</button>
+            </div>
+            <div class="product-item" category="sensores">
+              <a href="#">SITRANS FM MAG 3100 P</a>
+              <img src="imagenes/sitrans-f-m-mag3100p.jpg" alt="" >
+              <button id="openModal3">Más Información</button>
+            </div>
+            <div class="product-item" category="sensores">
+              <a href="#">SITRANS FM MAG 5100 W</a>
+              <img src="imagenes/p-sf01-xx-04526p-16-9.jpg" alt="" >
+              <button id="openModal4">Más Información</button>
+            </div>
+            <div class="product-item" category="transmisores">
+               <a href="#">SITRANS FM MAG 5000</a>
+               <img src="imagenes/sitransf-mag6000.jpg" alt="" >
+               <button id="openModal5">Más Información</button>
+            </div>
+            <div class="product-item" category="transmisores">
+              <a href="#">SITRANS FM MAG 6000</a>
+              <img src="imagenes/sitrans-mag6000.jpg" alt="">
+              <button id="openModal6">Más Información</button>
+            </div>
+            <div class="product-item" category="transmisores">
+              <a href="#">SITRANS FM MAG 6000 I - 6000 I Ex</a>
+              <img src="imagenes/sitrans-mag6000iexd.jpg" alt="">
+              <button id="openModal7">Más Información</button>
+            </div>
+            <div class="product-item" category="sist-flujo">
+              <a href="#">SITRANS FM MAG8000-MAG8000 CT</a>
+              <img src="imagenes/sitrans-fm-mag-8000.jpg" alt="">
+              <button id="openModal8">Más Información</button>
+            </div>
+            <div class="product-item" category="sist-flujo">
+              <a href="#">SITRANS FM TRANSMAG con sensor 911E</a>
+              <img src="imagenes/sitrans-f-m-high-powered-ac-meter.jpg" alt="">
+              <button id="openModal9">Más Información</button>
+            </div>
+            <div class="product-item" category="sist-flujo">
+              <a href="#">SITRANS FM100 <br><br></a>
+              <img src="imagenes/sitrans-fm100-16to9.png" alt="">
+              <button id="openModal10">Más Información</button>
+            </div>
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FM MAG 1100</h2>
+        <p>Es un sensor de acero inoxidable con revestimientos y electrodos muy resistentes que se adaptan incluso a los medios de proceso más extremos. <br><br>
+            •	El diseño compacto de oblea cumple con los estándares de brida EN 1092, DIN y ANSI<br>
+            •	Materiales de revestimiento y electrodos de alta resistencia para usar con los medios de proceso más extremos<br>
+            •	Versión de alta temperatura disponible hasta 390 °F<br>
+            •	Tecnología exclusiva SensorProm, almacena datos críticos específicos del sensor y los pasa al transmisor. Esto permite una puesta en marcha sencilla y flexible del sensor.<br>
+            •	Plug & Play: permite una fácil sustitución y la puesta en marcha del transmisor en cuestión de minutos<br>
+            •	Intercambiable durante el funcionamiento<br>
+            •	Es posible una instalación compacta o independiente<br>
+            •	La calibración validada garantiza una medición precisa del caudal. Cada caudalímetro se calibra en instalaciones acreditadas individualmente según ISO/IEC 17025.<br>
+            </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FM MAG 1100F</h2>
+        <p>El sensor SITRANS FM MAG 1100 F está especialmente diseñado para las industrias de alimentos y bebidas y farmacéutica y está disponible con conexiones de proceso higiénicas y flexibles.<br><br>
+            •	Conexiones de proceso flexibles y únicas<br>
+            •	Opciones de revestimiento estándar que cubren completamente las aplicaciones de alimentos y bebidas<br>
+            •	Diseño sanitario para limpieza CIP/SIP<br>
+            •	Tecnología exclusiva SensorProm, almacena datos críticos específicos del sensor y los pasa al transmisor. Esto permite una puesta en marcha sencilla y flexible del sensor.<br>
+            •	Plug & Play: permite una fácil sustitución y la puesta en marcha del transmisor en cuestión de minutos<br>
+            •	Intercambiable durante el funcionamiento<br>
+            •	Es posible una instalación compacta o independiente<br>
+            •	La calibración validada garantiza una medición precisa del caudal. Cada caudalímetro se calibra en instalaciones acreditadas individualmente según ISO/IEC 17025.<br>
+            </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FM MAG 3100 </h2>
+        <p>Es un sensor de caudal electromagnético con una gran variedad de revestimientos, materiales de electrodos y electrodos de puesta a tierra de serie, todo esto garantiza un ajuste perfecto para casi todas las aplicaciones de caudal. <br><br>
+            •	Construcción completamente soldada que es extremadamente resistente y puede soportar condiciones de proceso especiales utilizando electrodos de medición extremos<br>
+            •	Revestimiento y electrodos disponibles para cada aplicación<br>
+            •	Versión de alta temperatura disponible hasta 356 °F<br>
+            •	Aprobado para uso en atmósferas potencialmente explosivas<br>
+            •	Tecnología exclusiva SensorProm, almacena datos críticos específicos del sensor y los pasa al transmisor. Esto permite una puesta en marcha sencilla y flexible del sensor.<br>
+            •	Plug & Play: permite una fácil sustitución y la puesta en marcha del transmisor en cuestión de minutos<br>
+            •	Intercambiable durante el funcionamiento<br>
+            •	Es posible una instalación compacta o independiente<br>
+            •	La calibración validada garantiza una medición precisa del caudal. Cada caudalímetro se calibra en instalaciones acreditadas individualmente según ISO/IEC 17025.<br>
+            </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal3" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FM MAG 3100 P</h2>
+        <p>Diseñado para cumplir con las especificaciones más comunes dentro de las industrias química y de procesos.<br><br>
+            •	Construcción completamente soldada que es extremadamente resistente y puede soportar condiciones de proceso especiales utilizando electrodos de medición extremos<br>
+            •	Electrodos de puesta a tierra integrados, no se requieren anillos de puesta a tierra para muchas aplicaciones<br>
+            •	Resistente a temperaturas de hasta 302 °F<br>
+            •	Aprobado para uso en atmósferas potencialmente explosivas<br>
+            •	Tecnología exclusiva SensorProm, almacena datos críticos específicos del sensor y los pasa al transmisor. Esto permite una puesta en marcha sencilla y flexible del sensor.<br>
+            •	Plug & Play: permite una fácil sustitución y la puesta en marcha del transmisor en cuestión de minutos<br>
+            •	Intercambiable durante el funcionamiento<br>
+            •	Es posible una instalación compacta o independiente<br>
+            •	La calibración validada garantiza una medición precisa del caudal. Cada caudalímetro se calibra en instalaciones acreditadas individualmente según ISO/IEC 17025.<br>
+            </p>
+        <div id="close3" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal4" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FM MAG 5100 W</h2>
+        <p>Con sus revestimientos patentados de caucho duro NBR o ebonita y EPDM es un sensor para todas las aplicaciones de agua.<br><br>
+            •	Capacidades de instalación Zero Up y Zero Down<br>
+            •	Revestimiento específico para aplicaciones de agua potable que requieren aprobaciones especiales<br>
+            •	Mayor precisión de flujo bajo para la detección de fugas de agua (revestimiento de NBR o EPDM)<br>
+            •	Apto para instalación subterránea e inmersión permanente (IP68) o instalación submarina<br>
+            •	Electrodos de puesta a tierra integrados<br>
+            •	Tecnología exclusiva SensorProm, almacena datos críticos específicos del sensor y los pasa al transmisor. Esto permite una puesta en marcha sencilla y flexible del sensor.<br>
+            •	Plug & Play: permite una fácil sustitución y la puesta en marcha del transmisor en cuestión de minutos<br>
+            •	Intercambiable durante el funcionamiento<br>
+            •	Es posible una instalación compacta o independiente<br>
+            •	La calibración validada garantiza una medición precisa del caudal. Cada caudalímetro se calibra en instalaciones acreditadas individualmente según ISO/IEC 17025.<br>
+            </p>
+        <div id="close4" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal5" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FM MAG 5000</h2>
+        <p>Es un transmisor basado en microprocesador, solución completa para una amplia variedad de aplicaciones. <br><br>
+            •	Transmisor rentable con alto rendimiento<br>
+            •	Transmisor, adecuado para aplicaciones universales y tiene una alta precisión de medición<br>
+            •	Salidas de múltiples funciones para el control de procesos<br>
+            </p>
+        <div id="close5" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal6" class="modal-container">
+  <div class="modal-content">
+      <h2>SITRANS FM MAG 6000</h2>
+      <p>Es un transmisor basado en microprocesador para aplicaciones exigentes que requieren mayor precisión y mayor funcionalidad<br><br>
+        •	Mayor precisión de la medición de caudal de 0,4 a 0,2 %<br>
+        •	Equipamiento de módulos de comunicación adicionales sin pérdida de función<br>
+        •	Función de dosificación integrada<br>
+        •	Solución de problemas y verificación de dispositivos mejoradas a través de un completo menú de diagnóstico y servicio<br>
+        </p>
+      <div id="close6" class="close1">Cerrar</div>
+  </div>
+</div>
+
+<div id="modal7" class="modal-container">
+  <div class="modal-content">
+      <h2>SITRANS FM MAG 6000 I / 6000 I Ex </h2>
+      <p>Son transmisores basados en microprocesador que se pueden utilizar en los entornos industriales más duros. <br><br>
+        •	Control de lotes avanzado incorporado<br>
+        •	Robusta carcasa de aluminio fundido a presión de dos cámaras adecuada para aplicaciones potencialmente explosivas<br>
+        •	Función de dosificación incorporada<br>
+        •	Módulo de comunicación agregado para una fácil integración con su aplicación, brindando una solución completamente integrada en toda la planta<br>
+        •	Se cumplen los requisitos de EMC, así como una alta seguridad funcional y disponibilidad del sistema debido al concepto de operación uniforme según las directrices NAMUR<br>
+        •	Comportamiento de error según NE43 para salida de 4 ... 20 mA seleccionable<br>
+        •	Solución de problemas y pruebas mejoradas del instrumento a través de un completo menú de diagnóstico y servicio<br>
+        •	La tecnología SENSORPROM permite el reemplazo del transmisor y la reprogramación automática de un nuevo transmisor sin pérdida de datos o precisión<br>
+        •	El teclado y la pantalla alfanumérica son esencialmente seguros y programables directamente en el área peligrosa: certificación ATEX y FM<br>
+        </p>
+      <div id="close7" class="close1">Cerrar</div>
+  </div>
+</div>
+
+<div id="modal8" class="modal-container">
+  <div class="modal-content">
+      <h2>SITRANS FM MAG 8000</h2>
+      <p>La cartera de caudalímetros alimentados por batería SITRANS FM MAG 8000 le ofrece la flexibilidad de instalar un caudalímetro de agua fiable prácticamente en cualquier lugar sin sacrificar la precisión ni el rendimiento</p>
+      <div id="close8" class="close1">Cerrar</div>
+  </div>
+</div>
+
+<div id="modal9" class="modal-container">
+  <div class="modal-content">
+      <h2>SITRANS FM TRANSMAG 2</h2>
+      <p>Es un caudalímetro magnético de alta potencia en el que la intensidad del campo magnético es mucho mayor que la de los caudalímetros magnéticos convencionales.<br><br>
+        •	Diseño del sensor: proporciona una construcción robusta con un diseño robusto y confiable y protección de sensor IP68 opcional<br>
+        •	Garantiza una señal de flujo precisa, repetible, de respuesta rápida y estable <br>
+        •	Concepto SmartPLUG: verdadero Plug & Play con reconocimiento automático del sensor<br>
+        •	Campo alterno pulsado: proporciona una excelente intensidad de señal y estabilidad de punto cero<br>
+        •	Revestimientos: amplia variedad disponible para adaptarse a cada aplicación<br>
+        •	Electrodos - amplia gama de materiales disponibles <br>
+        </p>
+      <div id="close9" class="close1">Cerrar</div>
+  </div>
+</div>
+
+<div id="modal10" class="modal-container">
+  <div class="modal-content">
+      <h2>SITRANS FM100 </h2>
+      <p>Es un caudalímetro electromagnético para medir y controlar caudales pequeños y medianos.<br><br>
+        •	Diseño robusto de acero inoxidable<br>
+        •	Múltiples mediciones (flujo y temperatura) en un solo dispositivo <br>
+        •	Función de dosificación con entrada de control externa<br>
+        •	Fácil operación local a través de 4 botones ópticos, funciona con guantes <br>
+        •	Orientación individual de la pantalla según la aplicación<br>
+        •	Medición bidireccional<br>
+        •	Uso flexible en diferentes aplicaciones gracias a dos salidas configurables individuales<br>
+        •	Contadores de volumen total y parcial para realizar un seguimiento de los caudales<br>
+        </p>
+      <div id="close10" class="close1">Cerrar</div>
+  </div>
+</div>
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

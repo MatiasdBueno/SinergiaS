@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="coriolis.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+          <span class="logo_name">Instrumentación- <br> -Ultrasonico</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+              <a href="flujo.html">
+                <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+                <span class="link_name">Volver</span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="flujo.html">Volver</a></li>
+              </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                  <a href="presion.html">
+                    <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+                    <span class="link_name">Presión</span>
+                  </a>
+                </div>
+                <ul class="sub-menu">
+                  <li><a class="link_name" href="presion.html">Presión</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="iocn-link">
+                  <a href="temperatura.html">
+                    <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+                    <span class="link_name">Temperatura</span>
+                  </a>
+                </div>
+                <ul class="sub-menu">
+                  <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="nivel.html">
+                  <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+                  <span class="link_name">Nivel</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="nivel.html">Nivel</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="posicionadores.html">
+                  <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+                  <span class="link_name">Posicionadores</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="iocn-link">
+                  <a href="peso.html">
+                    <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+                    <span class="link_name">Peso</span>
+                  </a>
+                </div>
+                <ul class="sub-menu">
+                  <li><a class="link_name" href="peso.html">Peso</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="precesos.html">
+                  <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+                  <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="precesos.html">Control y protección de procesos</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="compcomplementarios.html">
+                  <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+                  <span class="link_name">Componentes complementarios</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+                </ul>
+              </li>
+    </ul>
+      </div>
+      <section class="home-section">
+        <div class="home-content">
+          <i class='bx bx-menu' ></i>
+        </div>
+      </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>FLUJO - ULTRASONICO</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="abrazadera">ABRAZADERA</a>
+            <a href="#" class="category_item" category="canal-abierto">CANAL ABIERTO</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="abrazadera">
+              <a href="#">SITRANS FS220</a>
+              <img src="imagenes/newton-fs220.jpg" alt="">
+              <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="abrazadera">
+              <a href="#">SITRANS FS230</a>
+              <img src="imagenes/fs230-fct030-family-picture.png" alt="" >
+              <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="abrazadera">
+              <a href="#">SITRANS FS290</a>
+              <img src="imagenes/sitrans-fs290-16zu9.png" alt="" >
+              <button id="openModal2">Más Información</button>
+            </div>
+            <div class="product-item" category="abrazadera">
+              <a href="#">SITRANS FST070</a>
+              <img src="imagenes/sitrans-fst070.jpg" alt="" >
+              <button id="openModal3">Más Información</button>
+            </div>
+            <div class="product-item" category="canal-abierto">
+              <a href="#">SITRANS PROBE LU240</a>
+              <img src="imagenes/sitransprobelu240.png" alt="" >
+              <button id="openModal4">Más Información</button>
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FS220</h2>
+        <p>El caudalímetro ultrasónico digital con abrazadera proporciona las funcionalidades de medición de caudal más esenciales con una precisión superior, rentabilidad y facilidad de uso. Es la mejor solución de su clase para el monitoreo directo de flujo de procesos líquidos. <br><br>
+            •	están disponibles en tres versiones diferentes: WideBeam® (alta precisión), universal y alta temperatura. <br>
+            •	cuentan con bajo mantenimiento y alta precisión, incluso para aplicaciones con altos niveles de aireación o sólidos en suspensión.<br>
+            •	Alta precisión y repetibilidad: precisión del 1 % del caudal y repetibilidad del 0,25 % según ISO 11631<br>
+            •	Estabilidad cero excepcional: necesidad mínima de establecer un punto cero<br>
+            •	Pantalla completamente gráfica con menú de navegación simple, múltiples asistentes de configuración y la opción de mostrar hasta 6 parámetros personalizables en la misma pantalla<br>
+            •	Mantenimiento sencillo, incluye tarjeta microSD SensorFlash® extraíble y puerto de servicio USB incorporado<br>
+            </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FS230</h2>
+        <p>Es un sistema de flujo ultrasónico con abrazadera. El transmisor SITRANS FST030 con los sensores FSS200 probados en uso es ideal para aplicaciones exigentes y el uso en áreas Ex. Para aplicaciones en áreas peligrosas, se utiliza el módulo electrónico externo SITRANS FS DSL. Se instala cerca de los sensores y digitaliza la señal medida en la primera oportunidad para transferirla al transmisor FST030 con una protección EMC óptima. <br><br>
+            •	Ideal para tareas de medición que requieren la máxima precisión<br>
+            •	Sistema de abrazadera de flujo para la medición de líquidos, petróleo o gas<br>
+            •	Apto para nuevas instalaciones, así como para reequipamiento<br>
+            •	Diseñado para usar con hasta 4 caminos<br>
+            •	Diseñado para uso en áreas Ex, distancia segura al transmisor de hasta 150 m<br>
+            •	Procesamiento de señal rápido con tasa de actualización de 100 Hz<br>
+            •	Alta precisión, repetibilidad y detección de flujo cero<br>
+            •	Diseñado de acuerdo con los requisitos de NAMUR e Industria 4.0 con varias funciones de diagnóstico<br>
+            •	es compatible con diámetros de tubería desde DN10 hasta DN10.000<br>
+            </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FS290</h2>
+        <p>Es un sistema de caudalímetro ultrasónico portátil para monitorizar el caudal volumétrico en tuberías.<br><br>
+            •	Verificar medidas de medición, temporales y de prueba<br>
+            •	Compensación de perturbaciones de caudal a través de la compensación de anomalías<br>
+            •	Batería de larga duración, cambio de batería sencillo<br>
+            •	Precisión de medición del 1 % en buenas condiciones<br>
+            </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal3" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FST070</h2>
+        <p>Es un caudalímetro ultrasónico para la periferia descentralizada SIMATIC ET200SP. Con SITRANS FST070, los datos se pueden procesar en tiempo real y se pueden visualizar todos los datos de medición y estado del caudalímetro ultrasónico. También permite la integración directa con controladores e interfaces de usuario en el TIA Portal de Siemens y el sistema de control de procesos SIMATIC PCS 7.<br><br>
+            •	Integración directa en el mundo SIMATIC (no se necesita transmisor)<br>
+            •	100 Hz - comunicación en tiempo real <br>
+            •	TIA, solución completa SIMATIC PCS 7, integración en el sistema de control sin esfuerzo de programación. <br>
+            </p>
+        <div id="close3" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal4" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS Probe LU240 </h2>
+        <p>Es una solución de nivel rentable, compacta e inteligente para el inventario de productos químicos líquidos, el control de recipientes de proceso pequeños y la medición de nivel en la industria medioambiental.<br><br>
+            •	Comunicaciones HART 7<br>
+            •	La tecnología de cara activa libre de mantenimiento mantiene el sensor limpio<br>
+            •	IP68 totalmente encapsulado con su sensor de PVDF totalmente encapsulado resistente a la corrosión, los productos químicos y los golpes extremos<br>
+            •	Procesamiento de eco Process Intelligence de última generación<br>
+            •	Compatible con pilas y energía solar, con baja corriente de arranque y funcionamiento con 10,5 voltios<br>
+            •	Distancia de borrado reducida<br>
+            •	Interfaz de usuario de 4 botones o configuración remota<br>
+            •	Tecnología inalámbrica Bluetooth opcional con adaptador SITRANS AW050<br>
+            </p>
+        <div id="close4" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

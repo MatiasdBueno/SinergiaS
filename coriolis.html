@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="coriolis.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+      <span class="logo_name">Instrumentación- <br> -Coriolis</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="flujo.html">
+          <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+          <span class="link_name">Volver</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="flujo.html">Volver</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="presion.html">
+            <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+            <span class="link_name">Presión</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="presion.html">Presión</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="temperatura.html">
+            <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+            <span class="link_name">Temperatura</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="nivel.html">
+          <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+          <span class="link_name">Nivel</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="nivel.html">Nivel</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="posicionadores.html">
+          <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+          <span class="link_name">Posicionadores</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="peso.html">
+            <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+            <span class="link_name">Peso</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="peso.html">Peso</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="procesos.html">
+          <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+          <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="compcomplementarios.html">
+          <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+          <span class="link_name">Componentes complementarios</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+      </div>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>FLUJO - CORIOLIS</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="transmisores">TRANSMISORES</a>
+            <a href="#" class="category_item" category="sensores">SENSORES</a>
+            <a href="#" class="category_item" category="caudalimetro">CAUDALIMETRO</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="transmisores">
+              <a href="#">SITRANS FCT010</a>
+              <img src="imagenes/sitrans-fct010.jpg" alt="">
+              <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="transmisores">
+              <a href="#">SITRANS FCT030</a>
+              <img src="imagenes/sitrans-fct030.jpg" alt="" >
+              <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="transmisores">
+              <a href="#">SITRANS FCT070</a>
+              <img src="imagenes/sitrans-fct070-16zu9 (1).png" alt="" >
+              <button id="openModal2">Más Información</button>
+            </div>
+            <div class="product-item" category="sensores">
+              <a href="#">SITRANS FC MASS 2100 DI 1.5</a>
+              <img src="imagenes/sitrans-f-c-mass-2100-di-1-point-5.jpg" alt="" >
+              <button id="openModal3">Más Información</button>
+            </div>
+            <div class="product-item" category="sensores">
+              <a href="#">SITRANS FC MASS 2100 DI 3 - 15</a>
+              <img src="imagenes/sitrans-f-c-mass-2100-di-3-15.jpg" alt="" >
+              <button id="openModal4">Más Información</button>
+            </div>
+            <div class="product-item" category="sensores">
+               <a href="#">SITRANS FC300 DN 4</a>
+               <img src="imagenes/sitrans-fc300-dn4.jpg" alt="" >
+               <button id="openModal5">Más Información</button>
+            </div>
+            <div class="product-item" category="sensores">
+              <a href="#">SITRANS FCS300</a>
+              <img src="imagenes/newton-fc310-and-fcs300.jpg" alt="">
+              <button id="openModal6">Más Información</button>
+            </div>
+            <div class="product-item" category="sensores">
+              <a href="#">SITRANS FCS400</a>
+              <img src="imagenes/sitrans-fcs400.jpg" alt="">
+              <button id="openModal7">Más Información</button>
+            </div>
+            <div class="product-item" category="caudalimetro">
+              <a href="#">SITRANS FC310</a>
+              <img src="imagenes/newton-fc310-and-fcs300.jpg" alt="">
+              <button id="openModal8">Más Información</button>
+            </div>
+            <div class="product-item" category="caudalimetro">
+              <a href="#">SITRANS FC330</a>
+              <img src="imagenes/newton-fc330.jpg" alt="">
+              <button id="openModal9">Más Información</button>
+            </div>
+            <div class="product-item" category="caudalimetro">
+              <a href="#">SITRANS FC410</a>
+              <img src="imagenes/sitrans-fc410.jpg" alt="">
+              <button id="openModal10">Más Información</button>
+            </div>
+            <div class="product-item" category="caudalimetro">
+              <a href="#">SITRANS FC430</a>
+              <img src="imagenes/sitrans-fc430.jpg" alt="">
+              <button id="openModal11">Más Información</button>
+            </div>
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FCT010</h2>
+        <p>Es un transmisor de caudal muy pequeño pero potente, desarrollado especialmente para la integración digital directa en sistemas de automatización de procesos. Su diseño compacto sin pantalla combinado con su capacidad para señales de salida digital lo convierten en la elección perfecta para patines y otras aplicaciones donde el espacio es limitado. <br><br>
+          •	Alta inmunidad contra el ruido del proceso<br>
+          •	Respuesta rápida a los cambios de paso en el flujo<br>
+          •	Supervisión de tubería vacía<br>
+          •	Sistema de filtrado inteligente para caudal aireado[PD(PSPM1]<br>
+          •	Integración directa en sistemas de control nuevos o existentes con protocolo de comunicación Modbus RTU RS485 multipunto direccionable y orden de bytes totalmente configurable para admitir todos los tipos de PLC<br>
+          •	Alta velocidad: actualización de señal de 100 Hz (10 m/s) para una transferencia de datos confiable y velocidades de datos RS485 de hasta 115,2 kBit/s para múltiples instrumentos<br>
+          •	Alarmas y seguridad: el diagnóstico avanzado y el menú de servicio mejoran la solución de problemas y la validación<br>
+          •	Fácil instalación: con conexiones estándar y cableado simplificado<br>
+          •	Rendimiento dedicado: ofrece mediciones reales de múltiples parámetros (p. ej., caudal másico, caudal volumétrico, densidad y temperatura)<br>
+          </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FCT030</h2>
+        <p>Basado en la tecnología patentada de procesamiento de señales digitales, este ofrece verdaderas mediciones de múltiples parámetros con eficiencia, seguridad y simplicidad mejoradas. <br><br>
+          •	Control de dosificación: control directo de una o dos válvulas de encendido/apagado, o una válvula analógica para aplicaciones de dosificación<br>
+          •	Posibilidad de montaje compacto, remoto en campo y remoto en pared<br>
+          •	Alarmas y seguridad: el diagnóstico avanzado y el menú de servicio mejoran la solución de problemas y la validación<br>
+          •	Gestión de alarmas: elección de configuraciones estándar Siemens o NAMUR (NE21 y NE43)<br>
+          •	SensorFlash permite el reemplazo simple del sensor y la transferencia de datos al transmisor existente<br>
+          •	Transferencia de señal digital y frecuencia de actualización de 100 Hz a todas las salidas<br>
+          </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FCT070</h2>
+        <p>Módulo tecnológico para el SIMATIC ET 200SP descentralizado <br><br>
+          •	Configuración y combinación rápidas con módulos SIMATIC ET200SP adicionales<br>
+          •	Sencilla selección e integración de módulos a través de Siemens TIA Selector<br>
+          •	Integración directa con controladores e interfaces de usuario para SIMATIC TIA Portal y SIMATIC PCS 7<br>
+          •	Intercambio en tiempo real entre el controlador y el caudalímetro<br>
+          •	Para uso universal con todos los caudalímetros Coriolis de Siemens mediante enlace de sensor digital<br>
+          •	Señal digital rápida hacia el sensor con una velocidad de actualización de 10 ms<br>
+          •	Soluciones completas para áreas peligrosas con el uso de la barrera SITRANS I300<br>
+          </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal3" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FC MASS 2100 DI 1.5</h2>
+        <p>Rendimiento superior en numerosas aplicaciones y pruebas de campo relacionadas con la precisión del flujo másico y la densidad y la relación de reducción. El diseño de un solo tubo continuo sin soldaduras internas, reducciones o divisores de flujo, ofrece higiene, seguridad y facilidad de limpieza CIP óptima para aplicaciones farmacéuticas y de alimentos y bebida.<br><br>
+          •	La construcción del impulsor y el captador de accionamiento doble facilitan la construcción de tuberías de peso ultra bajo<br>
+          •	Resistente a la corrosión y durabilidad a alta presión<br>
+          •	Plug & Play: el conector eléctrico multi enchufe y SENSORPROM facilitan una instalación y puesta en marcha rentables<br>
+          •	Diseño estándar intrínsecamente seguro EEx ia<br>
+          •	Medición de temperatura Pt1000 de 4 hilos para confiabilidad en flujo másico, densidad y fracción porcentual<br>
+          </p>
+        <div id="close3" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal4" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FC MASS 2100 DI 3-15</h2>
+        <p>Medición precisa del caudal másico de todo tipo de líquidos y gases. El diseño de paso total proporciona una menor pérdida de presión debido al diámetro interno constante en todo el sensor y la construcción de un solo tubo sin soldaduras internas, reducciones o divisores de flujo ofrece una higiene, seguridad y facilidad de limpieza CIP óptimas. <br><br>
+          •	El diseño de bloque central desacopla el ruido del proceso del entorno, es decir, vibraciones, pulsaciones, golpes de presión, etc. <br>
+          •	El diseño del sensor en acero inoxidable se adapta a todos los entornos<br>
+          •	Amplio rango dinámico de reducción superior a 500:1 y la pared de tubo más gruesa del mercado<br>
+          •	Plug & Play: el conector eléctrico multi enchufe y SENSORPROM facilitan una instalación y puesta en marcha rentables<br>
+          •	Precisión óptima, para caudal másico, densidad y fracción porcentual gracias a la medición de temperatura Pt1000 de 4 hilos<br>
+          •	Intrínsecamente seguro Ia II C como estándar, lo que hace posible el servicio en áreas peligrosas sin tener que desmontar el sensor <br>
+          </p>
+        <div id="close4" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal5" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FC300 DN 4</h2>
+        <p>Es un caudalímetro másico Coriolis compacto adecuado para la medición de caudal de todo tipo de líquidos y gases. El sensor ofrece un rendimiento superior en términos de precisión de flujo, rango de reducción y precisión de densidad<br><br>
+          •	Diseño compacto del sensor en línea de solo 135 x 205 x 58 mm (5,12" x 7,87" x 23,6") facilita la instalación en todas partes<br>
+          •	Sensor en acero inoxidable que se adapta a todas las aplicaciones<br>
+          •	Diseño de tubería equilibrada con poca pérdida de energía mecánica. <br>
+          •	Precisión óptima, para caudal másico, densidad y fracción porcentual gracias a la medición de temperatura de 4 hilos.<br>
+          •	Plug & Play: el conector eléctrico multi enchufe y SENSORPROM facilitan una instalación y puesta en marcha rentables<br>
+          •	Seguridad mejorada, intrínsecamente seguro EEx ia<br>
+          </p>
+        <div id="close5" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal6" class="modal-container">
+  <div class="modal-content">
+      <h2>SITRANS FCS300</h2>
+      <p>El SITRANS FCS300 es uno de los sensores de caudal Coriolis más compactos del mercado. Su pequeño tamaño simplifica la instalación y el reemplazo, y le permite optimizar el diseño de su planta colocando varias unidades en espacios reducidos.<br><br>
+        •	Flexibilidad: disponible desde DN15 a DN150, lo que garantiza un ajuste de aplicación amplio<br>
+        •	Fácil instalación: con una amplia gama de bridas estándar, roscas y conectores higiénicos<br>
+        •	Alta precisión: ±0,10 % o ±0,20 % alcanzado hasta 100 bares y 205 °C<br>
+        •	“Plug & Play” - con cable de sensor pre configurado<br>
+        •	Fiable digitalmente: todas las variables del proceso primario se transfieren digitalmente al transmisor<br>
+        •	Red de servicio global: para soporte de nivel experto cuando y donde lo necesite<br>
+        </p>
+      <div id="close6" class="close1">Cerrar</div>
+  </div>
+</div>
+
+<div id="modal7" class="modal-container">
+  <div class="modal-content">
+      <h2>SITRANS FCS400</h2>
+      <p>El tamaño pequeño facilita la instalación y el reemplazo, y permite colocar varias unidades en espacios reducidos. En el corazón del diseño compacto se encuentra la forma del tubo CompactCurveTM, que ofrece una precisión del 0,1 % del caudal y una alta sensibilidad para una medición óptima incluso de caudales muy bajos. <br><br>
+        •	Flexibilidad: disponible desde DN15 hasta DN50, lo que garantiza un ajuste de aplicación amplio<br>
+        •	Fácil instalación: con una amplia gama de bridas estándar, roscas y conectores higiénicos<br>
+        •	Mediciones estables: alta frecuencia de medición, alta relación señal/ruido<br>
+        •	Alta precisión: ±0,1 % alcanzado hasta 100 bares y 200 °C<br>
+        •	“Plug & Play” - con cable de sensor pre configurado<br>
+        •	Confiabilidad digital: todas las variables del proceso primario se transfieren digitalmente al transmisor; La tarjeta SD extraíble SensorFlash® transfiere datos de configuración y funcionamiento<br>
+        </p>
+      <div id="close7" class="close1">Cerrar</div>
+  </div>
+</div>
+
+<div id="modal8" class="modal-container">
+  <div class="modal-content">
+      <h2>SITRANS FC310</h2>
+      <p>Puede colocar más medidores en menos espacio y reducir el tamaño del patín sin comprometer el rendimiento. El FC310 presenta un diseño todo en uno para una instalación optimizada y una fácil integración en su sistema de control<br><br>
+
+        •	Integración directa, en sistemas de control nuevos o existentes con protocolo de comunicación Modbus RTU RS485 multipunto direccionable y orden de bytes totalmente configurable para admitir todos los tipos de PLC<br>
+        •	Fácil instalación, con conexiones estándar y cableado simplificado<br>
+        •	Funciones completas de memoria extraíble (tarjeta microSD SensorFlash®) <br>
+        - Certificados de calibración   <br>
+        - Certificados de prueba de materiales y presión (según pedido)<br>
+        •	Sensor aprobado por EHEDG en tamaños DN 25-80; superficie lisa para facilitar la limpieza y mínima influencia en el flujo<br>
+        •	Ofrece mediciones multiparamétricas reales (p. ej., caudal másico, caudal volumétrico, densidad y temperatura)<br>
+        </p>
+      <div id="close8" class="close1">Cerrar</div>
+  </div>
+</div>
+
+<div id="modal9" class="modal-container">
+  <div class="modal-content">
+      <h2>SITRANS FC330</h2>
+      <p>Sistema de flujo digital, mejora su productividad al aumentar la eficiencia de todos los procesos de líquidos y gases. El resultado es un medidor de flujo de vanguardia en la parte superior de su clase en precisión y confiabilidad, pero que ahorra espacio y es fácil de usar. <br><br>
+        •	Integración directa, en los sistemas de automatización DCS a través de Profibus 4.0, Modbus, HART 7.2 o como una solución independiente<br>
+        •	El diseño compacto del sensor con una opción de instalación remota brinda la oportunidad de una ubicación óptima del transmisor<br>
+        •	Funciones integrales de memoria extraíble (tarjeta microSD SensorFlash®) <br>  
+        - Certificados de calibración   <br>
+        - Certificados de prueba de presión y material (según pedido)   <br>
+        - Copia de seguridad de memoria no volátil de datos operativos   <br>
+        - Transferencia de la configuración del usuario a otros caudalímetros<br>
+        - Funcionalidad de registro de datos<br>
+        •	Sensor higiénico aprobado por EHEDG para tamaños DN 25-80; limpieza externa, acoplamientos<br>
+        </p>
+      <div id="close9" class="close1">Cerrar</div>
+  </div>
+</div>
+
+<div id="modal10" class="modal-container">
+  <div class="modal-content">
+      <h2>SITRANS FC410</h2>
+      <p>Es el sistema más ligero y compacto del mundo, puede reducir el tamaño de la plataforma, instalar varias unidades en las áreas más estrechas, simplificar la instalación en aplicaciones nuevas y existentes y minimizar los costos.<br><br>
+        •	Integración directa, en sistemas de control nuevos o existentes con protocolo de comunicación Modbus RTU RS485 multipunto direccionable y orden de bytes totalmente configurable para admitir todos los tipos de PLC<br>
+        •	Fácil instalación: con conexiones estándar y cableado simplificado<br>
+        •	Alta precisión: ±0,1 % alcanzado hasta 100 bar y 200 °C<br>
+        •	Disponible desde DN15 a DN50 para garantizar una amplia aplicación.<br>
+        •	Rendimiento dedicado que ofrece mediciones reales de múltiples parámetros (p. ej., caudal másico, caudal volumétrico, densidad y temperatura)<br>
+        •	Alta velocidad de actualización de señal de 10 m/s para una transferencia de datos confiable y velocidades de datos RS485 de hasta 115,2 kBit/s para múltiples instrumentos<br>
+        </p>
+      <div id="close10" class="close1">Cerrar</div>
+  </div>
+</div>
+
+<div id="modal11" class="modal-container">
+  <div class="modal-content">
+      <h2>SITRANS FC430</h2>
+      <p>El caudalímetro de base digital presenta un tamaño compacto líder en el mercado, una precisión muy alta del 0,1 %, baja pérdida de presión, punto cero extremadamente estable y la mejor actualización de datos de su clase con transferencia de señal de alta velocidad de 100 Hz. <br><br>
+        •	Herramientas de soporte únicas brindan acceso directo a todos los datos, certificados y registros de auditoría operativos y funcionales.<br>
+        •	Integración directa, en sistemas de automatización DCS a través de Profibus 4.0, Modbus, HART 7.2 o como solución independiente<br>
+        •	Ahorro de espacio, la instalación del sensor remoto brinda la oportunidad de ubicar el transmisor de manera óptima<br>
+        •	SensorFlash®: funciones integrales de memoria extraíble (tarjeta micro SD)   <br>
+        - Certificados de calibración   <br>
+        - Certificados de prueba de presión y material (según pedido)   <br>
+        - Copia de seguridad de memoria no volátil de datos operativos   <br>
+        - Transferencia de la configuración del usuario a otros caudalímetros<br>
+        - Funcionalidad de registro de datos<br>
+        •	Compatible con NAMUR (NE132): funciones del transmisor, configuraciones de salida, manejo de errores<br>
+        </p>
+      <div id="close11" class="close1">Cerrar</div>
+  </div>
+</div>
+
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

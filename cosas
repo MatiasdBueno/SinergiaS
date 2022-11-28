@@ -1,0 +1,674 @@
+<h1>TEMPERATURA</h1>
+		<div class="store-wrapper">
+			<div class="category_list">
+				<a href="#" class="category_item" category="sensores-temp">SENSORES DE TEMPERATURA</a>
+                <a href="#" class="category_item" category="cabezales-trans">CABEZALES DE TRANSMISION</a>
+                <a href="#" class="category_item" category="trans-temp">TRANSMISORES DE TEMPERATURA RIEL</a>
+                <a href="#" class="category_item" category="trans-campo">TRANSMISORES DE CAMPO</a>
+                <a href="#" class="category_item" category="temp-fibra">MEDIDOS DE TEMPERATURA DE FIBRA OPTICA</a>
+			</div>
+			<section class="products-list">
+				<div class="product-item" category="sensores-temp">
+                    <a href="#">SITRANS TS termopozo</a>
+					<img src="imagenes/sitrans-tsthermowell.jpg" alt="">
+                    <button id="openModal">Más Información</button>
+				</div>
+				<div class="product-item" category="sensores-temp">
+                    <a href="#">SITRANS TS100</a>
+					<img src="imagenes/sitrans-ts100.jpg" alt="" >
+                    <button id="openModal1">Más Información</button>
+				</div>
+				<div class="product-item" category="sensores-temp">
+                    <a href="#">SITRANS TS200</a>
+					<img src="imagenes/sitrans-ts200.jpg" alt="" >
+                    <button id="openModal2">Más Información</button>
+				</div>
+				<div class="product-item" category="sensores-temp">
+                    <a href="#">SITRANS TS300</a>
+					<img src="imagenes/sitrans-ts300.jpg" alt="" >
+                    <button id="openModal3">Más Información</button>
+				</div>
+				<div class="product-item" category="sensores-temp">
+                    <a href="#">SITRANS TS500</a>
+					<img src="imagenes/sitrans-ts500-temperature-sensor.jpg" alt="" >
+                    <button id="openModal4">Más Información</button>
+				</div>
+                <div class="product-item" category="cabezales-trans">
+                    <a href="#">SITRANS TH100</a>
+					<img src="imagenes/sitrans-th100.jpg" alt="" >
+                    <button id="openModal5">Más Información</button>
+				</div>
+                <div class="product-item" category="cabezales-trans">
+                    <a href="#">SITRANS TH200</a>
+					<img src="imagenes/sitrans-th200.jpg" alt="" >
+                    <button id="openModal6">Más Información</button>
+				</div>
+                <div class="product-item" category="cabezales-trans">
+                    <a href="#">SITRANS TH300</a>
+					<img src="imagenes/sitrans-th300.jpg" alt="" >
+                    <button id="openModal7">Más Información</button>
+				</div>
+                <div class="product-item" category="cabezales-trans">
+                    <a href="#">SITRANS TH320-420</a>
+					<img src="imagenes/sitrans-th-320-420.jpg" alt="" >
+                    <button id="openModal8">Más Información</button>
+				</div>
+                <div class="product-item" category="trans-temp">
+                    <a href="#">SITRANS TR320-420</a>
+					<img src="imagenes/sitrans-tr-320-420.jpg" alt="" >
+                    <button id="openModal9">Más Información</button>
+				</div>
+                <div class="product-item" category="trans-campo">
+                    <a href="#">SITRANS TF</a>
+					<img src="imagenes/sitrans-tf.jpg" alt="" >
+                    <button id="openModal10">Más Información</button>
+				</div>
+                <div class="product-item" category="trans-campo">
+                    <a href="#">SITRANS TF320-420</a>
+					<img src="imagenes/sitrans-tf320.jpg" alt="" >
+                    <button id="openModal11">Más Información</button>
+				</div>
+                <div class="product-item" category="temp-fibra">
+                    <a href="#">SITRANS TO500</a>
+					<img src="imagenes/fiber-optic-temperature.jpg" alt="" >
+                    <button id="openModal12">Más Información</button>
+				</div>
+                <script src="presion.js"></script>
+			</section>
+		</div>
+	</div>
+    <div id="modal" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TS Termopozo</h2>
+            <p>Ofrece una cartera completa de termopozos para una amplia gama de aplicaciones. <br><br>
+                •	Amplia gama de longitudes y materiales <br>
+                •	Cobertura completa de aplicaciones <br>
+                •	Son posibles opciones específicas del cliente <br>
+                •	Alta estabilidad gracias a los materiales de alta calidad <br>
+                •	Amplia variedad de diseños y certificados <br>
+                </p>
+            <div id="close" class="close">Cerrar</div>
+        </div>
+    </div>
+    <div id="modal1" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TS100</h2>
+            <p>La construcción de la línea de sensores de temperatura SITRANS TS100 se basa en cable con aislamiento mineral (MIC) y es compatible con una amplia gama de aplicaciones. <br><br>
+                •	Montaje sencillo: los racores de compresión o los racores para soldar permiten una puesta en servicio rápida <br>
+                •	diseñada para su uso en zonas 0, sin necesidad de un termopozo adicional, homologación ATEX y IEC EX <br>
+                </p>
+            <div id="close1" class="close">Cerrar</div>
+        </div>
+    </div>
+    <div id="modal2" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TS200</h2>
+            <p>La construcción de la línea de sensores de temperatura SITRANS TS200 se basa en cable con aislamiento mineral (MIC) y es compatible con una amplia gama de aplicaciones <br><br>
+                •	Montaje simple: los accesorios de compresión o los racores para soldar permiten una puesta en servicio rápida <br>
+                •	Universal: la línea de sensores está diseñada para servir a una amplia gama de aplicaciones <br>
+                </p>
+            <div id="close2" class="close">Cerrar</div>
+        </div>
+    </div>
+    <div id="modal3" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TS300</h2>
+            <p>Ha sido diseñada para aplicaciones higiénicas. Los beneficios de la medición con abrazadera se hacen efectivos especialmente cuando se trata de diámetros de tubería pequeños, ya que la soldadura y la validación de la soldadura son superfluas y no surgen perturbaciones en el proceso. <br><br>
+                •	desmontaje simple de las unidades para su recalibración <br>
+                •	diseñada para aplicaciones higiénicas, según recomendaciones EHEDG  <br>
+                •	Unidades de medida intercambiables <br>
+                </p>
+            <div id="close3" class="close">Cerrar</div>
+        </div>
+    </div>
+    <div id="modal4" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TS500</h2>
+            <p>Es un sensor de temperatura industrial que admite una gran cantidad de tareas de medición que van desde aplicaciones básicas hasta soluciones en entornos hostiles. <br><br>
+                •	diseño modular, que permite personalizar el sensor según las necesidades individuales <br>
+                •	Intercambiable durante el funcionamiento  <br>
+                •	Protección contra explosiones según ATEX e IEC EX seguridad intrínseca, antideflagrante y antichispas  <br>
+                </p>
+            <div id="close4" class="close">Cerrar</div>
+        </div>
+    </div>
+    <div id="modal5" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TH100</h2>
+            <p>Ofrece una operación de planta económica y mediciones confiables. La configuración es rápida y fácil con el módem del transmisor y SIPROM T. <br><br>
+                •	Mide la temperatura con una señal de salida lineal <br>
+                •	Alta precisión en todo el rango de temperatura ambiente <br>
+                •	Reduce el ruido de la planta <br>
+                •	Señal de alarma por rotura de sensor o cortocircuito según NAMUR 43 <br>
+                •	Ejecuciones protegidas contra explosiones para EE. UU., Canadá y Europa <br>
+                •	Diseño delgado, ideal para actualizar las sondas Pt100 instaladas con una señal de 4...20 mA <br>
+                •	Diseño resistente, electrónica totalmente encapsulada <br>
+                </p>
+            <div id="close5" class="close">Cerrar</div>
+        </div>
+    </div>
+    <div id="modal6" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TH200</h2>
+            <p>Está diseñado para admitir todos los RTD, termopares, sensores de resistencia y milivoltios comunes. La configuración es rápida y fácil con el módem del transmisor y el software SIPROM T <br><br>
+                •	Mide la temperatura con una señal de salida lineal <br>
+                •	Alta precisión en todo el rango de temperatura ambiente <br>
+                •	Reduce el ruido de la planta <br>
+                •	Señal de alarma por rotura de sensor o cortocircuito según NAMUR 43 <br>
+                •	Compatibilidad electromagnética (CEM) según DIN EN 61326 y NE21 <br>
+                •	Aislamiento galvánico para precisión y seguridad en aplicaciones de termopares <br>
+                •	Recorte de uno o dos puntos <br>
+                •	Curva característica personalizada para la aplicación de sensores no estándar <br>
+                •	Medición de diferencia y promedio <br>
+                •	Variantes protegidas contra explosiones para EE. UU., Canadá y Europa <br>
+                •	Diseño resistente, electrónica totalmente encapsulada <br>
+                </p>
+            <div id="close6" class="close">Cerrar</div>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TH300</h2>
+            <p>Con protocolo HART está diseñado para admitir todos los termopares, resistencias y sensores de milivoltios comunes. La configuración es rápida y sencilla con SIMATIC PDM o un comunicador portátil. <br><br>
+                •	Señal de alarma por rotura de sensor o cortocircuito según NAMUR 43 <br>
+                •	Compatibilidad electromagnética (CEM) según DIN EN 61326 y NE21<br>
+                •	Aislamiento galvánico para precisión y seguridad en aplicaciones de termopares<br>
+                •	Recorte de uno o dos puntos<br>
+                •	Curva característica personalizada para la aplicación de sensores no estándar<br>
+                •	Medición de diferencia y promedio<br>
+                •	Diagnóstico extenso: por ejemplo, indicador de arrastre y medidor de tiempo<br>
+                •	Conjunto de corriente de salida para simulación.<br>
+                </p>
+            <div id="close7" class="close">Cerrar</div>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TH320/TH420</h2>
+            <p>SITRANS TH320/420 está diseñado para admitir todas las termorresistencias y termopares habituales. También evalúa señales de resistencia y milivoltios. La configuración es rápida y sencilla con SIMATIC PDM o el comunicador portátil. Ambos transmisores de temperatura SITRANS TH320 y TH420 combinan medición e inteligencia perfectas para cada temperatura y condición. <br><br>
+                •	Alta disponibilidad durante la medición mediante la función de respaldo en caliente (SITRANS TH420)<br>
+                •	Alta fiabilidad y estabilidad a largo plazo: ajuste del sensor (Callendar-van-Dusen) y detección de deriva del sensor (solo SITRANS TH420) para una alta precisión y un tiempo de calibración acelerado <br>
+                •	Prevención de paradas de producción por fallos de medición<br>
+                •	La mejor relación costo-beneficio para la administración de instalaciones<br>
+                •	Reducción de costos a través del mantenimiento anticipatorio<br>
+                •	Resiste entornos críticos para la seguridad: rango de temperatura extendido hasta -50 °C y aprobaciones SIL2/3<br>
+                </p>
+            <div id="close8" class="close">Cerrar</div>
+        </div>
+    </div>
+
+    <div id="modal9" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TR320/TR420</h2>
+            <p>Transmisor de riel diseñado para soportar todas las termorresistencias y termopares comunes. También evalúa señales de resistencia y milivoltios. La configuración es rápida y sencilla con SIMATIC PDM o un comunicador portátil. Ambos transmisores de temperatura SITRANS TR320 y TR420 combinan medición e inteligencia perfectas para cada temperatura y condición. <br><br>
+                •	Alta disponibilidad durante la medición mediante la función de respaldo en caliente (SITRANS TR420)<br>
+                •	Alta confiabilidad y estabilidad a largo plazo: ajuste del sensor (Callendar-van-Dusen) y detección de deriva del sensor (solo SITRANS TR420) para una alta precisión y un tiempo de calibración acelerado<br>
+                •	Prevención de paradas de producción por fallos de medición<br>
+                •	La mejor relación costo-beneficio para la administración de instalaciones<br>
+                •	Reducción de costos a través del mantenimiento anticipatorio<br>
+                •	Resiste entornos críticos para la seguridad: rango de temperatura extendido hasta -50 °C y aprobaciones SIL2/3<br>
+                </p>
+            <div id="close9" class="close">Cerrar</div>
+        </div>
+    </div>
+
+    <div id="modal10" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TF</h2>
+            <p>Transforma las señales de termo resistencias, termopares, ohmios y mV en una corriente CC independiente de la carga correspondiente a la característica del sensor o una señal digital según el estándar Fieldbus Profibus PA o Foundation Fieldbus. <br><br>
+                •	Grado de protección IP66 I67 I68<br>
+                •	Para montaje remoto en aplicaciones de alta temperatura yIo vibraciones<br>
+                •	Comunicación PAIFF<br>
+            </p>
+            <div id="close10" class="close">Cerrar</div>
+        </div>
+    </div>
+
+    <div id="modal11" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TF320/420</h2>
+            <p>El transmisor de campo se puede utilizar para todas las termo resistencias y termopares habituales. También se pueden analizar sensores de tipo resistencia y señales de milivoltios. La configuración se puede realizar de forma rápida y sencilla a través de SIMATIC PDM, el comunicador portátil o la pantalla opcional con pulsadores.<br><br>
+                •	Carcasa de acero inoxidable o aluminio<br>
+                •	Transmisor de temperatura para montaje en campo, en una amplia gama de aplicaciones<br>
+                •	Redundancia total con función de hot-backup (TF420)<br>
+                •	Cumple con los requisitos SIL 2I3<br>
+                •	Gracias a la capacidad HART 7, se pueden transferir más datos de diagnóstico directamente<br>
+                •	4-20mA<br>
+                •	Tipos de protección combinados, por ej. Ex d + Ex i<br>
+                •	alarmas de diagnóstico conformes con NE107<br>
+                •	Rango de temperatura ampliado hasta -50 °C<br>
+                </p>
+            <div id="close11" class="close">Cerrar</div>
+        </div>
+    </div>
+
+    <div id="modal12" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TO500</h2>
+            <p>Transmisor de Temperatura por fibra Óptica<br><br>
+                •	Diámetro de la sonda del sensor < 2 mm<br>
+                •	Hasta 48 puntos de medida por cada sonda de sensor<br>
+                •	Instalación sencilla y económica gracias a sonda del sensor enrollable<br>
+                </p>
+            <div id="close12" class="close">Cerrar</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="flujo.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+      <span class="logo_name">Instrumentación- <br> -</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class='bx'><img src="./imagenes/home-solid.svg" alt=""></i></i>
+          <span class="link_name">Volver</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Volver</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx' ><img src="./imagenes/lane.svg" alt=""></i>
+            <span class="link_name">Category</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Category</a></li>
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">PHP & MySQL</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx' ><img src="./imagenes/lane.svg" alt=""></i>
+            <span class="link_name">Posts</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Posts</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Login Form</a></li>
+          <li><a href="#">Card Design</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx' ><img src="./imagenes/lane.svg" alt=""></i>
+          <span class="link_name">Analytics</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Analytics</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx' ><img src="./imagenes/lane.svg" alt=""></i>
+          <span class="link_name">Chart</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Chart</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx' ><img src="./imagenes/lane.svg" alt=""></i>
+            <span class="link_name">Plugins</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Plugins</a></li>
+          <li><a href="#">UI Face</a></li>
+          <li><a href="#">Pigments</a></li>
+          <li><a href="#">Box Icons</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx' ><img src="./imagenes/lane.svg" alt=""></i>
+          <span class="link_name">Explore</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Explore</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx' ><img src="./imagenes/lane.svg" alt=""></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx' ><img src="./imagenes/lane.svg" alt=""></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+      </div>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>TEMPERATURA</h1>
+		<div class="store-wrapper">
+			<div class="category_list">
+				<a href="#" class="category_item" category="sensores-temp">SENSORES DE TEMPERATURA</a>
+                <a href="#" class="category_item" category="cabezales-trans">CABEZALES DE TRANSMISION</a>
+                <a href="#" class="category_item" category="trans-temp">TRANSMISORES DE TEMPERATURA RIEL</a>
+                <a href="#" class="category_item" category="trans-campo">TRANSMISORES DE CAMPO</a>
+                <a href="#" class="category_item" category="temp-fibra">MEDIDOS DE TEMPERATURA DE FIBRA OPTICA</a>
+			</div>
+			<section class="products-list">
+				<div class="product-item" category="sensores-temp">
+                    <a href="#">SITRANS TS termopozo</a>
+					<img src="imagenes/sitrans-tsthermowell.jpg" alt="">
+                    <button id="openModal">Más Información</button>
+				</div>
+				<div class="product-item" category="sensores-temp">
+                    <a href="#">SITRANS TS100</a>
+					<img src="imagenes/sitrans-ts100.jpg" alt="" >
+                    <button id="openModal1">Más Información</button>
+				</div>
+				<div class="product-item" category="sensores-temp">
+                    <a href="#">SITRANS TS200</a>
+					<img src="imagenes/sitrans-ts200.jpg" alt="" >
+                    <button id="openModal2">Más Información</button>
+				</div>
+				<div class="product-item" category="sensores-temp">
+                    <a href="#">SITRANS TS300</a>
+					<img src="imagenes/sitrans-ts300.jpg" alt="" >
+                    <button id="openModal3">Más Información</button>
+				</div>
+				<div class="product-item" category="sensores-temp">
+                    <a href="#">SITRANS TS500</a>
+					<img src="imagenes/sitrans-ts500-temperature-sensor.jpg" alt="" >
+                    <button id="openModal4">Más Información</button>
+				</div>
+                <div class="product-item" category="cabezales-trans">
+                    <a href="#">SITRANS TH100</a>
+					<img src="imagenes/sitrans-th100.jpg" alt="" >
+                    <button id="openModal5">Más Información</button>
+				</div>
+                <div class="product-item" category="cabezales-trans">
+                    <a href="#">SITRANS TH200</a>
+					<img src="imagenes/sitrans-th200.jpg" alt="" >
+                    <button id="openModal6">Más Información</button>
+				</div>
+                <div class="product-item" category="cabezales-trans">
+                    <a href="#">SITRANS TH300</a>
+					<img src="imagenes/sitrans-th300.jpg" alt="" >
+                    <button id="openModal7">Más Información</button>
+				</div>
+                <div class="product-item" category="cabezales-trans">
+                    <a href="#">SITRANS TH320-420</a>
+					<img src="imagenes/sitrans-th-320-420.jpg" alt="" >
+                    <button id="openModal8">Más Información</button>
+				</div>
+                <div class="product-item" category="trans-temp">
+                    <a href="#">SITRANS TR320-420</a>
+					<img src="imagenes/sitrans-tr-320-420.jpg" alt="" >
+                    <button id="openModal9">Más Información</button>
+				</div>
+                <div class="product-item" category="trans-campo">
+                    <a href="#">SITRANS TF</a>
+					<img src="imagenes/sitrans-tf.jpg" alt="" >
+                    <button id="openModal10">Más Información</button>
+				</div>
+                <div class="product-item" category="trans-campo">
+                    <a href="#">SITRANS TF320-420</a>
+					<img src="imagenes/sitrans-tf320.jpg" alt="" >
+                    <button id="openModal11">Más Información</button>
+				</div>
+                <div class="product-item" category="temp-fibra">
+                    <a href="#">SITRANS TO500</a>
+					<img src="imagenes/fiber-optic-temperature.jpg" alt="" >
+                    <button id="openModal12">Más Información</button>
+				</div>
+                <script src="presion.js"></script>
+			</section>
+		</div>
+	</div>
+    <div id="modal" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TS Termopozo</h2>
+            <p>Ofrece una cartera completa de termopozos para una amplia gama de aplicaciones. <br><br>
+                •	Amplia gama de longitudes y materiales <br>
+                •	Cobertura completa de aplicaciones <br>
+                •	Son posibles opciones específicas del cliente <br>
+                •	Alta estabilidad gracias a los materiales de alta calidad <br>
+                •	Amplia variedad de diseños y certificados <br>
+                </p>
+            <div id="close" class="close1">Cerrar</div>
+        </div>
+    </div>
+    <div id="modal1" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TS100</h2>
+            <p>La construcción de la línea de sensores de temperatura SITRANS TS100 se basa en cable con aislamiento mineral (MIC) y es compatible con una amplia gama de aplicaciones. <br><br>
+                •	Montaje sencillo: los racores de compresión o los racores para soldar permiten una puesta en servicio rápida <br>
+                •	diseñada para su uso en zonas 0, sin necesidad de un termopozo adicional, homologación ATEX y IEC EX <br>
+                </p>
+            <div id="close1" class="close1">Cerrar</div>
+        </div>
+    </div>
+    <div id="modal2" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TS200</h2>
+            <p>La construcción de la línea de sensores de temperatura SITRANS TS200 se basa en cable con aislamiento mineral (MIC) y es compatible con una amplia gama de aplicaciones <br><br>
+                •	Montaje simple: los accesorios de compresión o los racores para soldar permiten una puesta en servicio rápida <br>
+                •	Universal: la línea de sensores está diseñada para servir a una amplia gama de aplicaciones <br>
+                </p>
+            <div id="close2" class="close1">Cerrar</div>
+        </div>
+    </div>
+    <div id="modal3" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TS300</h2>
+            <p>Ha sido diseñada para aplicaciones higiénicas. Los beneficios de la medición con abrazadera se hacen efectivos especialmente cuando se trata de diámetros de tubería pequeños, ya que la soldadura y la validación de la soldadura son superfluas y no surgen perturbaciones en el proceso. <br><br>
+                •	desmontaje simple de las unidades para su recalibración <br>
+                •	diseñada para aplicaciones higiénicas, según recomendaciones EHEDG  <br>
+                •	Unidades de medida intercambiables <br>
+                </p>
+            <div id="close3" class="close1">Cerrar</div>
+        </div>
+    </div>
+    <div id="modal4" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TS500</h2>
+            <p>Es un sensor de temperatura industrial que admite una gran cantidad de tareas de medición que van desde aplicaciones básicas hasta soluciones en entornos hostiles. <br><br>
+                •	diseño modular, que permite personalizar el sensor según las necesidades individuales <br>
+                •	Intercambiable durante el funcionamiento  <br>
+                •	Protección contra explosiones según ATEX e IEC EX seguridad intrínseca, antideflagrante y antichispas  <br>
+                </p>
+            <div id="close4" class="close1">Cerrar</div>
+        </div>
+    </div>
+    <div id="modal5" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TH100</h2>
+            <p>Ofrece una operación de planta económica y mediciones confiables. La configuración es rápida y fácil con el módem del transmisor y SIPROM T. <br><br>
+                •	Mide la temperatura con una señal de salida lineal <br>
+                •	Alta precisión en todo el rango de temperatura ambiente <br>
+                •	Reduce el ruido de la planta <br>
+                •	Señal de alarma por rotura de sensor o cortocircuito según NAMUR 43 <br>
+                •	Ejecuciones protegidas contra explosiones para EE. UU., Canadá y Europa <br>
+                •	Diseño delgado, ideal para actualizar las sondas Pt100 instaladas con una señal de 4...20 mA <br>
+                •	Diseño resistente, electrónica totalmente encapsulada <br>
+                </p>
+            <div id="close5" class="close1">Cerrar</div>
+        </div>
+    </div>
+    <div id="modal6" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TH200</h2>
+            <p>Está diseñado para admitir todos los RTD, termopares, sensores de resistencia y milivoltios comunes. La configuración es rápida y fácil con el módem del transmisor y el software SIPROM T <br><br>
+                •	Mide la temperatura con una señal de salida lineal <br>
+                •	Alta precisión en todo el rango de temperatura ambiente <br>
+                •	Reduce el ruido de la planta <br>
+                •	Señal de alarma por rotura de sensor o cortocircuito según NAMUR 43 <br>
+                •	Compatibilidad electromagnética (CEM) según DIN EN 61326 y NE21 <br>
+                •	Aislamiento galvánico para precisión y seguridad en aplicaciones de termopares <br>
+                •	Recorte de uno o dos puntos <br>
+                •	Curva característica personalizada para la aplicación de sensores no estándar <br>
+                •	Medición de diferencia y promedio <br>
+                •	Variantes protegidas contra explosiones para EE. UU., Canadá y Europa <br>
+                •	Diseño resistente, electrónica totalmente encapsulada <br>
+                </p>
+            <div id="close6" class="close1">Cerrar</div>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TH300</h2>
+            <p>Con protocolo HART está diseñado para admitir todos los termopares, resistencias y sensores de milivoltios comunes. La configuración es rápida y sencilla con SIMATIC PDM o un comunicador portátil. <br><br>
+                •	Señal de alarma por rotura de sensor o cortocircuito según NAMUR 43 <br>
+                •	Compatibilidad electromagnética (CEM) según DIN EN 61326 y NE21<br>
+                •	Aislamiento galvánico para precisión y seguridad en aplicaciones de termopares<br>
+                •	Recorte de uno o dos puntos<br>
+                •	Curva característica personalizada para la aplicación de sensores no estándar<br>
+                •	Medición de diferencia y promedio<br>
+                •	Diagnóstico extenso: por ejemplo, indicador de arrastre y medidor de tiempo<br>
+                •	Conjunto de corriente de salida para simulación.<br>
+                </p>
+            <div id="close7" class="close1">Cerrar</div>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TH320/TH420</h2>
+            <p>SITRANS TH320/420 está diseñado para admitir todas las termorresistencias y termopares habituales. También evalúa señales de resistencia y milivoltios. La configuración es rápida y sencilla con SIMATIC PDM o el comunicador portátil. Ambos transmisores de temperatura SITRANS TH320 y TH420 combinan medición e inteligencia perfectas para cada temperatura y condición. <br><br>
+                •	Alta disponibilidad durante la medición mediante la función de respaldo en caliente (SITRANS TH420)<br>
+                •	Alta fiabilidad y estabilidad a largo plazo: ajuste del sensor (Callendar-van-Dusen) y detección de deriva del sensor (solo SITRANS TH420) para una alta precisión y un tiempo de calibración acelerado <br>
+                •	Prevención de paradas de producción por fallos de medición<br>
+                •	La mejor relación costo-beneficio para la administración de instalaciones<br>
+                •	Reducción de costos a través del mantenimiento anticipatorio<br>
+                •	Resiste entornos críticos para la seguridad: rango de temperatura extendido hasta -50 °C y aprobaciones SIL2/3<br>
+                </p>
+            <div id="close8" class="close1">Cerrar</div>
+        </div>
+    </div>
+
+    <div id="modal9" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TR320/TR420</h2>
+            <p>Transmisor de riel diseñado para soportar todas las termorresistencias y termopares comunes. También evalúa señales de resistencia y milivoltios. La configuración es rápida y sencilla con SIMATIC PDM o un comunicador portátil. Ambos transmisores de temperatura SITRANS TR320 y TR420 combinan medición e inteligencia perfectas para cada temperatura y condición. <br><br>
+                •	Alta disponibilidad durante la medición mediante la función de respaldo en caliente (SITRANS TR420)<br>
+                •	Alta confiabilidad y estabilidad a largo plazo: ajuste del sensor (Callendar-van-Dusen) y detección de deriva del sensor (solo SITRANS TR420) para una alta precisión y un tiempo de calibración acelerado<br>
+                •	Prevención de paradas de producción por fallos de medición<br>
+                •	La mejor relación costo-beneficio para la administración de instalaciones<br>
+                •	Reducción de costos a través del mantenimiento anticipatorio<br>
+                •	Resiste entornos críticos para la seguridad: rango de temperatura extendido hasta -50 °C y aprobaciones SIL2/3<br>
+                </p>
+            <div id="close9" class="close1">Cerrar</div>
+        </div>
+    </div>
+
+    <div id="modal10" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TF</h2>
+            <p>Transforma las señales de termo resistencias, termopares, ohmios y mV en una corriente CC independiente de la carga correspondiente a la característica del sensor o una señal digital según el estándar Fieldbus Profibus PA o Foundation Fieldbus. <br><br>
+                •	Grado de protección IP66 I67 I68<br>
+                •	Para montaje remoto en aplicaciones de alta temperatura yIo vibraciones<br>
+                •	Comunicación PAIFF<br>
+            </p>
+            <div id="close10" class="close1">Cerrar</div>
+        </div>
+    </div>
+
+    <div id="modal11" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TF320/420</h2>
+            <p>El transmisor de campo se puede utilizar para todas las termo resistencias y termopares habituales. También se pueden analizar sensores de tipo resistencia y señales de milivoltios. La configuración se puede realizar de forma rápida y sencilla a través de SIMATIC PDM, el comunicador portátil o la pantalla opcional con pulsadores.<br><br>
+                •	Carcasa de acero inoxidable o aluminio<br>
+                •	Transmisor de temperatura para montaje en campo, en una amplia gama de aplicaciones<br>
+                •	Redundancia total con función de hot-backup (TF420)<br>
+                •	Cumple con los requisitos SIL 2I3<br>
+                •	Gracias a la capacidad HART 7, se pueden transferir más datos de diagnóstico directamente<br>
+                •	4-20mA<br>
+                •	Tipos de protección combinados, por ej. Ex d + Ex i<br>
+                •	alarmas de diagnóstico conformes con NE107<br>
+                •	Rango de temperatura ampliado hasta -50 °C<br>
+                </p>
+            <div id="close11" class="close1">Cerrar</div>
+        </div>
+    </div>
+
+    <div id="modal12" class="modal-container">
+        <div class="modal-content">
+            <h2>SITRANS TO500</h2>
+            <p>Transmisor de Temperatura por fibra Óptica<br><br>
+                •	Diámetro de la sonda del sensor < 2 mm<br>
+                •	Hasta 48 puntos de medida por cada sonda de sensor<br>
+                •	Instalación sencilla y económica gracias a sonda del sensor enrollable<br>
+                </p>
+            <div id="close12" class="close1">Cerrar</div>
+        </div>
+    </div>
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

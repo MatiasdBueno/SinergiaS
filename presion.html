@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+      <span class="logo_name">Instrumentación</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">
+          <i class='bx'><img src="./imagenes/home-solid.svg" alt=""></i></i>
+          <span class="link_name">Inicio</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="index.html">Inicio</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="temperatura.html">
+            <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+            <span class="link_name">Temperatura</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="flujo.html">
+            <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+            <span class="link_name">Flujo</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="flujo.html">Flujo</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="nivel.html">
+          <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+          <span class="link_name">Nivel</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="nivel.html">Nivel</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="posicionadores.html">
+          <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+          <span class="link_name">Posicionadores</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="peso.html">
+            <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+            <span class="link_name">Peso</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="peso.html">Peso</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="procesos.html">
+          <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+          <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="compcomplementarios.html">
+          <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+          <span class="link_name">Componentes complementarios</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+      </div>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>PRESIÓN</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="transmisores">TRANSMISORES</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="transmisores">
+                <a href="#">SITRANS LH300</a>
+                <img src="imagenes/sitrans-lh300.jpg" alt="">
+                <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="transmisores">
+                <a href="#">SITRANS P compact</a>
+                <img src="imagenes/sitrans-p-compact.png" alt="" >
+                <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="transmisores">
+                <a href="#">SITRANS P200/P210/P220</a>
+                <img src="imagenes/sitrans-p200-p210-p220.jpg" alt="" >
+                <button id="openModal2">Más Información</button>
+            </div>
+            <div class="product-item" category="transmisores">
+                <a href="#">SITRANS P300</a>
+                <img src="imagenes/sitrans-p300.jpg" alt="" >
+                <button id="openModal3">Más Información</button>
+            </div>
+            <div class="product-item" category="transmisores">
+                <a href="#">SITRANS P320/420</a>
+                <img src="imagenes/SITRANS P320-420.jpg" alt="" >
+                <button id="openModal4">Más Información</button>
+            </div>
+            <div class="product-item" category="transmisores">
+                <a href="#">SITRANS P500</a>
+                <img src="imagenes/sitrans-p500.jpg" alt="" >
+                <button id="openModal5">Más Información</button>
+            </div>
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS LH300</h2>
+        <p>Es un sensor sumergible para la medición de nivel hidrostático con tapas protectoras de PPE, acero inoxidable y ETFE <br>
+            •	El transmisor consta de una carcasa de acero inoxidable (Ø 30 mm) con protección mecánica IP68 y el sensor piezorresistivo con diafragma cerámico <br>
+            •	Mide niveles de líquidos en tanques, contenedores, canales y presas. <br>
+            •	Varios rangos de medición y con protección contra explosiones como opción <br>
+            </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS P compact</h2>
+        <p>Es un transmisor analógico para medir la presión absoluta y relativa que se ha desarrollado especialmente para los requisitos de las industrias alimentaria/farmacéutica y biotecnológica <br>
+            •	Diseño adecuado para aplicaciones higiénicas según recomendaciones EHEDG, FDA, y GMP <br>
+            •	Conexiones de proceso y carcasa de acero inoxidable <br>
+            •	Desviación de medida c 0,2% <br>
+            </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS P200/P210/P220</h2>
+        <p>Son transmisores compactos de rango único para medir la presión absoluta y relativa. <br>
+            •	Posee dos tipos diferentes de sensores de presión: dos sensores de acero inoxidable y un sensor de cerámica. Por lo tanto, la medición de la presión del proceso, la presión absoluta y la presión hidrostática es algo <sencillo class="br"></sencillo> 
+            •	Conversión de la presión medida a señal de 4–20 mA o 0–10 V <br>
+            •	Alta capacidad de sobrecarga <br>
+            •	Adecuado para una amplia gama de aplicaciones: para medios agresivos y no agresivos, así como para medir la presión de líquidos, gases y vapores <br>
+            
+            </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal3" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS P300</h2>
+        <p>Ofrece precisión de medición y robustez. Su carcasa de acero inoxidable con placa de identificación impresa con láser, junto con una amplia gama de conexiones de proceso higiénicas <br>
+            •	Con certificados de higiene (EHEDG, 3A), materiales y calibración eminentemente adecuados para la industria alimentaria y de bebidas y farmacéutica <br>
+            •	Especialmente adecuado para grados de protección IP68 e IP69K, limpieza CIP/SIP y medios de medición de alta viscosidad <br>
+            •	Amplias oportunidades de aplicación mediante celdas de medición para presión relativa y absoluta <br>
+            •	Fácil limpieza mediante celdas de medición con diafragma empotrado <br>
+            •	Control de procesos optimizado mediante simulaciones y diagnósticos ampliados <br>               
+            </p>
+        <div id="close3" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal4" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS P320/340</h2>
+        <p>Es el primer transmisor de presión del mercado que cuenta con manejo remoto de seguridad. El manejo remoto de seguridad de los instrumentos a través de SIMATIC PDM ahorra tiempo durante la puesta en marcha SIL: en lugar de atender manualmente cada dispositivo, pueden programar transmisores desde la sala de control. <br>
+            •	Ahorro de tiempo y esfuerzos debido a la puesta en marcha a distancia de los <br>
+            •	dispositivos SIL Desarrollado de acuerdo con la norma IEC 61508 para SIL 2I3 <br>
+            •	Reducción del tiempo de respuesta aumentando la eficiencia del proceso <br>
+            •	Listo para la Digitalización de la planta con el transmisor de presión HART 7: las funciones de registro de datos y el control de eventos ofrecen a los usuarios el control y análisis exhaustivo <br>
+            •	Fácil de usar gracias a la pantalla clara y grande y los iconos de diagnóstico según. a NAMUR NE107 y un asistente de inicio rápido <br>
+            •	Reducción de los costes de mantenimiento gracias al intervalo de prueba de hasta 15 años <br>
+            •	Transmisor homologado FM <br>                
+            </p>
+        <div id="close4" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal5" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS P compact</h2>
+        <p>Es un transmisor analógico para medir la presión absoluta y relativa que se ha desarrollado especialmente para los requisitos de las industrias alimentaria/farmacéutica y biotecnológica <br>
+            •	Diseño adecuado para aplicaciones higiénicas según recomendaciones EHEDG, FDA, y GMP <br>
+            •	Conexiones de proceso y carcasa de acero inoxidable <br>
+            •	Desviación de medida c 0,2% <br>
+            </p>
+        <div id="close5" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

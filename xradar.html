@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="flujo.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+      <span class="logo_name">Instrumentación</span>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <a href="nivelcontinuo.html">
+              <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+              <span class="link_name">Volver</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="nivelcontinuo.html">Volver</a></li>
+            </ul>
+          </li>
+      <li>
+        <div class="iocn-link">
+          <a href="presion.html">
+            <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+            <span class="link_name">Presión</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="presion.html">Presión</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="temperatura.html">
+            <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+            <span class="link_name">Temperatura</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="flujo.html">
+          <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+          <span class="link_name">Flujo</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="flujo.html">Flujo</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="posicionadores.html">
+          <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+          <span class="link_name">Posicionadores</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="peso.html">
+            <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+            <span class="link_name">Peso</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="peso.html">Peso</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="procesos.html">
+          <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+          <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="compcomplementarios.html">
+          <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+          <span class="link_name">Componentes complementarios</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+        </ul>
+      </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>NIVEL - NIVEL CONTINUO - POR RADAR</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="radar">POR RADAR</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="radar">
+              <a href="#">SITRANS LR100</a>
+              <img src="imagenes/sitranslr100serieswithlr150.jpg" alt="">
+              <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="radar">
+              <a href="#">SITRANS LR200</a>
+              <img src="imagenes/sitranslr200.jpg" alt="" >
+              <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="radar">
+              <a href="#">SITRANS LR250</a>
+              <img src="imagenes/sitranslr250-2020.jpg" alt="" >
+              <button id="openModal2">Más Información</button>
+            </div>
+            <div class="product-item" category="radar">
+              <a href="#">SITRANS LR460</a>
+              <img src="imagenes/sitranslr460.jpg" alt="" >
+              <button id="openModal3">Más Información</button>  
+            </div>
+            <div class="product-item" category="radar">
+                <a href="#">SITRANS LR560</a>
+                <img src="imagenes/sitranslr560.jpg" alt="" >
+                <button id="openModal4">Más Información</button>
+              </div>
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>SERIE SITRANS LR100</h2>
+        <p>Son transmisores de radar compactos de 80 GHz con tecnología inalámbrica Bluetooth. Para la medición de nivel de líquidos o sólidos. Con un haz angosto para instalaciones flexibles en aberturas de recipientes existentes, o de forma no intrusiva a través de recipientes de plástico.<br><br>
+            LR100: medición básica de 4-20 mA a 8 m con cable<br>
+            LR110: con comunicaciones, opciones de aprobaciones peligrosas y alcance de hasta 15 m<br>
+            LR120: con comunicaciones, mayor alcance de 30 m y pantalla de inmersión opcional para protección contra inundaciones<br>
+            LR140 - medidas básicas hasta 8 m con conexión terminal<br>
+            LR150: con comunicación HART, aprobaciones para áreas peligrosas, opción HMI local y rango de hasta 15 m<br><br>
+            
+            •	Tecnología inalámbrica Easy Bluetooth® para una configuración fácil y rápida con la aplicación Siemens SITRANS mobile IQ <br>
+            •	El haz estrecho de 80 GHz y el tamaño pequeño permiten una instalación y puesta en marcha más sencillas<br>
+            •	El microchip de radar personalizado significa que las condiciones que matan la señal, como la condensación, la acumulación o los sólidos esponjosos, no son rival para la sensibilidad extrema del microchip, las señales más débiles aún se detectan<br>
+            •	La zona de supresión cero permite un rango de medición hasta el sensor y, con una precisión de 2 mm, puede deshacerse de los costosos métodos de medición manual.<br>
+            •	Listo para digitalización e Industria 4.0 con HART 7.0 o Modbus RTU opcional para datos inteligentes de valor agregado localmente o en la nube<br>
+            </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS LR200</h2>
+        <p>Es un transmisor de nivel de radar de pulsos de 6 GHz de 2 hilos para condiciones de proceso extremas en recipientes de proceso de hasta 20 metros (66 pies). Esta tecnología es más adecuada para aplicaciones donde hay turbulencia severa o acumulación de material.<br><br>
+            •	Fácil configuración con HMI gráfica con asistente de inicio rápido o acceso remoto a través de EDD o DTM<br>
+            •	Programador portátil de infrarrojos intrínsecamente seguro para interfaz local<br>
+            •	Probado en el campo con carcasa encapsulada resistente basada en más de 10 años de experiencia<br>
+            •	Lecturas confiables con procesamiento de eco avanzado Process Intelligence para un rendimiento confiable<br>
+            •	Listo para digitalización con HART o PROFIBUS PA para conectividad<br>
+            </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS LR250</h2>
+        <p>La gama completa de antenas y conexiones de proceso, hace que este transmisor sea adecuado para casi cualquier aplicación de líquidos. Construidas para durar, estas antenas le brindan flexibilidad de nivel de líquido para recipientes de inventario y proceso.<br><br>
+            Antena con lente de polipropileno<br><br>
+            •	Sobresale en la mayoría de las aplicaciones industriales a un precio económico<br>
+            •	La bocina liviana con recubrimiento de polvo de poliéster produce una señal muy alta <br>
+            •	Polipropileno de alta resistencia a la corrosión y materiales húmedos de FKM para usar en una amplia gama de productos químicos con presión y temperatura nominales<br>
+            •	Las bridas poliméricas universales ofrecen un valor excepcional y se ajustan a los patrones de pernos DIN, ASME y JIS<br>
+            Antena de bocina 316L<br><br>
+            •	Con múltiples tamaños y clases de presión<br>
+            •	Emisor de PTFE y sello FKM, sello FFKM opcional para una mayor resistencia a la corrosión<br>
+            •	Bridas y conexiones de proceso roscadas según las normas ASME/ANSI y DIN, típicas en aplicaciones de petróleo y gas<br>
+            •	Rango de temperatura más alto hasta 200 °C (392 °F)<br>
+            •	Ideal para pozos tranquilizadores y tuberías de derivación<br>
+            Antena encapsulada bridada con lente de PTFE<br><br>
+            •	Puede manejar productos químicos extremadamente corrosivos y altas temperaturas/presiones<br>
+            •	Ideal para aplicaciones de control de procesos en la industria química<br>
+            •	Lente TFM TM PTFE aprobada por la FDA y fácil de limpiar<br>
+            •	Un reemplazo rentable para antenas hechas de metales exóticos<br>
+            Antena encapsulada higiénica HEA<br><br>
+            •	Antena higiénica adecuada para las industrias láctea, cervecera y farmacéutica<br>
+            •	El diseño aprobado por EHEDG y 3A es fácil de limpiar<br>
+            •	Superficies húmedas de acero inoxidable 316L y TFM TM PTFE adecuadas para operaciones de limpieza en el lugar<br>
+            •	La más amplia gama de conexiones de proceso<br>
+            </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal3" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS LR460</h2>
+        <p>Para polvos de baja densidad y dieléctrico extremadamente bajo, el SITRANS LR460 de 25 GHz es la solución preferida. Con una antena de bocina con un haz de 8 grados, este dispositivo FMCW de 4 hilos ha demostrado su eficacia en miles de aplicaciones.<br><br>
+            •	Process Intelligence: procesamiento de eco avanzado para un rendimiento fiable<br>
+            •	Programador portátil de infrarrojos intrínsecamente seguro<br>
+            •	La señal extremadamente alta produce un alto rendimiento (alta relación señal-ruido)<br>
+            •	Asistente de inicio rápido para la configuración<br>
+            </p>
+        <div id="close3" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal4" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS LR560</h2>
+        <p>Es el transmisor de radar de sólidos de primera elección y el más fácil de usar del mercado. Con una alta frecuencia de banda W (78 GHz), un haz estrecho de 4 grados y una longitud de onda corta, funciona de manera confiable en materiales sólidos desde prácticamente cualquier ubicación de instalación.<br><br>
+            •	Process Intelligence: procesamiento de eco avanzado para un rendimiento fiable<br>
+            •	Fácil configuración con interfaz de pantalla local (LDI) con asistente de inicio rápido o acceso remoto a través de EDD o DTM<br>
+            •	La banda W (78 GHz) de alta frecuencia proporciona un haz muy estrecho, prácticamente sin ruido de boquilla de montaje y una reflexión óptima de sólidos inclinados <br>
+            •	Diseño resistente de acero inoxidable para aplicaciones industriales  <br>
+            •	Brida de apuntador para optimizar las lecturas en el área del cono del silo <br>
+            •	Pulsadores o programador portátil de infrarrojos intrínsecamente seguro opcional para interfaz local<br>
+            •	La antena de la lente es altamente resistente a la acumulación de productos  <br>
+            •	Se incluye una conexión de purga de aire para la auto limpieza de sólidos extremadamente pegajosos  <br>
+            </p>
+        <div id="close4" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

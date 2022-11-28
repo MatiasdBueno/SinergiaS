@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="flujo.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+      <span class="logo_name">Instrumentación</span>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <a href="nivelultrasonico.html">
+              <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+              <span class="link_name">Volver</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="nivelultrasonico.html">Volver</a></li>
+            </ul>
+          </li>
+      <li>
+        <div class="iocn-link">
+          <a href="presion.html">
+            <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+            <span class="link_name">Presión</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="presion.html">Presión</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="temperatura.html">
+            <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+            <span class="link_name">Temperatura</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="flujo.html">
+          <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+          <span class="link_name">Flujo</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="flujo.html">Flujo</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="posicionadores.html">
+          <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+          <span class="link_name">Posicionadores</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="peso.html">
+            <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+            <span class="link_name">Peso</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="peso.html">Peso</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="procesos.html">
+          <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+          <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="compcomplementarios.html">
+          <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+          <span class="link_name">Componentes complementarios</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+        </ul>
+      </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>NIVEL - ULTRASONICO - TRANSDUCTORES</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="transductor">TRANSDUCTORES</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="transductor">
+              <a href="#">Echomax XPS</a>
+              <img src="imagenes/theprobe.jpg" alt="">
+              <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="transductor">
+              <a href="#">Echomax XRS-5</a>
+              <img src="imagenes/sitranslu150and180.jpg" alt="" >
+              <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="transductor">
+              <a href="#">Transductor ST-H</a>
+              <img src="imagenes/probelu.jpg" alt="" >
+              <button id="openModal2">Más Información</button>
+            </div>
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>Echomax XPS</h2>
+        <p>Utilizan tecnología ultrasónica para medir el nivel en una amplia gama de líquidos y sólidos. Los transductores se pueden sumergir por completo, son resistentes al vapor y a los productos químicos corrosivos, y se pueden instalar sin bridas.<br><br>
+            •	Compensación integral de temperatura<br>
+            •	El efecto de timbre bajo reduce la distancia de borrado<br>
+            •	Revestimiento de espuma opcional para aplicaciones polvorientas<br>
+            •	Auto limpiante y bajo mantenimiento<br>
+            •	Químicamente resistente<br>
+            •	Sellado herméticamente<br>
+            </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>Echomax XRS-5</h2>
+        <p>El transductor ultrasónico proporciona un control de nivel continuo y fiable de líquidos y lodos en estaciones de bombeo estrechas/pozos húmedos, canales, vertederos y lechos de filtración.<br><br>
+            •	Ángulo de haz estrecho de solo 10°<br>
+            •	Auto limpiante y bajo mantenimiento<br>
+            •	La carcasa de copolímero de PVDF resistente a productos químicos y la cara de caucho CSM están diseñadas para ofrecer la máxima resistencia al metano, el agua salada, las sustancias cáusticas y los productos químicos agresivos.<br>
+            •	Totalmente sumergible: grado de protección IP68<br>
+            •	Fácil instalación con conexión 1" NPT o R 1" BSPT<br>
+            </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>Transductor ST-H</h2>
+        <p>Utilizan tecnología ultrasónica para medir el nivel en tanques de almacenamiento de productos químicos y líquidos. El diseño angosto del ST-H permite montar el transductor en un tubo vertical de 2" (50,8 mm). Cuando se monta correctamente, está completamente protegido del proceso e incluso se puede usar en entornos hostiles y corrosivos.<br><br>
+            •	Compensación integral de temperatura<br>
+            •	El efecto de timbre bajo reduce la distancia de borrado<br>
+            •	Auto limpiante y bajo mantenimiento<br>
+            •	Químicamente resistente<br>
+            •	Sellado herméticamente<br>
+            </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

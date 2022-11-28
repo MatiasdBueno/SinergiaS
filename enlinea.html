@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="coriolis.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+          <span class="logo_name">Instrumentación- <br> -Ultrasonico - En linea</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+              <a href="flujo.html">
+                <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+                <span class="link_name">Volver</span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="flujo.html">Volver</a></li>
+              </ul>
+            </li>
+            <li>
+            <div class="iocn-link">
+              <a href="presion.html">
+                <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+                <span class="link_name">Presión</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="presion.html">Presión</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="temperatura.html">
+                <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+                <span class="link_name">Temperatura</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="nivel.html">
+              <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+              <span class="link_name">Nivel</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="nivel.html">Nivel</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="posicionadores.html">
+              <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+              <span class="link_name">Posicionadores</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="peso.html">
+                <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+                <span class="link_name">Peso</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="peso.html">Peso</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="procesos.html">
+              <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+              <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="compcomplementarios.html">
+              <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+              <span class="link_name">Componentes complementarios</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+            </ul>
+          </li>
+        <li>
+      <div class="profile-details">
+        <div class="profile-content">
+        </div>
+      </div>
+    </li>
+    </ul>
+      </div>
+      <section class="home-section">
+        <div class="home-content">
+          <i class='bx bx-menu' ></i>
+        </div>
+      </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>FLUJO - ULTRASONICO - EN LINEA</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="industria">INDUSTRIA</a>
+            <a href="#" class="category_item small" category="reacon">REACONDICIONAMIENTO</a>
+            <a href="#" class="category_item" category="unidad">UNIDAD</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="industria">
+              <a href="#">SITRANS FUS SONO 3100-SITRANS FU060</a>
+              <img src="imagenes/sitrans-f-us-sono3100.jpg" alt="">
+              <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="industria">
+              <a href="#">SITRANS FUS SONO 3300-SITRANS FUS060</a>
+              <img src="imagenes/sitrans-f-us-sono3300.jpg" alt="" >
+              <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="industria">
+              <a href="#">SITRANS FUS060 <br> <br></a>
+              <img src="imagenes/sitrans-fus060.jpg" alt="" >
+              <button id="openModal2">Más Información</button>
+            </div>
+            <div class="product-item" category="reacon">
+              <a href="#">SITRANS FUS SONOKIT</a>
+              <img src="imagenes/sitrans-f-us-sonokit.jpg" alt="" >
+              <button id="openModal3">Más Información</button>
+            </div>
+            <div class="product-item" category="reacon">
+              <a href="#">SITRANS FUS880</a>
+              <img src="imagenes/sitrans-fus880.jpg" alt="" >
+              <button id="openModal4">Más Información</button>
+            </div>
+            <div class="product-item" category="unidad">
+              <a href="#">SITRANS FUE380</a>
+              <img src="imagenes/sitrans-fue380-fus380 (1).jpg" alt="" >
+              <button id="openModal5">Más Información</button>
+            </div>
+            <div class="product-item" category="unidad">
+              <a href="#">SITRANS FUE950</a>
+              <img src="imagenes/sitrans-fue950.jpg" alt="" >
+              <button id="openModal6">Más Información</button>
+            </div>
+            <div class="product-item" category="unidad">
+              <a href="#">SITRANS FUS080</a>
+              <img src="imagenes/sitrans-fus080.jpg" alt="" >
+              <button id="openModal7">Más Información</button>
+            </div>
+            <div class="product-item" category="unidad">
+              <a href="#">SITRANS FUS380</a>
+              <img src="imagenes/sitrans-fue380-fus380.jpg" alt="" >
+              <button id="openModal8">Más Información</button>
+            </div>
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FUS SONO 3100-SITRANS FU060</h2>
+        <p>Consta de un sensor SITRANS FUS SONO 3100 con transductores de junta tórica o de brida según la aplicación. El transmisor SITRANS FUS060 está diseñado para aplicaciones de alto rendimiento y diseñado para instalación remota en entornos peligrosos y no peligrosos. <br><br>
+          •	Es adecuado para la instalación separada de sensor y transmisor<br>
+          •	Tecnología no invasiva de fácil intercambio de transductores integrados sin necesidad de tiempo de inactividad o parada del proceso<br>
+          </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FUS SONO 3300-SITRANS FUS060</h2>
+        <p>Consta de un sensor SITRANS FUS SONO 3300 y un transmisor SITRANS FUS060. El sensor está disponible en acero al carbono y está equipado con transductores integrados. También viene con cables de señal encerrados en tubos de acero inoxidable.<br><br>
+          •	Excelente inmunidad contra las impurezas y los obstáculos en el agua. <br>
+          •	Fiable: estabilidad a largo plazo y medición lineal<br>
+          </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FUS060</h2>
+        <p>Se basa en tecnología probada para la medición de caudal volumétrico y es ideal para optimizar la eficiencia cuando se requiere una alta precisión. Viene de serie con 2 rutas y cuenta con diagnósticos avanzados, certificación ATEX y comunicación por bus.<br><br>
+          •	Mayor precisión e inmunidad contra obstáculos gracias a 4 rutas <br>
+          •	Bajo mantenimiento - Estabilidad de las mediciones a largo plazo<br>
+          •	Monitoreo mejorado - Capacidades de diagnóstico extendidas<br>
+          </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal3" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FUS SONOKIT</h2>
+        <p>Ofrece una alternativa sencilla y precisa a los caudalímetros tradicionales, ya que puede adaptarse a las tuberías existentes. Al ser un caudalímetro ultrasónico basado en el tiempo de tránsito, SITRANS FUS SONOKIT tiene transductores en línea que aseguran una precisión y un rendimiento superiores. <br><br>
+          •	El kit incluye todas las piezas necesarias y herramientas especiales para realizar la instalación como caudalímetro de 1 o 2 vías.<br>
+          •	Apto para enterrar e inundar constantemente<br>
+          •	Mínimo mantenimiento - Construcción sólida sin partes móviles<br>
+          </p>
+        <div id="close3" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal4" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FUS880</h2>
+        <p>Es un caudalímetro alimentado por batería que se puede instalar en tuberías existentes y está aprobado para instalación y funcionamiento subterráneos. Ha sido desarrollado especialmente para la industria del riego y puede medir en tuberías de pared simple o doble y en construcciones lisas o corrugadas. El medidor tiene transductores húmedos que garantizan una precisión y un rendimiento superiores. <br><br>
+          •	Posee salidas de pulso aisladas galvánicamente para ambas direcciones de flujo y un display que indica valores medidos, señal e información de operación.<br>
+          •	El sensor se puede enterrar fácilmente y soportar inundaciones constantes<br>
+          •	lectura rápida y sencilla de los valores medidos (caudal y volumen)<br>
+          </p>
+        <div id="close4" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal5" class="modal-container">
+  <div class="modal-content">
+      <h2>SITRANS FUE380</h2>
+      <p>El SITRANS FUE380 de 2 pistas es la versión aprobada para transferencia de custodia del SITRANS FUS380. <br><br>
+        •	Flexibilidad para personalizar su solución de caudalímetro perfecta<br>
+        •	Diseñado para proporcionar una medición de energía precisa de alta resolución.<br>
+        •	Proporciona un rendimiento sin concesiones para aplicaciones a base de agua de alto volumen<br>
+        •	Pantalla equipada con una interfaz óptica IrDA para la comunicación con SIMATIC PDM, que se puede utilizar para la transferencia de datos y la programación.<br>
+        •	Los módulos adicionales RS 232 y RS 485 opcionales incluyen el protocolo MODBUS RTU.<br>
+        •	Homologado según la directiva (MID, EN 1434 y OIML R75) son válidas para sistemas de medida de energía. <br>
+        •	Transferencia de custodia sellada para garantizar la seguridad total de los datos<br>
+        </p>
+      <div id="close5" class="close1">Cerrar</div>
+  </div>
+</div>
+
+<div id="modal6" class="modal-container">
+  <div class="modal-content">
+      <h2>SITRANS FUE950</h2>
+      <p>Calculador de energía universal aprobado para transferencia de custodia. Está diseñado para su uso en aplicaciones de agua caliente, agua fría y refrigeración/calefacción. La calculadora tiene una construcción modular, lo que significa que puede equiparse con módulos de salida opcionales cuando se solicita. Estos incluyen una salida de pulsos, una entrada de pulsos, una salida de corriente y un módulo adicional M-Bus.<br><br>
+        •	Homologado según la directiva MID, para sistemas de medida de energía <br>
+        •	Aprobación de refrigeración (según el estándar nacional alemán PTB K7.2)  <br>
+        •	Adecuado para conexión de sensor de temperatura de 2 y 4 hilos  <br>
+        •	Lectura óptica de datos M-Bus según EN 1434<br>
+        •	Valores instantáneos de energía y caudal volumétrico<br>
+        •	Módulos opcionales de entrada/salida flexibles<br>
+        •	Batería de larga duración (hasta 16 años)<br>
+        •	Opción para 2 salidas de corriente (4 ... 20mA, pasiva)<br>
+        </p>
+      <div id="close6" class="close1">Cerrar</div>
+  </div>
+</div>
+
+<div id="modal7" class="modal-container">
+  <div class="modal-content">
+      <h2>SITRANS FUS080</h2>
+      <p>Transmisor basado en tiempo de tránsito diseñado para la medición ultrasónica de caudal con cualquier sensor de la serie SITRANS FUS380 / SITRANS FUE380 en línea.<br><br>
+        •	Puesta en marcha sencilla, con pantalla de un solo botón<br>
+        •	Precisión óptima, principio de medición de 2 vías<br>
+        •	Aplicación versátil, medición de todas las calidades del agua<br>
+        </p>
+      <div id="close7" class="close1">Cerrar</div>
+  </div>
+</div>
+
+<div id="modal8" class="modal-container">
+  <div class="modal-content">
+      <h2>SITRANS FUS380</h2>
+      <p>Es un caudalímetro de 2 vías alimentado por batería o alimentado por la red eléctrica diseñado para numerosas aplicaciones estándar. Se puede utilizar en todas las aplicaciones de servicios públicos para el control del flujo de agua.  <br><br>
+        •	Solución de caudalímetro ideal y personalizable<br>
+        •	Pantalla equipada con una interfaz óptica IrDA para la comunicación con SIMATIC PDM, que se puede utilizar para la transferencia de datos y la programación.<br>
+        •	Los módulos adicionales RS 232 y RS 485 opcionales incluyen el protocolo MODBUS RTU.<br>
+        •	Diseñado para proporcionar una medición de energía de alta resolución<br>
+        •	Rendimiento sin concesiones, para aplicaciones a base de agua de alto volumen, adecuado para todas las calidades de agua.<br>
+        </p>
+      <div id="close8" class="close1">Cerrar</div>
+  </div>
+</div>
+
+
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+          <span class="logo_name">Instrumentación</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="procesos.html">
+                <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+                <span class="link_name">Volver</span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="procesos.html">Volver</a></li>
+              </ul>
+            </li>
+          <li>
+            <div class="iocn-link">
+              <a href="presion.html">
+                <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+                <span class="link_name">Presión</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="presion.html">Presión</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="temperatura.html">
+                <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+                <span class="link_name">Temperatura</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="flujo.html">
+                <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+                <span class="link_name">Flujo</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="flujo.html">Flujo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="nivel.html">
+              <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+              <span class="link_name">Nivel</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="nivel.html">Nivel</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="posicionadores.html">
+              <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+              <span class="link_name">Posicionadores</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="peso.html">
+              <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+              <span class="link_name">Peso</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="peso.html">Peso</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="compcomplementarios.html">
+              <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+              <span class="link_name">Componentes complementarios</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+            </ul>
+          </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+      </div>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>PESO - PROTECCIÓN DE PROCESOS: SENSORES MOVIMIENTO</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="sensores-mov">PROTECCIÓN DE PROCESOS: SENSORES MOVIMIENTO</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="sensores-mov">
+                <a href="#">Milltronics MFA 4p</a>
+                <img src="imagenes/drehzahlsensor-mfa-.jpg" alt="">
+                <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="sensores-mov">
+                <a href="#">Milltronics MSP-7</a>
+                <img src="imagenes/P_Fi01_XX_05254i.jpg" alt="">
+                <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="sensores-mov">
+                <a href="#">SITRANS WM300 MFA</a>
+                <img src="imagenes/drehzahlsensor-wm300.png" alt="">
+                <button id="openModal2">Más Información</button>
+            </div>
+            <div class="product-item" category="sensores-mov">
+                <a href="#">WM100</a>
+                <img src="imagenes/drehzahlsensor-wm100-.jpg" alt="">
+                <button id="openModal3">Más Información</button>
+            </div>
+
+
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>Milltronics MFA 4p</h2>
+        <p>El controlador de alarma de falla de movimiento Milltronics MFA 4p es un sistema de sensor de movimiento de punto de ajuste único altamente sensible, que se utiliza con las sondas Milltronics MSP y XPP. Detecta cambios en el movimiento y la velocidad de equipos giratorios, alternativos o transportadores. Advierte del mal funcionamiento del equipo y señala a través de contactos para apagar la maquinaria en caso de ralentización o falla.<br><br>
+            •	Manera rentable de proteger valiosos equipos de proceso<br>
+            •	Detección de sobrevelocidad o subvelocidad seleccionable por interruptor<br>
+            •	Ajuste del punto de consigna 2 a 3000 PPM (pulsos/minuto)<br>
+            •	Retardo de tiempo de inicio ajustable<br>
+            •	Indicación visual del funcionamiento de la sonda y el estado del relé<br>
+            </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>MILLTRONICS MSP-7</h2>
+        <p>Es un sensor de movimiento de 3 hilos de alta resistencia que proporciona una salida de colector abierto NPN a los PLC.<br><br>
+            •	Espacio de hasta 100 mm (4 pulgadas) entre el objetivo y la sonda<br>
+            •	Construcción resistente a la corrosión<br>
+            •	Propósito general, adecuado para la mayoría de las aplicaciones industriales; los diseños resistentes de la sonda brindan una confiabilidad inigualable<br>
+            </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS WM300 MFA</h2>
+        <p>Detecta cambios en el movimiento y la velocidad de equipos giratorios, alternativos o transportadores. Advierte del mal funcionamiento del equipo y señala a través de contactos para apagar la maquinaria en caso de ralentización o falla.<br><br>
+            •	Manera rentable de proteger valiosos equipos de proceso<br>
+            •	Detección de punto de ajuste de velocidad excesiva y insuficiente<br>
+            •	Rango de ajuste del punto de ajuste 2 a 5 000 Hz (120 a 300 000 ppm)<br>
+            •	Retardo de tiempo de inicio ajustable<br>
+            •	Indicación visual del funcionamiento de la sonda y el estado del relé<br>
+            </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal3" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS WM100</h2>
+        <p>es un interruptor de alarma de velocidad cero para servicio pesado. Esta unidad sin contacto proporciona una protección rentable del equipo incluso en las condiciones más duras. Esta unidad robusta es impermeable al polvo, la suciedad, la acumulación y la humedad y es ideal para las industrias primarias, incluidas la minería, los agregados y el cemento.<br><br>
+            •	Rango de medición de separación de hasta 100 mm (4")<br>
+            •	Robusto, de bajo mantenimiento adecuado para entornos difíciles<br>
+            •	Proporciona una protección rentable<br>
+            •	Indicación visual del pulso disparado por el objetivo<br>
+            •	Máximo 3000 pulsos por minuto<br>
+            </p>
+        <div id="close3" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

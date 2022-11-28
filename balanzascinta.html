@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+          <span class="logo_name">Instrumentación</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="5peso.html">
+                <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+                <span class="link_name">Volver</span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="5peso.html">Volver</a></li>
+              </ul>
+            </li>
+          <li>
+            <div class="iocn-link">
+              <a href="presion.html">
+                <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+                <span class="link_name">Presión</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="presion.html">Presión</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="temperatura.html">
+                <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+                <span class="link_name">Temperatura</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="flujo.html">
+                <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+                <span class="link_name">Flujo</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="flujo.html">Flujo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="nivel.html">
+              <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+              <span class="link_name">Nivel</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="nivel.html">Nivel</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="posicionadores.html">
+              <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+              <span class="link_name">Posicionadores</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="procesos.html">
+              <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+              <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="compcomplementarios.html">
+              <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+              <span class="link_name">Componentes complementarios</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+            </ul>
+          </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+      </div>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>PESO - PESAJE DE CINTA - BALANZAS DE CINTA</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="balanzascinta">BALANZAS DE CINTA</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="balanzascinta">
+                <a href="#">Milltronics MCS</a>
+                <img src="imagenes/belt-scale-milltronics-mcs.jpg" alt="">
+                <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="balanzascinta">
+                <a href="#">Milltronics MLC</a>
+                <img src="imagenes/belt-scale-milltronics-mlc.jpg" alt="">
+                <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="balanzascinta">
+                <a href="#">Milltronics MMI</a>
+                <img src="imagenes/belt-scale-milltronics-mmi.jpg" alt="">
+                <button id="openModal2">Más Información</button>
+            </div>
+            <div class="product-item" category="balanzascinta">
+                <a href="#">Milltronics MSI</a>
+                <img src="imagenes/belt-scale-milltronics-msi.jpg" alt="">
+                <button id="openModal3">Más Información</button>
+            </div>
+            <div class="product-item" category="balanzascinta">
+                <a href="#">Milltronics MUS</a>
+                <img src="imagenes/belt-scale-milltronics-mus.jpg" alt="">
+                <button id="openModal4">Más Información</button>
+            </div>
+            <div class="product-item" category="balanzascinta">
+                <a href="#">Milltronics WD600</a>
+                <img src="imagenes/belt-scale-milltronics-wd600.jpg" alt="">
+                <button id="openModal5">Más Información</button>
+            </div>
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>Balanza de cinta Milltronics MCS</h2>
+        <p>Es una báscula de cinta compacta, robusta, modular y para trabajos pesados. <br>
+            </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>Balanza de cinta Milltronics MLC</h2>
+        <p>Es una báscula de baja capacidad para carga de cinta ligera.</p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>Balanza de cinta Milltronics MMI</h2>
+        <p>Es una báscula de cinta de rodillos múltiples de alta precisión y servicio pesado que se utiliza para procesos críticos y control de carga.</p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal3" class="modal-container">
+    <div class="modal-content">
+        <h2>Balanza de cinta Milltronics MSI</h2>
+        <p>Es una báscula de cinta de un solo rodillo de fotograma completo y alta precisión para trabajo pesado que se utiliza para el control de proceso y descarga.</p>
+        <div id="close3" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal4" class="modal-container">
+    <div class="modal-content">
+        <h2>Balanza de cinta Milltronics MUS</h2>
+        <p>Es una báscula de cinta de diseño modular, de servicio mediano a pesado para la indicación de procesos, que proporciona un pesaje continuo en línea a un costo mínimo.</p>
+        <div id="close4" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal5" class="modal-container">
+    <div class="modal-content">
+        <h2>Balanza de cinta Milltronics WD600</h2>
+        <p>Es una báscula de cinta deslizante de servicio liviano a mediano que se utiliza para el control de procesos y carga en la fabricación.</p>
+        <div id="close5" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

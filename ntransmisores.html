@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="flujo.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+      <span class="logo_name">Instrumentación</span>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <a href="nivelultrasonico.html">
+              <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+              <span class="link_name">Volver</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="nivelultrasonico.html">Volver</a></li>
+            </ul>
+          </li>
+      <li>
+        <div class="iocn-link">
+          <a href="presion.html">
+            <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+            <span class="link_name">Presión</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="presion.html">Presión</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="temperatura.html">
+            <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+            <span class="link_name">Temperatura</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="flujo.html">
+          <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+          <span class="link_name">Flujo</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="flujo.html">Flujo</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="posicionadores.html">
+          <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+          <span class="link_name">Posicionadores</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="peso.html">
+            <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+            <span class="link_name">Peso</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="peso.html">Peso</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="procesos.html">
+          <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+          <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="compcomplementarios.html">
+          <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+          <span class="link_name">Componentes complementarios</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+        </ul>
+      </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>NIVEL - ULTRASONICO - TRANSMISORES</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="transmisores">TRANSMISORES</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="transmisores">
+              <a href="#">LA SONDA</a>
+              <img src="imagenes/theprobe.jpg" alt="">
+              <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="transmisores">
+              <a href="#">SITRANS LU150/LU180</a>
+              <img src="imagenes/sitranslu150and180.jpg" alt="" >
+              <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="transmisores">
+              <a href="#">SITRANS Probe LU</a>
+              <img src="imagenes/probelu.jpg" alt="" >
+              <button id="openModal2">Más Información</button>
+            </div>
+            <div class="product-item" category="transmisores">
+              <a href="#">SITRANS Probe LU240</a>
+              <img src="imagenes/sitransprobelu240.png" alt="" >
+              <button id="openModal3">Más Información</button>
+            </div>
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>LA SONDA</h2>
+        <p>La sonda es un transmisor de nivel ultrasónico integrado de corto alcance, ideal para líquidos y lodos en recipientes abiertos o cerrados. El transductor está disponible en copolímero PVDF, lo que hace que el dispositivo sea adecuado para su uso en una amplia variedad de aplicaciones.<br><br>
+            •	Fácil de instalar, programar y mantener<br>
+            •	Preciso y confiable<br>
+            •	Modelos sanitarios disponibles<br>
+            •	Procesamiento de eco confiable de Process Intelligence<br>
+            •	Compensación integral de temperatura<br>
+            </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS LU150/180</h2>
+        <p>Es un transmisor de nivel ultrasónico integrado de corto alcance ideal para líquidos y lodos en sus depósitos abiertos o cerrados.  <br><br>
+            •	Para rangos cortos, mediciones simples<br>
+            •	Fácil de instalar y mantener<br>
+            •	Fácil programación con dos botones<br>
+            •	Transductor PVDF para compatibilidad química<br>
+            •	Clasificación IP68<br>
+            </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS Probe LU</h2>
+        <p>Es un transmisor de medición de nivel ultrasónico alimentado por lazo de 2 hilos para medir depósitos de almacenamiento, lechos de filtración y flujo de canal abierto en las industrias de agua y aguas residuales, alimentos y química.<br><br>
+            •	Comunicaciones PROFIBUS PA<br>
+            •	Programación mediante software de PC o programador portátil de infrarrojos<br>
+            •	Clasificación IP68<br>
+            •	Medición de nivel, volumen y caudal<br>
+            •	Transductor de PVDF o ETFE para compatibilidad química<br>
+            </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal3" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS Probe LU240</h2>
+        <p>Es una solución de nivel rentable, compacta e inteligente para el inventario de productos químicos líquidos, el control de recipientes de proceso pequeños y la medición de nivel en la industria medioambiental.</p>
+        <div id="close3" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

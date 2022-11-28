@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+          <span class="logo_name">Instrumentación</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="compcomplementarios.html">
+                <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+                <span class="link_name">Volver</span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="compcomplementarios.html">Volver</a></li>
+              </ul>
+            </li>
+          <li>
+            <div class="iocn-link">
+              <a href="presion.html">
+                <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+                <span class="link_name">Presión</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="presion.html">Presión</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="temperatura.html">
+                <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+                <span class="link_name">Temperatura</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="flujo.html">
+                <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+                <span class="link_name">Flujo</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="flujo.html">Flujo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="nivel.html">
+              <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+              <span class="link_name">Nivel</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="nivel.html">Nivel</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="posicionadores.html">
+              <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+              <span class="link_name">Posicionadores</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="peso.html">
+              <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+              <span class="link_name">Peso</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="peso.html">Peso</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="procesos.html">
+                <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+                <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+              </ul>
+            </li>
+    <div class="profile-details">
+      <div class="profile-content">
+      </div>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>COMPONENTES COMPLEMENTARIOS - PANTALLA</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="pantalla">PANTALLA</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="pantalla">
+                <a href="#">SITRANS RD100</a>
+                <img src="imagenes/sitransrd100.jpg" alt="">
+                <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="pantalla">
+                <a href="#">SITRANS RD150</a>
+                <img src="imagenes/sitrans-rd150.png" alt="">
+                <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="pantalla">
+                <a href="#">SITRANS RD200</a>
+                <img src="imagenes/sitransrd200.jpg" alt="">
+                <button id="openModal2">Más Información</button>
+            </div>
+            <div class="product-item" category="pantalla">
+                <a href="#">SITRANS RD300</a>
+                <img src="imagenes/sitransrd300.jpg" alt="">
+                <button id="openModal3">Más Información</button>
+            </div>
+
+
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS RD100</h2>
+        <p>Es una pantalla digital remota cerrada alimentada por lazo de 2 hilos para instrumentación de procesos. La calibración consiste en un proceso rápido de dos pasos, lo que hace que esta pantalla sea fácil de instalar.<br><br>
+          •	Configuración fácil<br>
+          •	Aprobado para ubicaciones peligrosas<br>
+          •	Caja resistente a impactos NEMA 4X, IP67<br>
+          •	Calibración sencilla en dos pasos<br>
+          •	Dos modos de entrada permiten un fácil mantenimiento, sin necesidad de interrumpir el bucle<br>    
+          </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS RD150</h2>
+        <p>Es una pantalla digital remota para dispositivos HART y de 4 a 20 mA. Configuración básica fácil de usar de instrumentos HART usando comandos HART y configuración avanzada de instrumentos conectados usando USB y computadora.<br><br>
+          •	Facilidad de uso a través de la pantalla controlada por menú de 4 botones<br>
+          •	Pantalla retroiluminada para visibilidad en diversas condiciones de luz<br>
+          •	Opciones de montaje flexibles para una fácil instalación<br>
+          •	Configuración completa de sensores conectados con comunicador USB opcional y PC<br>
+          </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS RD200</h2>
+        <p>Es una pantalla digital remota de montaje en panel de entrada universal para instrumentación de procesos. Los datos se pueden recopilar y registrar de forma remota utilizando el software de configuración y registro disponible. y presentado desde hasta 100 pantallas en su computadora local. <br><br>
+          •	Fácil configuración y programación a través de los botones del panel frontal o de forma remota mediante el software RD <br>
+          •	Pantalla legible a la luz del sol en diferentes intensidades<br>
+          •	Fuente de alimentación del transmisor de 24 V CC simple o doble<br>
+          •	Comunicación en serie mediante protocolo incorporado o Modbus RTU<br>
+          •	Relés opcionales para indicación de alarma o aplicaciones de control de procesos <br>
+          •	Función de raíz cuadrada o lineal admitida <br>
+          •	Función de copia de medidor para reducir el tiempo de configuración, el costo y los errores <br>
+          •	El software RD admite la configuración, el monitoreo y el registro remotos <br>
+          •	Opción 2X para pantalla LED roja de 30,5 mm (1,2 pulgadas) de altura <br>
+          </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal3" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS RD300</h2>
+        <p>Es una pantalla remota para instrumentos de nivel, flujo, presión, pesaje y otros procesos. Esta pantalla también actúa como un índice/totalizador multipropósito y fácil de usar, ideal para aplicaciones de control, totales y de índice de flujo. Los datos se pueden recopilar, registrar y presentar de forma remota en su computadora local utilizando el software RD descargable gratuito. <br><br>
+          •	Fácil configuración y programación a través de los botones del panel frontal o utilizando el software RD gratuito disponible a través de una unidad USB<br>
+          •	Pantalla legible a la luz del sol en diferentes intensidades<br>
+          •	Fuente de alimentación del transmisor de 24 V CC simple o doble<br>
+          •	Comunicación en serie mediante protocolo integrado o Modbus RTU<br>
+          •	Admite hasta 8 relés y 8 E/S digitales para control de procesos y alarmas<br>
+          •	Linealización de 32 puntos, raíz cuadrada o linealización exponencial<br>
+          •	Control de alternancia multibomba<br>
+          •	Totalizador de 9 dígitos con función de desbordamiento total<br>
+          •	Gran pantalla de dos líneas y 6 dígitos<br>
+          •	Configure, monitoree y registre datos desde una PC<br>
+          •	Opción de entrada dual con funciones matemáticas<br>
+          </p>
+        <div id="close3" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

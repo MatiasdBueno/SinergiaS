@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+          <span class="logo_name">Instrumentación</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="peso.html">
+                <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+                <span class="link_name">Volver</span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="peso.html">Volver</a></li>
+              </ul>
+            </li>
+          <li>
+            <div class="iocn-link">
+              <a href="presion.html">
+                <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+                <span class="link_name">Presión</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="presion.html">Presión</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="temperatura.html">
+                <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+                <span class="link_name">Temperatura</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="flujo.html">
+                <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+                <span class="link_name">Flujo</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="flujo.html">Flujo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="nivel.html">
+              <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+              <span class="link_name">Nivel</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="nivel.html">Nivel</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="posicionadores.html">
+              <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+              <span class="link_name">Posicionadores</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="procesos.html">
+              <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+              <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="compcomplementarios.html">
+              <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+              <span class="link_name">Componentes complementarios</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+            </ul>
+          </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+      </div>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>PESO - CAUDALIMETROS DE PESO</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="sensoresvelocidad">CAUDALIMETROS DE PESO</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="sensoresvelocidad">
+                <a href="#">Milltronics SF500</a>
+                <img src="imagenes/sf500.jpg" alt="">
+                <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="sensoresvelocidad">
+                <a href="#">SITRANS Serie WF300</a>
+                <img src="imagenes/p-wt02-xx-02352h.jpg" alt="">
+                <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="sensoresvelocidad">
+                <a href="#">SITRANS WF100</a>
+                <img src="imagenes/p-wt02-xx-02389h.jpg" alt="">
+                <button id="openModal2">Más Información</button>
+            </div>
+            <div class="product-item" category="sensoresvelocidad">
+                <a href="#">SITRANS WF200 y WF250</a>
+                <img src="imagenes/p-wt02-xx-02390h.jpg" alt="">
+                <button id="openModal3">Más Información</button>
+            </div>
+            <div class="product-item" category="sensoresvelocidad">
+                <a href="#">SITRANS WFS300</a>
+                <img src="imagenes/ile-37-0208-2.jpg" alt="">
+                <button id="openModal4">Más Información</button>
+            </div>
+
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>Milltronics SF500</h2>
+        <p>Procesa las señales del sensor para obtener una tasa de flujo precisa y un peso totalizado de sólidos a granel. Puede asumir funciones de control de nivel inferior que tradicionalmente manejan otros dispositivos y es compatible con los buses de comunicación industrial más populares. Su función patentada de equilibrio de celdas de carga elimina la coincidencia de celdas de carga.<br><br>
+
+            •	Calibración electrónica y cero automático<br>
+            •	Alarmas por tasa o error de diagnóstico<br>
+            •	Modbus integrado, PROFIBUS DP opcional, ProfiNet, Modbus TCP/IP, EtherNet/IP y DeviceNet™<br>
+            •	Calibración en línea y control PID dual con tarjeta de E/S analógica opcional<br>
+            •	Linealizador multipunto para una alta precisión de reducción<br>
+            •	Hasta 8 tramos múltiples para la aplicación de más de una condición de flujo y/o material<br>
+            •	Entrada de medidor de humedad con tarjeta de E/S analógica opcional para el cálculo del peso seco<br>
+            </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS Serie WF300</h2>
+        <p>Son caudalímetros de capacidad baja a media para diversos tamaños, densidades y fluidez de productos. Con la mecánica de pesaje ubicada en el exterior, los caudalímetros de sólidos de la serie WF300 no se ven afectados por materiales corrosivos, abrasivos o calientes. Los medidores de flujo ayudan a mejorar el producto final, aumentan la eficiencia operativa y logran ahorros de costos significativos.<br><br>
+            •	Para aplicaciones de prealimentación especializadas  <br>
+            •	Elemento sensor montado fuera del proceso  <br>
+            •	Caudales de 0,2 a 300 t/h (0,2 a 330 STPH)  <br>
+            •	Temperatura de proceso a +232 °C (+450 °F)<br>
+            </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS WF100</h2>
+        <p>Es un caudalímetro de capacidad baja a media. No se ve afectado por materiales corrosivos, abrasivos o calientes. Al manejar varios tamaños, densidades y fluidez de productos, incluidos polvos finos como el azúcar, el WF100 ayuda a mejorar el producto final, aumentar la eficiencia operativa y lograr ahorros de costos significativos.<br><br>
+            •	Caudales de 3 a 200 t/h (4 a 220 STPH)<br>
+            •	Temperatura de proceso a +65 ºC (+150 ºF)<br>
+            </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal3" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS WF200 y WF250</h2>
+        <p>Son caudalímetros de capacidad media a alta. Operando con un paquete integrador basado en microprocesador, los medidores de flujo de la serie WF200 muestran la tasa de flujo, el flujo totalizado y las alarmas de tasa. STPH). Para la pre alimentación del transportador por gravedad aireado de alta capacidad, el WF250 tiene una tasa máxima de 900 t/h (990 STPH).<br><br>
+            •	Para aplicaciones de prealimentación especializadas<br>
+            •	Elemento sensor montado fuera del proceso<br>
+            •	Caudales de 200 a 900 t/h (220 a 990 STPH)<br>
+            •	Temperatura de proceso a +100 ºC (+212 ºF)<br>
+            </p>
+        <div id="close3" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal4" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS WFS300</h2>
+        <p>Los cabezales de detección WFS utilizan solo la fuerza horizontal creada por el impacto del producto sobre la placa de detección y luego aplican la desviación horizontal a un transformador diferencial variable lineal (LVDT) altamente confiable. Los pivotes sin fricción excluyen la fuerza vertical del proceso de detección y el rango de recorrido del LVDT se controla mediante un resorte helicoidal seleccionado para el caudal de escala completa especificado. Un amortiguador de fluido viscoso proporciona amortiguación mecánica en caso de flujos pulsantes. El LVDT convierte el movimiento horizontal, proporcional a las fuerzas de impacto en una señal eléctrica, que es convertida por el integrador en una indicación y totalización del caudal basado en el tiempo. Este método de detección del flujo de material ha demostrado ser el mejor en miles de aplicaciones en todo el mundo.<br><br>
+            •	Fácil instalación con montaje modular  <br>
+            •	±1% de precisión (o mejor) con alta repetibilidad  <br>
+            •	Medición de caudal de sólidos a granel totalmente cerrado y hermético al polvo  <br>
+            •	El mecanismo de detección está fuera del proceso, protegido de la contaminación  <br>
+            •	Sin deriva cero, debido al mecanismo de detección único  <br>
+            •	Bajo mantenimiento; solo la placa sensora está en el proceso  <br>
+            •	Sin restricción del flujo de producto<br>
+            </p>
+        <div id="close4" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

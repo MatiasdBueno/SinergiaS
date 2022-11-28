@@ -11,13 +11,15 @@
 </head>
 <body>
     <header>
+        <div id="header"></div>
         <nav class="nav">
-            <div class="logo"><img src="./imagenes/Recurso 6.png" alt=""></div>
+            <div class="logo"><a href="#header"><img src="./imagenes/Recurso 6.png" alt=""></a></div>
             <ul class="menu">
-                <li><a href="">Inicio</a></li>
+            <div class="logo__hover"><a href="#header"><img src="./imagenes/Recurso 6.png" alt=""></a></div>
+                <li><a href="#header">Inicio</a></li>
                 <li><a href="#aboutUs">Nosotros</a></li>
-                <li><a href="">Instrumentación</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#instrumentacion">Instrumentación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
 
 
@@ -29,14 +31,14 @@
         </nav>
     </header>
     <script src="index.js"></script>
-    <section class="aboutUs"></section>
+    <div id="aboutUs"></div>
     <section class="about">
         <div class="content">
             <img data-aos="zoom-in-up" src="./imagenes/industrial3.jpg" alt="">
             <div class="text">
-                <h1>Sobre nosotros</h1>
-                <h5>Sinergia Servicios</h5>
-                <p>Somos un proveedor de Soluciones Eléctricas, Instrumentación y Control y Construcciones metalmecánica que define sus acciones basadas en una cultura de Compromiso y Respeto. <br> <br> Establecemos relaciones de confianza con nuestros clientes y brindamos nuestros recursos para resolver las diferentes situaciones que se les presenten. <br> <br> Ser una empresa líder en el mercado, reconocida como una organización respetable y confiable, que brinde soluciones integrales a las necesidades de nuestros clientes. <br> <br> Respetar la Ley. 
+                <h1 data-aos="zoom-in-up">Sobre nosotros</h1>
+                <h5 data-aos="zoom-in-up">Sinergia Servicios</h5>
+                <p data-aos="zoom-in-up">Somos un proveedor de Soluciones Eléctricas, Instrumentación y Control y Construcciones metalmecánica que define sus acciones basadas en una cultura de Compromiso y Respeto. <br> <br> Establecemos relaciones de confianza con nuestros clientes y brindamos nuestros recursos para resolver las diferentes situaciones que se les presenten. <br> <br> Ser una empresa líder en el mercado, reconocida como una organización respetable y confiable, que brinde soluciones integrales a las necesidades de nuestros clientes. <br> <br> Respetar la Ley. 
                     Conducir nuestro negocio con integridad.
                     Mantener registros precisos y honestos.
                     Honrar nuestras obligaciones comerciales.
@@ -44,6 +46,7 @@
                     Proteger la información, activos e intereses de Sinergia.
                     Asumir el compromiso de ser ciudadano global responsable.
                     Superar las expectativas de nuestros clientes</p>
+                    <div id="instrumentacion"></div>
             </div>
         </div>
     </section>
@@ -51,5 +54,135 @@
     <script>
         AOS.init();
       </script>
+      <div class="container__cards">
+
+        <div class="card" data-aos="zoom-in-up">
+            <div class="cover">
+                <img src="./imagenes/presion.png" alt="">
+                <div class="img__back"></div>
+            </div>
+            <div class="description">
+                <h2>PRESIÓN</h2>
+                <p>SITRANS P es una familia completa de transmisores para la medida de presiones relativas, diferenciales y absolutas. Además de su alta precisión de medida y robustez, destacan por la facilidad de manejo y la funcionalidad de su sistema modular, así como por sus prestaciones de seguridad. <br><br><br><br></p>
+               <a href="presion.html"><input type="button" value="Más Info"></a> 
+            </div>
+        </div>
+        <div class="card" data-aos="zoom-in-up">
+            <div class="cover">
+                <img src="./imagenes/temperatura.png" alt="">
+                <div class="img__back"></div>
+            </div>
+            <div class="description">
+                <h2>TEMPERATURA	</h2>
+                <p>SITRANS T está formado por instrumentos profesionales de medida de temperatura, incluso en condiciones extremas. Ya sea con calor, con frío o en atmósferas potencialmente explosivas. Miden de forma precisa en cualquier aplicación y se conectan de forma rápida y sencilla a termopares o termo resistencias. El paquete de software inteligente SIMATIC PDM permite la parametrización en solo unos minutos, evitando los errores de entrada.</p>
+                   <a href="temperatura.html"><input type="button" value="Más Info"></a> 
+            </div>
+        </div>
+        <div class="card" data-aos="zoom-in-up">
+            <div class="cover">
+                <img src="./imagenes/flujo.png" alt="">
+                <div class="img__back"></div>
+            </div>
+            <div class="description">
+                <h2>FLUJO</h2>
+                <p>En la medición de caudal, la elección del instrumento adecuado es decisiva para la productividad. SITRANS F ofrece el caudalímetro adecuado para cada rango de aplicaciones y para cada medio con cinco tecnologías de caudal diferentes disponibles para adaptarse a una amplia variedad de condiciones de funcionamiento: Coriolis, electromagnético, ultrasónico, vortex y presión diferencial</p>
+                   <a href="flujo.html"><input type="button" value="Más Info"></a> 
+            </div>
+        </div>
+        <div class="card" data-aos="zoom-in-up">
+            <div class="cover">
+                <img src="./imagenes/nivel.png" alt="">
+                <div class="img__back"></div>
+            </div>
+            <div class="description">
+                <h2>NIVEL</h2>
+                <p>Instrumentos de contacto y sin contacto para una medición continua y puntual<br><br><br><br><br><br><br><br><b><br></b></p>
+                   <a href="nivel.html"><input type="button" value="Más Info"></a> 
+            </div>
+        </div>
+        <div class="card" data-aos="zoom-in-up">
+            <div class="cover">
+                <img src="./imagenes/posicionadores.png" alt="">
+                <div class="img__back"></div>
+            </div>
+            <div class="description">
+                <h2>POSICIONADORES</h2>
+                <p>Como interfaz entre el sistema de control y las válvulas, los posicionadores juegan un papel importante para garantizar la confiabilidad y el rendimiento óptimo en sus plantas de proceso automatizadas <br><br><br><br><br><br></p>
+                   <a href="posicionadores.html"><input type="button" value="Más Info"></a> 
+            </div>
+        </div>
+        <div class="card" data-aos="zoom-in-up">
+            <div class="cover">
+                <img src="./imagenes/peso.png" alt="">
+                <div class="img__back"></div>
+            </div>
+            <div class="description">
+                <h2>PESO</h2>
+                <p>Aquí encontrará sus módulos de pesaje SIWAREX para la integración en el sistema de automatización SIMATIC de Siemens<br><br><br><br><br><br><br><br></p>
+                   <a href="peso.html"><input type="button" value="Más Info"></a> 
+            </div>
+        </div>
+        <div class="card" data-aos="zoom-in-up">
+            <div class="cover">
+                <img src="./imagenes/controlyproteccion.png" alt="">
+                <div class="img__back"></div>
+            </div>
+            <div class="description">
+                <h2>CONTROL Y PROTECCIÓN DE PROCESOS</h2>
+                <p>Los dispositivos de protección de procesos se pueden utilizar como sistemas de alerta temprana para evitar costosas interrupciones y averías de los equipos. Detectan sistemas de flujo, bloqueos, fallas en la pantalla, ralentización de la maquinaria o bolsas de filtro rotas. Su construcción robusta los hace impermeables al polvo, la acumulación de suciedad y la humedad.</p>
+                   <a href="procesos.html"><input type="button" value="Más Info"></a> 
+            </div>
+        </div>
+        <div class="card" data-aos="zoom-in-up">
+            <div class="cover">
+                <img src="./imagenes/compcomplementarios.png" alt="">
+                <div class="img__back"></div>
+            </div>
+            <div class="description">
+                <h2>COMPONENTES COMPLEMENTARIOS</h2>
+                <p>Llevando la funcionalidad de su instrumentación al siguiente nivel: los componentes complementarios mejoran sus operaciones a través de comunicaciones inalámbricas fluidas, pantallas remotas y soluciones de monitoreo remoto. <br><br><br><br></p>
+                   <a href="compcomplementarios.html"><input type="button" value="Más Info"></a> 
+            </div>
+        </div>
+      </div>
+      <footer>
+        <div id="contacto"></div>
+          <div class="center box">
+            <h2>Contactos</h2>
+            <div class="content">
+              <div class="place">
+                <span class="fas fa-map-marker-alt"></span>
+                <span class="text">Av. San Lorenzo 2599, S2154 Cap. Bermúdez, Santa Fe</span>
+              </div>
+              <div class="phone">
+                <span class="fas fa-phone-alt"></span>
+                <span class="text">+54 (9) 3416361440</span><br>
+                <span class="fas fa-phone-alt"></span>
+                <span class="text">+54 341 478 0700</span>
+              </div>
+              <div class="email">
+                <span class="fas fa-envelope"></span>
+                <span class="text">eaisa@sinergiaservicios.com.ar</span><br>
+                <span class="fas fa-envelope"></span>
+                <span class="text">nicolasarriola@sinergiaservicios.com.ar</span><br>
+                <span class="fas fa-envelope"></span>
+                <span class="text">info@sinergiaservicios.com.ar</span><br>
+                <span class="fas fa-envelope"></span>
+                <span class="text">nabilaaisa@sinergiaservicios.com.ar</span>
+              </div>
+              <div class="wsp">
+                <a href="https://wa.me/3416727426" target="_blank"><span class="fas fab fa-whatsapp"></span></a>
+                <span class="text"><a href="https://wa.me/3416727426" target="_blank"> Chatear ahora</a></span>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </footer>
+      <div class="container">
+      <div class="copy">
+        <p class="end">&copy; Sinergia Servicios . Todos los derechos reservados</p>
+    </div>
+</div>
 </body>
 </html> 

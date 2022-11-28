@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="flujo.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+      <span class="logo_name">Instrumentación</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">
+          <i class='bx'><img src="./imagenes/home-solid.svg" alt=""></i></i>
+          <span class="link_name">Inicio</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="index.html">Inicio</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="presion.html">
+            <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+            <span class="link_name">Presión</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="presion.html">Presión</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="temperatura.html">
+            <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+            <span class="link_name">Temperatura</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="nivel.html">
+          <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+          <span class="link_name">Nivel</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="nivel.html">Nivel</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="posicionadores.html">
+          <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+          <span class="link_name">Posicionadores</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="peso.html">
+            <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+            <span class="link_name">Peso</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="peso.html">Peso</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="procesos.html">
+          <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+          <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="compcomplementarios.html">
+          <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+          <span class="link_name">Componentes complementarios</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+        </ul>
+      </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>FLUJO</h1>
+
+<section class="fondo">
+  <div class="container">
+  <div class="card">
+    <h2>CORIOLIS</h2>
+    <p>SITRANS FC para una monitorización fiable de líquidos y gases en prácticamente todas las aplicaciones <br><br><br><br><br><br><br><br><br><br><br></p>
+    <a href="coriolis.html"><button>Más Info</button></a>
+  </div>
+  <div class="card">
+    <h2>ELECTROMAGNETICO</h2>
+    <p>Ya se trate de un caudalímetro electromagnético estándar con tecnología de CC pulsada modular, un sistema de caudal de CA pulsada de alto rendimiento o un contador de agua alimentado por batería, la línea de productos SITRANS FM tiene el sensor y el transmisor adecuados para cada desafío industrial.<br><br><br><br><br></p>
+        <a href="electromagnetico.html"><button>Más Info</button></a>
+  </div>
+  <div class="card">
+    <h2>ULTRASONICO</h2>
+    <p>Medición de caudal por Ultrasonido. Máxima versatilidad con opciones en línea y de sujeción para líquidos y gases. <br><br></p>
+        <a href="ultrasonico.html"><button>Más Info</button></a><br>
+        <h2 class="second">ULTRASONICO - En Linea</h2>
+        <p>Medición de caudal por Ultrasonido. Máxima versatilidad con opciones en línea y de sujeción para líquidos y gases. <br><br></p>
+        <a href="enlinea.html"><button>Más Info</button></a>
+  </div>
+  <div class="card">
+    <h2>VORTEX</h2>
+    <p>Es su solución de vórtice todo en uno para la medición de flujo volumétrico y másico de vapor, gases y líquidos, y mucho más.<br><br><br><br><br><br><br><br><br><br></p>
+        <a href="vortex.html"><button>Más Info</button></a>
+  </div>
+  <div class="card">
+    <h2>PRESIÓN DIFERENCIAL</h2>
+    <p>Solución completa para mediciones de flujo de presión diferencial. Esta tecnología bien establecida es adecuada para todo tipo de aplicaciones: líquidos, gases secos o húmedos y vapor. La gama de productos de presión diferencial consta del sistema de medición de tubo de Pitot SITRANS FPS300 y los sensores de presión diferencial según ISO 5167 (orificios) SITRANS FPS200. <br><br><br></p>
+        <a href="pdiferencial.html"><button class="vacio">Más Info</button></a>
+  </div>
+  <div class="card">
+    <h2>AREA VARIABLE</h2>
+    <p>Los caudalímetros de área variable SITRANS F VA 250 (rotámetro) con una longitud estándar de 250 mm (9,84 pulgadas) y su diseño totalmente metálico se pueden utilizar para medir muchos tipos diferentes de líquidos y gases que pasan a través de tuberías cerradas. <br><br><br><br><br><br></p>
+        <a href="areavareable.html"><button class="vacio">Más Info</button></a>
+  </div>
+</div>
+</section>
+    <script src="modal1.js"></script>
+</body>
+</html>

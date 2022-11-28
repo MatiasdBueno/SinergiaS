@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="coriolis.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+          <span class="logo_name">Instrumentación- <br> -Ultrasonico</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+              <a href="flujo.html">
+                <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+                <span class="link_name">Volver</span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="flujo.html">Volver</a></li>
+              </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                  <a href="presion.html">
+                    <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+                    <span class="link_name">Presión</span>
+                  </a>
+                </div>
+                <ul class="sub-menu">
+                  <li><a class="link_name" href="presion.html">Presión</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="iocn-link">
+                  <a href="temperatura.html">
+                    <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+                    <span class="link_name">Temperatura</span>
+                  </a>
+                </div>
+                <ul class="sub-menu">
+                  <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="nivel.html">
+                  <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+                  <span class="link_name">Nivel</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="nivel.html">Nivel</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="posicionadores.html">
+                  <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+                  <span class="link_name">Posicionadores</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="iocn-link">
+                  <a href="peso.html">
+                    <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+                    <span class="link_name">Peso</span>
+                  </a>
+                </div>
+                <ul class="sub-menu">
+                  <li><a class="link_name" href="peso.html">Peso</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="procesos.html">
+                  <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+                  <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="compcomplementarios.html">
+                  <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+                  <span class="link_name">Componentes complementarios</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+                </ul>
+              </li>
+    </ul>
+      </div>
+      <section class="home-section">
+        <div class="home-content">
+          <i class='bx bx-menu' ></i>
+        </div>
+      </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>FLUJO - PRESIÓN DIFERENCIAL</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="pdiferencial">PRESIÓN DIFERENCIAL</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="pdiferencial">
+              <a href="#">SITRANS FPS200</a>
+              <img src="imagenes/SITRANS FPS200.png" alt="">
+              <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="pdiferencial">
+              <a href="#">SITRANS FPS300</a>
+              <img src="imagenes/SITRANS FPS300.png" alt="" >
+              <button id="openModal1">Más Información</button>
+            </div>
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FP</h2>
+        <p>Solución completa para mediciones de flujo de presión diferencial. Esta tecnología bien establecida es adecuada para todo tipo de aplicaciones: líquidos, gases secos o húmedos y vapor. La gama de productos de presión diferencial consta del sistema de medición de tubo de Pitot SITRANS FPS300 y los sensores de presión diferencial según ISO 5167 (orificios) SITRANS FPS200. <br><br>
+            •	Adecuado para una amplia gama de aplicaciones diferentes<br>
+            •	Disponible como sistema compacto premontado y como piezas remotas<br>
+            •	Procedimiento de dimensionamiento inteligente avanzado<br>
+            •	El dimensionamiento basado en la web y el almacenamiento de datos permiten una trazabilidad completa y una comunicación fácil<br>
+            </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS FP</h2>
+        <p>Solución completa para mediciones de flujo de presión diferencial. Esta tecnología bien establecida es adecuada para todo tipo de aplicaciones: líquidos, gases secos o húmedos y vapor. La gama de productos de presión diferencial consta del sistema de medición de tubo de Pitot SITRANS FPS300 y los sensores de presión diferencial según ISO 5167 (orificios) SITRANS FPS200.<br><br>
+            •	Adecuado para una amplia gama de aplicaciones diferentes<br>
+            •	Disponible como sistema compacto premontado y como piezas remotas<br>
+            •	Procedimiento de dimensionamiento inteligente avanzado<br>
+            •	El dimensionamiento basado en la web y el almacenamiento de datos permiten una trazabilidad completa y una comunicación fácil<br>
+            </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

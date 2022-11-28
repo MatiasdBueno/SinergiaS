@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="flujo.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+      <span class="logo_name">Instrumentación</span>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <a href="nivel.html">
+              <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+              <span class="link_name">Volver</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="nivel.html">Volver</a></li>
+            </ul>
+          </li>
+      <li>
+        <div class="iocn-link">
+          <a href="presion.html">
+            <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+            <span class="link_name">Presión</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="presion.html">Presión</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="temperatura.html">
+            <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+            <span class="link_name">Temperatura</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="flujo.html">
+          <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+          <span class="link_name">Flujo</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="flujo.html">Flujo</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="posicionadores.html">
+          <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+          <span class="link_name">Posicionadores</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="peso.html">
+            <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+            <span class="link_name">Peso</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="peso.html">Peso</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="procesos.html">
+          <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+          <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="compcomplementarios.html">
+          <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+          <span class="link_name">Componentes complementarios</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+        </ul>
+      </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>NIVEL - NIVEL CONTINUO</h1>
+    <section class="fondo">
+        <div class="container">
+        <div class="card">
+          <h2 class="">CONTROLADORES</h2>
+          <p>Brindan control de nivel básico para rutinas de bombeo complejas, para una gama de tecnologías que incluyen radar de 80 GHz, ultrasonidos y cualquier dispositivo de 4-20 mA de dos hilos.<br><br><br><br><br><br><br><br><br></p>
+          <a href="controladores.html"><button>Más Info</button></a>
+        </div>
+        <div class="card menor">
+          <h2>ULTRASONICOS</h2>
+          <p><br><br><br></p>
+              <a href="nivelultrasonico.html"><button>Más Info</button></a>
+        </div>
+        <div class="card">
+            <h2>POR RADAR</h2>
+            <p class="chicop">La medición de nivel por radar, es una tecnología sin contacto construida para monitorear niveles de líquidos y sólidos. Los entornos de proceso desafiantes como el vapor, la presión, el polvo o las altas temperaturas no son rival para estos instrumentos. Process Intelligence, el método avanzado de procesamiento de perfiles de eco de los transmisores, garantiza una medición de nivel fiable y precisa e ignora automáticamente las obstrucciones. Los asistentes gráficos de inicio rápido lo ponen en funcionamiento en minutos, sin ningún ajuste adicional. <br><br></p>
+                <a href="xradar.html"><button>Más Info</button></a>
+          </div>
+          <div class="card">
+            <h2>RADAR DE ONDA</h2>
+            <p class="chicop">El radar de onda guiada, es una tecnología de contacto que sobresale en el control del nivel de líquidos y sólidos. El procesamiento de eco avanzado le brinda confiabilidad y precisión inigualables al medir el nivel y la interfaz en todo, desde recipientes pequeños hasta grandes. Condiciones extremas como alta presión y vapores no son un problema para estos transmisores. Con asistentes de inicio rápido fáciles de usar para la configuración, sondas ajustables y reemplazables en el campo para un fácil mantenimiento y clasificaciones SIL para una operación segura, vea la diferencia que hace el radar de onda guiada.</p>
+                <a href="radaronda.html"><button>Más Info</button></a>
+          </div>
+          <div class="card">
+            <h2>CAPACITANCIA</h2>
+            <p>Medición continua de nivel, con una gama completa de tecnologías para su aplicación exacta: ultrasónica, radar, radar de onda guiada, capacitancia, gravimétrica e hidrostática. Con configuración intuitiva, precisión de clase mundial y una red global de soporte.<br></BR><br><br><br><br></p>
+                <a href="capacitancia.html"><button>Más Info</button></a>
+          </div>
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

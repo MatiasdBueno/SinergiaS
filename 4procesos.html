@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+          <span class="logo_name">Instrumentación</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="procesos.html">
+                <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+                <span class="link_name">Volver</span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="procesos.html">Volver</a></li>
+              </ul>
+            </li>
+          <li>
+            <div class="iocn-link">
+              <a href="presion.html">
+                <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+                <span class="link_name">Presión</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="presion.html">Presión</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="temperatura.html">
+                <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+                <span class="link_name">Temperatura</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="flujo.html">
+                <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+                <span class="link_name">Flujo</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="flujo.html">Flujo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="nivel.html">
+              <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+              <span class="link_name">Nivel</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="nivel.html">Nivel</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="posicionadores.html">
+              <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+              <span class="link_name">Posicionadores</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="peso.html">
+              <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+              <span class="link_name">Peso</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="peso.html">Peso</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="compcomplementarios.html">
+              <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+              <span class="link_name">Componentes complementarios</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+            </ul>
+          </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+      </div>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>PESO - REGISTRADORES DE PROCESOS</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="reg-procesos">REGISTRADORES DE PROCESOS</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="reg-procesos">
+                <a href="#">SIREC D200</a>
+                <img src="imagenes/sirec-d200.png" alt="">
+                <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="reg-procesos">
+                <a href="#">SIREC D300</a>
+                <img src="imagenes/sirec-d300.png" alt="">
+                <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="reg-procesos">
+                <a href="#">SIREC D400</a>
+                <img src="imagenes/sirec-d400.png" alt="">
+                <button id="openModal2">Más Información</button>
+            </div>
+
+
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>SIREC D200</h2>
+        <p>Es una grabadora de pantalla competitiva en formato de 144 mm x 144 mm con pantalla LCD a color de 5,7" en resolución QVGA.<br><br>
+            •	Tasa de muestreo 100/200/500 ms<br>
+            •	Precisión: 0,1% típico -T/C<br>
+            •	Fuente de alimentación del transmisor 24Vdc<br>
+            •	Funciones matemáticas<br>
+            •	Búfer de datos interno de 1 GB (2 GB opcional)<br>
+            •	Interfaz: Ethernet TCP/IP<br>
+            •	Registro de datos a través de interfaz USB o tarjeta SD<br>
+            •	Configuración en el dispositivo o mediante SIREC D Manager o Server-Software<br>
+            •	Pantalla táctil con navegación rápida<br>
+            •	Hasta 4 niveles de protección de contraseña con hasta 50 usuarios diferentes disponibles.<br>
+            •	Protección frontal tipo NEMA 3/IP54, NEMA 4X/IP66 disponible como opción<br>
+            •	Configuración en el dispositivo o mediante SIREC D Manager o Server-Software<br>
+            •	Opciones de firmware seleccionables individualmente por un sistema de crédito flexible<br>
+            </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>SIREC D300</h2>
+        <p>Es un grabador de pantalla multifuncional en formato de 144 mm x 144 mm con pantalla LCD a color de 5,7" en resolución VGA.<br><br>
+            •	Tasa de escaneo rápido de 20/100/200/500 ms<br>
+            •	De 1 GB a 4 GB de búfer de datos interno<br>
+            •	Precisión: 0,1% típico -T/C<br>
+            •	Fuente de alimentación del transmisor 24Vdc<br>
+            •	Funciones matemáticas integrales<br>
+            •	Interfaces: Ethernet, RS 485, USB, ranura para tarjeta SD<br>
+            •	Registro de datos a través de interfaz USB o tarjeta SD<br>
+            •	Operación rápida a través de una pantalla táctil<br>
+            •	Configuración en el dispositivo o a través del software SIREC D manager o server<br>
+            •	Hasta 4 niveles de protección de contraseña con hasta 50 usuarios diferentes disponibles<br>
+            •	Protección frontal tipo NEMA 3/IP65, NEMA 4X/IP66 disponible como opción<br>
+            •	Opciones de firmware seleccionables individualmente a través de un sistema de crédito flexible<br>
+            </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>SIREC D400</h2>
+        <p>Es un grabador de pantalla de gama alta en formato de 300 mm x 300 mm con pantalla LCD a color de 12,1" en resolución XGA.<br><br>
+            •	Tasa de escaneo rápido de 20/100/200/500 ms<br>
+            •	De 1 GB a 4 GB de búfer de datos interno<br>
+            •	Precisión: 0,1% típico -T/C<br>
+            •	Fuente de alimentación del transmisor 24Vdc<br>
+            •	Funciones matemáticas integrales<br>
+            •	Interfaces: Ethernet, RS 485, USB, ranura para tarjeta de CD<br>
+            •	Registro de datos a través de interfaz USB o tarjeta SD<br>
+            •	Operación rápida a través de una pantalla táctil<br>
+            •	Configuración en el dispositivo o a través del software SIREC D manager o server<br>
+            •	Protección frontal tipo NEMA 3/IP65, NEMA 4X/IP66 disponible como opción<br>
+            •	Opciones de firmware seleccionables individualmente a través de un sistema de crédito flexible<br>
+            </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

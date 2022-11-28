@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="peso.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+      <span class="logo_name">Instrumentación</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">
+          <i class='bx'><img src="./imagenes/home-solid.svg" alt=""></i></i>
+          <span class="link_name">Inicio</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="index.html">Inicio</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="presion.html">
+            <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+            <span class="link_name">Presión</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="presion.html">Presión</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="temperatura.html">
+            <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+            <span class="link_name">Temperatura</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="flujo.html">
+            <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+            <span class="link_name">Flujo</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="flujo.html">Flujo</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="nivel.html">
+          <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+          <span class="link_name">Nivel</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="nivel.html">Nivel</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="posicionadores.html">
+          <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+          <span class="link_name">Posicionadores</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="peso.html">
+          <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+          <span class="link_name">Peso</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="peso.html">Peso</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="compcomplementarios.html">
+          <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+          <span class="link_name">Componentes complementarios</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+        </ul>
+      </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>CONTROL Y PROTECCION DE PROCESOS</h1>
+
+<section class="fondo fondopeso">
+  <div class="container containerpeso">
+  <div class="card smal">
+    <h2>CONTROLADORES DE PROCESOS</h2>
+    <p>Los dispositivos de protección de procesos se pueden utilizar como sistemas de alerta temprana para evitar costosas interrupciones y averías de los equipos. Detectan sistemas de flujo, bloqueos, fallas en la pantalla, ralentización de la maquinaria o bolsas de filtro rotas. Su construcción robusta los hace impermeables al polvo, la acumulación de suciedad y la humedad. <br><br><br><br><br></p>
+    <a href="1procesos.html"><button>Más Info</button></a>
+  </div>
+  <div class="card smal">
+    <h2>PROTECCION DE PROCESOS:ACUSTICO</h2>
+    <p class="chicop">Con los sensores acústicos para el control de bombas, SITRANS DA, incluso las fugas más pequeñas en las válvulas de impulsión de las bombas de desplazamiento positivo oscilantes (p. ej., bombas de pistón) pueden detectarse mediante la medición de la cavitación. SITRANS AS100 es un sensor acústico utilizado para la detección de flujo de sólidos. El SITRANS AS100 se puede conectar a un SITRANS CU02, que procesa las señales del sensor y proporciona salidas de relé y analógicas para la conexión a un proceso, o se puede conectar directamente a una entrada analógica de PLC. <br><br><br></p>
+        <a href="2procesos.html"><button>Más Info</button></a>
+  </div>
+  <div class="card smal">
+    <h2>PROTECCIÓN DE PROCESOS: SENSORES MOVIMIENTO</h2>
+    <p>Todas las sondas de detección de movimiento MFA 4p se pueden montar a una distancia de hasta 100 mm (4”) del objetivo ferroso, lo que reduce la posibilidad de dañar la sonda y el equipo. Las sondas no se ven afectadas por la acumulación de humedad o polvo.<br><br><br><br><br><br><br><br></p>
+        <a href="3procesos.html"><button>Más Info</button></a><br>
+  </div>
+  <div class="card smal">
+    <h2>REGISTRADORES DE PROCESOS</h2>
+    <p class="chicop">Los registradores de pantalla de la serie SIREC D se utilizan para la monitorización continua de variables de proceso en el mantenimiento de plantas y optimización de procesos o en la resolución de problemas. Los registradores de pantalla de la serie SIREC D se utilizan para la monitorización continua de variables de proceso en mantenimiento de plantas y optimización de procesos o en Resolución de problemas. Los registradores de pantalla de la serie SIREC D se utilizan para la monitorización continua de variables de proceso en el mantenimiento de plantas y la optimización de procesos o en la resolución de problemas. <br><br><br></p>
+        <a href="4procesos.html"><button>Más Info</button></a>
+  </div>
+</div>
+</section>
+    <script src="modal1.js"></script>
+</body>
+</html>

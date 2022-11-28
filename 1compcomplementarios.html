@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+          <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+          <span class="logo_name">Instrumentación</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="compcomplementarios.html">
+                <i class='bx'><img src="./imagenes/back.svg" alt=""></i></i>
+                <span class="link_name">Volver</span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="compcomplementarios.html">Volver</a></li>
+              </ul>
+            </li>
+          <li>
+            <div class="iocn-link">
+              <a href="presion.html">
+                <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+                <span class="link_name">Presión</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="presion.html">Presión</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="temperatura.html">
+                <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+                <span class="link_name">Temperatura</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="flujo.html">
+                <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+                <span class="link_name">Flujo</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="flujo.html">Flujo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="nivel.html">
+              <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+              <span class="link_name">Nivel</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="nivel.html">Nivel</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="posicionadores.html">
+              <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+              <span class="link_name">Posicionadores</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="peso.html">
+              <i class='bx' ><img src="./imagenes/peso.png" alt=""></i>
+              <span class="link_name">Peso</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="peso.html">Peso</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="procesos.html">
+                <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+                <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+              </a>
+              <ul class="sub-menu blank">
+                <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+              </ul>
+            </li>
+    <div class="profile-details">
+      <div class="profile-content">
+      </div>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>COMPONENTES COMPLEMENTARIOS - FUENTES DE ALIMENTACION</h1>
+    <div class="store-wrapper">
+        <div class="category_list">
+            <a href="#" class="category_item" category="f-alimentacion">FUENTES DE ALIMENTACION</a>
+        </div>
+        <section class="products-list">
+            <div class="product-item" category="f-alimentacion">
+                <a href="#">SITRANS I100</a>
+                <img src="imagenes/P_FI01_XX_05509i.jpg" alt="">
+                <button id="openModal">Más Información</button>
+            </div>
+            <div class="product-item" category="f-alimentacion">
+                <a href="#">SITRANS I200</a>
+                <img src="imagenes/P_FI01_XX_05648j.jpg" alt="">
+                <button id="openModal1">Más Información</button>
+            </div>
+            <div class="product-item" category="f-alimentacion">
+                <a href="#">SITRANS I300</a>
+                <img src="imagenes/P_FI01_XX_05495i.jpg" alt="">
+                <button id="openModal2">Más Información</button>
+            </div>
+
+
+            <script src="presion.js"></script>
+        </section>
+    </div>
+</div>
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS I100</h2>
+        <p>Las fuentes de alimentación aislantes se utilizan para el funcionamiento intrínsecamente seguro de los transmisores o para la conexión a fuentes de mA intrínsecamente seguras.<br><br>
+            •	Salida activa y pasiva 0/4 a 20 mA<br>
+            •	De aplicación universal para transmisores y fuentes de mA (transmisores de 4 hilos)<br>
+            •	Diseño estrecho - 12,5 mm (0,49 pulgadas) de ancho - para versión de uno y dos canales<br>
+            •	Entrada intrínsecamente segura [Ex ia] IIC<br>
+            •	Aislamiento galvánico entre entrada, salida y alimentación auxiliar<br>
+            •	Instalación permitida en Zonas 2, 22 y Div. 2<br>
+            •	Se puede utilizar hasta SIL 2 (IEC/EN 61508)<br>
+            </p>
+        <div id="close" class="close1">Cerrar</div>
+    </div>
+</div>
+<div id="modal1" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS I200</h2>
+        <p>Los transformadores de aislamiento de salida Ex i de uno y dos canales se utilizan para el funcionamiento intrínsecamente seguro de posicionadores de válvulas, convertidores i/p o indicadores.<br><br>
+            El SITRANS I200 se utiliza para el funcionamiento intrínsecamente seguro de válvulas reguladoras, convertidores I/P o indicadores.<br>
+            •	Transformador de aislamiento de salida Ex i compacto de uno y dos canales<br>
+            •	Diseño estrecho - 12,5 mm (0,49 pulgadas) de ancho - para versión de uno y dos canales<br>
+            •	Para señales de salida HART de 0/4 a 20 mA<br>
+            •	Salida intrínsecamente segura [Ex ia] IIC<br>
+            •	Aislamiento galvánico entre entrada, salida y alimentación auxiliar<br>
+            •	Vigilancia y mensajería de rotura de cable y cortocircuito (se puede desconectar)<br>
+            •	Instalación permitida en Zona 2 y Div. 2<br>
+            •	Se puede utilizar hasta SIL 2 (IEC/EN 61508)<br>
+            </p>
+        <div id="close1" class="close1">Cerrar</div>
+    </div>
+</div>
+
+<div id="modal2" class="modal-container">
+    <div class="modal-content">
+        <h2>SITRANS I300</h2>
+        <p>Interfaz EIA-485 para comunicación Modbus RTU, PROFIBUS RS 485 IS y BACnet MS/TP.<br><br>
+            •	Apto para dispositivos de 4 hilos<br>
+            •	Aislamiento galvánico entre EIA 485 y EIA 485 IS, entre la fuente de alimentación y EIA 485 IS, y entre la fuente de alimentación en el lado de entrada y la fuente de alimentación intrínsecamente segura en el lado de salida.<br>
+            •	Fuente de alimentación y comunicación intrínsecamente seguras [Ex ia] IIC<br>
+            •	Instalación permitida en Zona 2 y Div. 2<br>
+            •	Diagnóstico a través de LED<br>
+            •	Terminación de bus conectable e integrada en el lado no peligroso y en el lado peligroso<br>
+            •	Velocidades de transmisión de 1 200 bps a 1,5 Mbps<br>
+            </p>
+        <div id="close2" class="close1">Cerrar</div>
+    </div>
+</div>
+
+
+
+
+    <script src="modal1.js"></script>
+</body>
+</html>

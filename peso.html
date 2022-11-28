@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="peso.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+     <script src="./jquery-3.2.1.js"></script>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx'><img src="./imagenes/iconob.png" alt=""></i>
+      <span class="logo_name">Instrumentación</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">
+          <i class='bx'><img src="./imagenes/home-solid.svg" alt=""></i></i>
+          <span class="link_name">Inicio</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="index.html">Inicio</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="presion.html">
+            <i class='bx' ><img src="./imagenes/presion.png" alt=""></i>
+            <span class="link_name">Presión</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="presion.html">Presión</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="temperatura.html">
+            <i class='bx' ><img src="./imagenes/temperatura.png" alt=""></i>
+            <span class="link_name">Temperatura</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="temperatura.html">Temperatura</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="flujo.html">
+            <i class='bx' ><img src="./imagenes/flujo.png" alt=""></i>
+            <span class="link_name">Flujo</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="flujo.html">Flujo</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="nivel.html">
+          <i class='bx' ><img src="./imagenes/nivel.png" alt=""></i>
+          <span class="link_name">Nivel</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="nivel.html">Nivel</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="posicionadores.html">
+          <i class='bx' ><img src="./imagenes/posicionadores.png" alt=""></i>
+          <span class="link_name">Posicionadores</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="posicionadores.html">Posicionadores</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="procesos.html">
+          <i class='bx' ><img src="./imagenes/controlyproteccion.png" alt=""></i>
+          <span class="link_name">Control y <br> protección <br> de <br> procesos <br></span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="procesos.html">Control y protección de procesos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="compcomplementarios.html">
+          <i class='bx' ><img src="./imagenes/compcomplementarios.png" alt=""></i>
+          <span class="link_name">Componentes complementarios</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="compcomplementarios.html">Componentes complementarios</a></li>
+        </ul>
+      </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <div class="wrap">
+    <h1>PESO</h1>
+
+<section class="fondo fondopeso">
+  <div class="container containerpeso">
+  <div class="card">
+    <h2>ELECTRONICA SIWAREX PARA SIMATIC</h2>
+    <p>Aquí encontrará sus módulos de pesaje SIWAREX para la integración en el sistema de automatización SIMATIC de Siemens. <br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+    <a href="1peso.html"><button>Más Info</button></a>
+  </div>
+  <div class="card">
+    <h2>ELECTRONICA INDEPENDIENTE <br><br></h2>
+    <p>Aquí puede encontrar el integrador adecuado para básculas, tanto básculas de cinta como dosificadores de peso, así como para medidores de flujo de sólidos<br><br><br><br><br><br><br><br><br><br><br><br></p>
+        <a href="2peso.html"><button>Más Info</button></a>
+  </div>
+  <div class="card">
+    <h2>SOLUCIONES DE PESAJE IIOT <br><br></h2>
+    <p>Ofrece una manera fácil de digitalizar su aplicación de pesaje, también para industrias muy específicas con requisitos especiales. Los valores medidos por las celdas de carga de galgas extensimétricas se pueden ver fácilmente a través del control remoto. El sistema digitaliza los datos analógicos y los envía a la nube a través de la puerta de enlace SIMATIC IOT2050<br><br><br><br><br><br><br></p>
+        <a href="3peso.html"><button>Más Info</button></a><br>
+  </div>
+  <div class="card smal">
+    <h2>CELULAS DE CARGA <br><br></h2>
+    <p class="chicop">La celda de carga correcta para cada carga nominal
+      Una amplia selección de diferentes diseños: desde celdas de carga de plataforma hasta celdas de viga de flexión y corte, tipo s y de compresión. Las diferentes series de celdas de carga cubren cargas nominales desde 0,3 kg hasta 500 t. Nuestra gama se completa con unidades de montaje que favorecen una alineación óptima de la celda de carga, protegen la celda de carga contra sobrecargas o cargas transversales y que simplifican enormemente el montaje. Esto es esencial para que las celdas de carga rindan al máximo en términos de precisión. <br><br><br></p>
+        <a href="4peso.html"><button>Más Info</button></a>
+  </div>
+  <div class="card menor">
+    <h2>PESAJE DE CINTA <br><br></h2>
+    <p><br></p>
+        <a href="5peso.html"><button class="vacio">Más Info</button></a>
+  </div>
+  <div class="card smal">
+    <h2>DOSIFICADORES DE PESO <br><br></h2>
+    <p>La tarea del dosificador de peso es medir y controlar la cantidad de producción del material. La precisión y la fiabilidad de la medición tienen la máxima prioridad <br><br><br><br><br><br><br><br><br><br><br></p>
+        <a href="dosificadorp.html"><button class="vacio">Más Info</button></a>
+  </div>
+  <div class="card smal">
+    <h2>CAUDALIMETROS DE PESO <br><br></h2>
+    <p>Los caudalímetros de sólidos integrados en sistemas de tuberías cerradas proporcionan mediciones fiables y muy precisas del rendimiento del material. <br><br><br><br><br><br><br><br><br><br><br></p>
+        <a href="caudalimetrop.html"><button class="vacio">Más Info</button></a>
+  </div>
+</div>
+</section>
+    <script src="modal1.js"></script>
+</body>
+</html>
