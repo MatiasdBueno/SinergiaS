@@ -16,10 +16,11 @@ header{
         rgba(0,0,0,0.6),
         rgba(0,0,0,0.6)
     )
-    ,url(./imagenes/imagen1bk.jpg);
-    background-size: cover;
+    ,url(./imagenes/e2c61b3212fac609eb77689dc299ba40.gif);
+    background-repeat: no-repeat;
     background-position: center;
     z-index: 3;
+    background-size: cover;
 }
 .nav{
     position: fixed;
@@ -130,7 +131,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 4;
 
 }
 
@@ -160,7 +161,7 @@ header{
     z-index: 1;
 }
 .text h1{
-    color: #12899e;
+    color: #0862ac;
     font-size: 70px;
     margin-bottom: 20px;
     text-transform: capitalize;
@@ -168,7 +169,7 @@ header{
 }
 .text h5{
     color: rgb(235, 23, 23);
-    font-size: 25px;
+    font-size: 29px;
     margin-bottom: 25px;
     text-transform: capitalize;
     letter-spacing: 2px;
@@ -176,7 +177,7 @@ header{
 }
 .text p{
     color: #000000;
-    font-size:18px ;
+    font-size:21px ;
     line-height: 28px;
     letter-spacing: 1px;
     margin-bottom: 45px;
@@ -204,6 +205,80 @@ header{
         z-index: 1;
     }
 }
+ /* CLIENTES ----------------------------*/
+ .clients {
+    width: 100%;
+    height: 45vh;
+    display: grid;
+    place-items: center;
+    
+ }
+ .client-wrap{
+    width: 90%;
+    height: auto;
+    text-align: center;
+ }
+ .client-wrap h1{
+    font-size: 50px;
+    color: #555;
+ }
+ .client-wrap hr{
+    width: 15%;
+    height: 4px;
+    border: none;
+    background: #df2020;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 35px;
+ }
+ .client-in{
+    width: 100%;
+    height: auto;
+
+ }
+ .client-in ul{
+    padding: 0;
+    margin: 0;
+ }
+ .client-in ul li{
+    list-style: none;
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+ }
+ .client-in ul li img{
+    width: 100%;
+    height: 100%;
+ }
+ .client-in ul li:hover{
+    bottom: 15px;
+    transition: all 500ms;
+
+ }
+
+
+ @media screen and (max-width: 1045px){
+    .client-in ul li img{
+        width: 80%;
+        height: 80%;
+     }
+     .clients{
+        width: 100%;
+     }
+ }
+ @media screen and (max-width: 700px){
+    .clients{
+        height: 120%;
+        width: 110%;
+    }
+ }
+
+
+
+
 
 /* INSTRUMENTACIÓN ------------------------------------------*/
 
@@ -312,6 +387,15 @@ header{
     background: #0e6777;
 }
 
+.title_index_instru {
+    text-decoration: none;
+    color: #3f3e3e;
+    text-align: center;
+}
+
+.title_index_instru:hover{
+    color: #000000;
+}
 /* FOOTER ------------------------------------------ */
 
   footer{

@@ -350,6 +350,11 @@ body{
 	text-align: center;
 	text-decoration: none;
 }
+
+.products-list .product-item a:hover{
+  background-color: #005757;
+}
+
 button{
 	cursor: pointer;
 }
